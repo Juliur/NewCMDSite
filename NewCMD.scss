@@ -1,8 +1,15 @@
 $main-color: #014D80;
 $navbar_item_color: rgba(255, 255, 255, 0.9);
-
+$shadow : 0px 0px 7px rgba(0,0,0,0.5);
 body{
     font-family: 'Libre Franklin', sans-serif;
+    
+}
+.scrolled{
+    background-color: $main-color;
+    padding: 0 15px;
+    transition: all 0.5s linear 0s;
+    box-shadow: $shadow;
 }
 #header{
     height: 75vh;
@@ -13,6 +20,7 @@ body{
     background-attachment: fixed;
     position: relative;
     #nav-custom{
+        transition: all 0.2s linear 0s;
         a{
             font-size: 1.1em;
             color: $navbar_item_color;
@@ -48,6 +56,7 @@ body{
         transform: translate(-50%, -50%);
         padding: 20px;
         background-color: $main-color;
+        box-shadow: $shadow;
         p{
             color: white;
             text-align: center;
@@ -59,6 +68,7 @@ body{
 #main{
    .dashboard-items{
        margin-top: 20%;
+       margin-bottom: 5%;
        .dashboard-item{
             .counter-amount{
                 text-align: center;
@@ -70,5 +80,31 @@ body{
             }
        } 
    }
+   .community-involvement{
+        .section-title{
+            color: $main-color;
+            position: relative;
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                height: 4px;
+                width: 7%;
+                background-color: $main-color;
+                bottom: -30%;
+            }
+        }
+        .card-deck-custom{
+            .card-custom{
+                flex: 0 0 30%;
+                border-radius: 0;
+                margin-top: 15px;
+            }
+        }
+        
+    }
 }
 

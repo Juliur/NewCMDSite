@@ -2,6 +2,13 @@ body {
   font-family: 'Libre Franklin', sans-serif;
 }
 
+.scrolled {
+  background-color: #014D80;
+  padding: 0 15px;
+  transition: all 0.5s linear 0s;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
 #header {
   height: 75vh;
   background-image: url("images/mountains.jpg");
@@ -10,6 +17,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
+}
+
+#header #nav-custom {
+  transition: all 0.2s linear 0s;
 }
 
 #header #nav-custom a {
@@ -52,6 +63,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 20px;
   background-color: #014D80;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 }
 
 #header .about-company-wrap p {
@@ -62,6 +74,7 @@ body {
 
 #main .dashboard-items {
   margin-top: 20%;
+  margin-bottom: 5%;
 }
 
 #main .dashboard-items .dashboard-item .counter-amount {
@@ -72,4 +85,28 @@ body {
 
 #main .dashboard-items .dashboard-item .counter-title {
   text-align: center;
+}
+
+#main .community-involvement .section-title {
+  color: #014D80;
+  position: relative;
+}
+
+#main .community-involvement .section-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  width: 7%;
+  background-color: #014D80;
+  bottom: -30%;
+}
+
+#main .community-involvement .card-deck-custom .card-custom {
+  flex: 0 0 30%;
+  border-radius: 0;
+  margin-top: 15px;
 }
