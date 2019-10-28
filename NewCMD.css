@@ -1,0 +1,38 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+#header {
+  height: 70vh;
+  background-image: url("images/mountains.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#nav-custom a {
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.company-name-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-name-wrap h1 {
+  font-size: 2.8rem;
+}
+
+.company-name-wrap p {
+  font-size: 1.3rem;
+}
+
+.company-name-wrap a, .company-name-wrap p {
+  color: white;
+}
