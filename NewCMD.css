@@ -1,9 +1,9 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 #header {
-  height: 70vh;
+  height: 75vh;
   background-image: url("images/mountains.jpg");
   background-size: cover;
   background-position: 50% 50%;
@@ -12,12 +12,18 @@ body {
   position: relative;
 }
 
-#nav-custom a {
+#header #nav-custom a {
   font-size: 1.1em;
   color: rgba(255, 255, 255, 0.9);
+  padding: 0.6rem;
 }
 
-.company-name-wrap {
+#header #nav-custom .current {
+  font-weight: 700;
+  color: white;
+}
+
+#header .company-name-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,14 +31,45 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.company-name-wrap h1 {
+#header .company-name-wrap h1 {
   font-size: 2.8rem;
 }
 
-.company-name-wrap p {
+#header .company-name-wrap p {
   font-size: 1.3rem;
 }
 
-.company-name-wrap a, .company-name-wrap p {
+#header .company-name-wrap a, #header .company-name-wrap p {
   color: white;
+}
+
+#header .about-company-wrap {
+  width: 85%;
+  position: absolute;
+  bottom: -35%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #014D80;
+}
+
+#header .about-company-wrap p {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#main .dashboard-items {
+  margin-top: 20%;
+}
+
+#main .dashboard-items .dashboard-item .counter-amount {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 0;
+}
+
+#main .dashboard-items .dashboard-item .counter-title {
+  text-align: center;
 }

@@ -1,34 +1,74 @@
+$main-color: #014D80;
+$navbar_item_color: rgba(255, 255, 255, 0.9);
+
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
 }
 #header{
-    height: 70vh;
+    height: 75vh;
     background-image: url("images/mountains.jpg");
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-}
-#nav-custom{
-    a{
-        font-size: 1.1em;
-        color: rgba(255, 255, 255, 0.9)
+    #nav-custom{
+        a{
+            font-size: 1.1em;
+            color: $navbar_item_color;
+            padding: 0.6rem;
+        }
+        .current{
+            font-weight: 700;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+    .company-name-wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        h1{
+            font-size: 2.8rem;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+        a,p{
+            color: rgb(255, 255, 255);
+        }
+    }
+    .about-company-wrap{
+        width: 85%;
+        position: absolute;
+        bottom: -35%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: $main-color;
+        p{
+            color: white;
+            text-align: center;
+            font-size: 1.3rem;
+        }
     }
 }
-.company-name-wrap{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    h1{
-        font-size: 2.8rem;
-    }
-    p{
-        font-size: 1.3rem;
-    }
-    a,p{
-        color: rgb(255, 255, 255);
-    }
+
+#main{
+   .dashboard-items{
+       margin-top: 20%;
+       .dashboard-item{
+            .counter-amount{
+                text-align: center;
+                font-size: 2.3rem;
+                margin-bottom: 0;
+            }
+            .counter-title{
+                text-align: center;
+            }
+       } 
+   }
 }
+

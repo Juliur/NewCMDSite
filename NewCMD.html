@@ -10,92 +10,93 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="NewCMD.css">
 	</link>
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 </head>
 
 <body>
 	<header id="header">
-		<nav class="navbar fixed-top navbar-expand-lg" id="nav-custom">
-			<button class="navbar-toggler hamburger" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-				aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-				aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-			</button>
+			<nav class="navbar fixed-top navbar-expand-lg" id="nav-custom">
+				<button class="navbar-toggler hamburger" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+					aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+					aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+				</button>
 
-					<!-- <div class="d-block d-xs-block d-sm-block  d-lg-none d-xl-none text-uppercase pr-5 font-weight-bold nav-title">
-									<h6>Command Prompt, Inc.</h6>
-					</div> -->
+						<!-- <div class="d-block d-xs-block d-sm-block  d-lg-none d-xl-none text-uppercase pr-5 font-weight-bold nav-title">
+										<h6>Command Prompt, Inc.</h6>
+						</div> -->
 
-					<div class="col-md-1">
-						<a class="d-block brand-img" href="#">
-							Logo
-						</a>
-					</div>
-					<div class="col-md-7 offset-md-4">
-						<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" href="#">Home</a>
-								</li>
-								<li class="nav-item dropdown">
+						<div class="col-md-1">
+							<a class="d-block brand-img" href="#">
+								Logo
+							</a>
+						</div>
+						<div class="col-md-7 offset-md-4">
+							<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link current" href="#">Home</a>
+									</li>
+									<li class="nav-item dropdown">
+											<a class="nav-link" href="#" id="navbarDropdownMenuLink"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												About
+											</a>
+											<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+												<a class="dropdown-item" href="/products/hot_or_cold_standby">Careers</a>
+												<a class="dropdown-item" href="/products/high_availability_clusters">Partners</a>
+											</div>
+										</li>
+									<li class="nav-item dropdown">
 										<a class="nav-link" href="#" id="navbarDropdownMenuLink"
 											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											About
+											Products
 										</a>
 										<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-											<a class="dropdown-item" href="/products/hot_or_cold_standby">Careers</a>
-											<a class="dropdown-item" href="/products/high_availability_clusters">Partners</a>
+											<a class="dropdown-item" href="/products/hot_or_cold_standby">Hot Standby / Cold Standby / DRBD</a>
+											<a class="dropdown-item" href="/products/high_availability_clusters">High Availability Clusters</a>
+											<a class="dropdown-item" href="/products/performance_audit">Performance Audit</a>
+											<a class="dropdown-item" href="/products/postgresql_core">PostgreSQL Core</a>
+											<a class="dropdown-item" href="/products/warm_standby">Warm Standby</a>
+											<a class="dropdown-item" href="/products/audit_and_tune">Audit and Tune</a>
 										</div>
 									</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Products
-									</a>
-									<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="/products/hot_or_cold_standby">Hot Standby / Cold Standby / DRBD</a>
-										<a class="dropdown-item" href="/products/high_availability_clusters">High Availability Clusters</a>
-										<a class="dropdown-item" href="/products/performance_audit">Performance Audit</a>
-										<a class="dropdown-item" href="/products/postgresql_core">PostgreSQL Core</a>
-										<a class="dropdown-item" href="/products/warm_standby">Warm Standby</a>
-										<a class="dropdown-item" href="/products/audit_and_tune">Audit and Tune</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Services
-									</a>
-									<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="/services/performance_tuning">Performance Tuning</a>
-										<a class="dropdown-item" href="/services/on_site">On Site</a>
-										<a class="dropdown-item" href="/services/training">Training</a>
-										<a class="dropdown-item" href="/services/high_availability">High Availability</a>
-										<a class="dropdown-item" href="/services/remote_hands">Remote Hands</a>
-										<a class="dropdown-item" href="/services/oracle_to_postgres_migrations">Oracle Migrations</a>
-										<a class="dropdown-item" href="/services/fullstack">Full Stack Offerings</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Support
-									</a>
-									<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="/support/support_options">Support Options</a>
-									</div>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link">Blog</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link">Contact</a>
-								</li>
-							</ul>
-						</div>
-		</nav>
+									<li class="nav-item dropdown">
+										<a class="nav-link" href="#" id="navbarDropdownMenuLink"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Services
+										</a>
+										<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+											<a class="dropdown-item" href="/services/performance_tuning">Performance Tuning</a>
+											<a class="dropdown-item" href="/services/on_site">On Site</a>
+											<a class="dropdown-item" href="/services/training">Training</a>
+											<a class="dropdown-item" href="/services/high_availability">High Availability</a>
+											<a class="dropdown-item" href="/services/remote_hands">Remote Hands</a>
+											<a class="dropdown-item" href="/services/oracle_to_postgres_migrations">Oracle Migrations</a>
+											<a class="dropdown-item" href="/services/fullstack">Full Stack Offerings</a>
+										</div>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link" href="#" id="navbarDropdownMenuLink"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Support
+										</a>
+										<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+											<a class="dropdown-item" href="/support/support_options">Support Options</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link">Blog</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link">Contact</a>
+									</li>
+								</ul>
+							</div>
+			</nav>
+	
 		<div class="container-fluid company-name-wrap">
 			<div class="row">
 				<div class="col-md-12">
@@ -104,12 +105,39 @@
 						<p class="font-weight-bold text-uppercase text-center pt-3 m-0">PostgreSQL Centered full stack support, consulting &amp; development.</p>
 					</div>
 				</div>
-				</div>
 			</div>
+		</div>
+
+		<div class="about-company-wrap">
+			<div class="about-company">
+				<p class="mb-0">
+						Command Prompt, Inc. is the oldest and largest dedicated PostgreSQL support provider in North America. Since 1997, we have been developing, supporting, deploying and advocating the use of the World's Most Advanced Open Source Database.
+				</p>
+			</div>	
+		</div>
 	</header>
 
-	<main>
-
+	<main id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<div class="dashboard-items d-flex justify-content-between">
+						<div class="dashboard-item">
+							<p id="items-managed" class="counter-amount">20,559</p>
+							<h5 class="counter-title">Items managed</h5>
+						</div>
+						<div class="dashboard-item">
+							<p id="transactions-processed" class="counter-amount">5,659,123</p>
+							<h5 class="counter-title">Transaction/hour</h5>
+						</div>
+						<div class="dashboard-item">
+							<p id="issues solved" class="counter-amount">86,122</p>
+							<h5 class="counter-title">Issues solved</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
