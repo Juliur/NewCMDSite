@@ -13,6 +13,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="./NewCMD.js"></script>
 </head>
 
 <body>
@@ -24,9 +34,9 @@
 					<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
 				</button>
 
-						<!-- <div class="d-block d-xs-block d-sm-block  d-lg-none d-xl-none text-uppercase pr-5 font-weight-bold nav-title">
-										<h6>Command Prompt, Inc.</h6>
-						</div> -->
+					<!-- <div class="d-block d-xs-block d-sm-block  d-lg-none d-xl-none text-uppercase pr-5 font-weight-bold nav-title">
+									<h6>Command Prompt, Inc.</h6>
+					</div> -->
 
 						<div class="col-md-1">
 							<a class="d-block brand-img" href="#">
@@ -35,11 +45,11 @@
 						</div>
 						<div class="col-md-7 offset-md-4">
 							<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
-								<ul class="navbar-nav">
-									<li class="nav-item">
+								<ul class="navbar-nav navbar-nav-custom">
+									<li class="nav-item nav-item-custom">
 										<a class="nav-link current" href="#">Home</a>
 									</li>
-									<li class="nav-item dropdown">
+									<li class="nav-item nav-item-custom dropdown">
 											<a class="nav-link" href="#" id="navbarDropdownMenuLink"
 												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												About
@@ -49,7 +59,7 @@
 												<a class="dropdown-item" href="/products/high_availability_clusters">Partners</a>
 											</div>
 										</li>
-									<li class="nav-item dropdown">
+									<li class="nav-item nav-item-custom dropdown">
 										<a class="nav-link" href="#" id="navbarDropdownMenuLink"
 											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Products
@@ -63,7 +73,7 @@
 											<a class="dropdown-item" href="/products/audit_and_tune">Audit and Tune</a>
 										</div>
 									</li>
-									<li class="nav-item dropdown">
+									<li class="nav-item nav-item-custom dropdown">
 										<a class="nav-link" href="#" id="navbarDropdownMenuLink"
 											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Services
@@ -78,7 +88,7 @@
 											<a class="dropdown-item" href="/services/fullstack">Full Stack Offerings</a>
 										</div>
 									</li>
-									<li class="nav-item dropdown">
+									<li class="nav-item nav-item-custom dropdown">
 										<a class="nav-link" href="#" id="navbarDropdownMenuLink"
 											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Support
@@ -87,12 +97,33 @@
 											<a class="dropdown-item" href="/support/support_options">Support Options</a>
 										</div>
 									</li>
-									<li class="nav-item">
+									<li class="nav-item nav-item-custom">
 										<a class="nav-link">Blog</a>
 									</li>
-									<li class="nav-item">
+									<li class="nav-item nav-item-custom">
 										<a class="nav-link">Contact</a>
 									</li>
+									<li class="nav-item nav-item-custom">
+											<a class="nav-link" data-toggle="modal" data-target="#newsletterModal">Newsletter</a>
+									</li>
+										<!-- Modal -->
+										<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-design-background">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+													<div class="modal-design-header"></div>
+														<div class="modal-content modal-content-custom">
+															<h5 class="modal-title text-center" id="exampleModalLabel">Join Our Newsletter</h5>
+															<form class="subscribe-form">
+																	<input type="email" class="subscribe-input" placeholder="youremail@example.com">
+																	<button type="button" class="btn subscribe-btn">Subscribe</button>
+															</form>
+														</div>
+											</div>
+											</div>
+										</div>
 								</ul>
 							</div>
 			</nav>
@@ -154,20 +185,10 @@
 						</div>
 					</div>
 					<div class="card card-custom">
-						<img src="./images/NO_IMG.png" class="card-img-top" alt="">
-						<div class="card-body">
-							<h5 class="card-title">Название карточки</h5>
-							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-					<div class="card card-custom">
 							<img src="./images/NO_IMG.png" class="card-img-top" alt="">
 							<div class="card-body">
 								<h5 class="card-title">Название карточки</h5>
-								<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longerThis is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 							</div>
 							<div class="card-footer">
 								<small class="text-muted">Last updated 3 mins ago</small>
@@ -177,37 +198,28 @@
 								<img src="./images/NO_IMG.png" class="card-img-top" alt="">
 								<div class="card-body">
 									<h5 class="card-title">Название карточки</h5>
-									<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longerThis is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 								</div>
 								<div class="card-footer">
 									<small class="text-muted">Last updated 3 mins ago</small>
 								</div>
 							</div>
-					<div class="card card-custom">
-						<img src="./images/NO_IMG.png" class="card-img-top" alt="">
-						<div class="card-body">
-							<h5 class="card-title">Название карточки</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
+							<div class="card card-custom">
+									<img src="./images/NO_IMG.png" class="card-img-top" alt="">
+									<div class="card-body">
+										<h5 class="card-title">Название карточки</h5>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longerThis is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Last updated 3 mins ago</small>
+									</div>
+								</div>
 				</div>
 			</div>	
 		</section>
 	</main>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-	</script>
-	<script src="./NewCMD.js"></script>
+
 </body>
 
 </html>
