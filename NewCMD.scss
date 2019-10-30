@@ -17,7 +17,7 @@ body {
 	transition: all 0.5s linear 0s;
 	box-shadow: $shadow_2;
 }
-.section-title {
+.general-title {
 	color: $main-color;
 	position: relative;
 
@@ -268,7 +268,7 @@ body {
 	}
 	.clients{
 		background-color: $main-color;
-		.section-title{
+		.general-title{
 			color: white;
 			&::after{
 			background-color: white;
@@ -280,6 +280,88 @@ body {
 			.clients-logo{
 				width: 100%;
 				height: auto;
+			}
+		}
+	}
+	.quotes{
+		.carousel-item-custom {
+			.quote-wrap{
+				padding: 2rem;
+				background-color: white;
+				box-shadow: $shadow_2;
+				position: relative;
+				margin-bottom: 5%;
+				 &::before, &:after {
+					content: '';
+					position: absolute;
+					background: white;
+					right: 5%; 
+					bottom: -3%;
+					width: 20px; 
+					height: 20px;
+					z-index: -1; /* Прячем за основным блоком */
+					transform: rotate(45deg); /* Поворачиваем на 45º */
+					-webkit-transform: rotate(45deg);
+					box-shadow: $shadow_2;
+				 }
+				 &::after {
+					z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
+					box-shadow: none; /* Прячем тень */
+				 }
+				.fa-quote-left{
+					color: $main-color;
+				}
+				.quote{
+					width: 85%;
+					margin: 0 auto;
+				}
+			}
+			.quote-footer{
+				text-align: end;
+				.quote-author{
+					color: $main-color;
+				}
+				.author-company{
+					text-decoration: none;
+					color: $main-color;
+				}
+			}	
+		}
+		
+	}
+	.article-blog{
+		background-color: $main-color;
+		.article-img{
+			position: relative;
+			height: 100%;
+			&::before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(180deg, rgba(255,255,255,0) 25%, rgb(37, 37, 37) 90%);
+				z-index: 1;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.article-title{
+				position: absolute;
+				color: white;
+				bottom: 0;
+				z-index:2;
+				font-size: 3rem;
+				    line-height: 1;
+			}
+		}
+		.article-content{
+			color: white;
+			.article-inner{
+				border-right: 2px solid white;
 			}
 		}
 	}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Libre Franklin', sans-serif;
   padding-right: 0 !important;
@@ -10,12 +11,12 @@ body {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.section-title {
+.general-title {
   color: #014D80;
   position: relative;
 }
 
-.section-title:after {
+.general-title:after {
   content: "";
   display: block;
   position: absolute;
@@ -259,11 +260,11 @@ body {
   background-color: #014D80;
 }
 
-#main .clients .section-title {
+#main .clients .general-title {
   color: white;
 }
 
-#main .clients .section-title::after {
+#main .clients .general-title::after {
   background-color: white;
 }
 
@@ -275,4 +276,100 @@ body {
 #main .clients .clients-logo-wrap .clients-logo {
   width: 100%;
   height: auto;
+}
+
+#main .quotes .carousel-item-custom .quote-wrap {
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 5%;
+}
+
+#main .quotes .carousel-item-custom .quote-wrap::before, #main .quotes .carousel-item-custom .quote-wrap:after {
+  content: '';
+  position: absolute;
+  background: white;
+  right: 5%;
+  bottom: -3%;
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+  /* Прячем за основным блоком */
+  transform: rotate(45deg);
+  /* Поворачиваем на 45º */
+  -webkit-transform: rotate(45deg);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#main .quotes .carousel-item-custom .quote-wrap::after {
+  z-index: 1;
+  /* Накладываем поверх, чтобы скрыть следы тени */
+  box-shadow: none;
+  /* Прячем тень */
+}
+
+#main .quotes .carousel-item-custom .quote-wrap .fa-quote-left {
+  color: #014D80;
+}
+
+#main .quotes .carousel-item-custom .quote-wrap .quote {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#main .quotes .carousel-item-custom .quote-footer {
+  text-align: end;
+}
+
+#main .quotes .carousel-item-custom .quote-footer .quote-author {
+  color: #014D80;
+}
+
+#main .quotes .carousel-item-custom .quote-footer .author-company {
+  text-decoration: none;
+  color: #014D80;
+}
+
+#main .article-blog {
+  background-color: #014D80;
+}
+
+#main .article-blog .article-img {
+  position: relative;
+  height: 100%;
+}
+
+#main .article-blog .article-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, #252525 90%);
+  z-index: 1;
+}
+
+#main .article-blog .article-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#main .article-blog .article-img .article-title {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  z-index: 2;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+#main .article-blog .article-content {
+  color: white;
+}
+
+#main .article-blog .article-content .article-inner {
+  border-right: 2px solid white;
 }
