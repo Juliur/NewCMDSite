@@ -1,216 +1,286 @@
 $main-color: #014D80;
+$grey-background: #E2E6ED;
 $navbar_item_color: rgba(255, 255, 255, 0.9);
-$shadow : 0px 0px 7px rgba(0,0,0,0.5);
-$shadow-btn: 1px 2px 3px rgba(0,0,0,0.5);
-body{
-    font-family: 'Libre Franklin', sans-serif;
-    padding-right: 0 !important;
-    
+$shadow : 0px 0px 7px rgba(0, 0, 0, 0.5);
+$shadow_2 : 2px 5px 10px rgba(0, 0, 0, 0.2);
+$shadow_btn: 1px 2px 3px rgba(0, 0, 0, 0.5);
+
+body {
+	font-family: 'Libre Franklin', sans-serif;
+	padding-right: 0 !important;
+
 }
-.scrolled{
-    background-color: $main-color;
-    padding: 0 15px;
-    transition: all 0.5s linear 0s;
-    box-shadow: $shadow;
+
+.scrolled {
+	background-color: $main-color;
+	padding: 0 15px;
+	transition: all 0.5s linear 0s;
+	box-shadow: $shadow_2;
+}
+.section-title {
+	color: $main-color;
+	position: relative;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		height: 4px;
+		width: 7%;
+		background-color: $main-color;
+		bottom: -30%;
+	}
 }
 //popup style
-.modal-backdrop{
-    z-index: 1;
+.modal-backdrop {
+	z-index: 1;
 }
 .modal-custom {
-    overflow-y: auto;
-    padding-right: 0px !important;
-    .modal-dialog-custom{
-        margin: 4rem auto;
-        .modal-design-background{
-            width: 450px;
-            height: 300px;
-            background-color: white;
-            position: relative;
-            .close-btn{
-                color: white;
-                margin-right: 10px;
-                margin-top: 5px;
-            }
-            .modal-design-header{
-                background-color: $main-color;
-                width: 100%;
-                height: 35%;
-            }
-        }
-        .modal-content-custom{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            border: 0;
-            box-shadow: $shadow;
-            border-radius: 0;
-            padding: 1.5rem;
-            .subscribe-form{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 1rem;
-            }
-            .subscribe-input, .subscribe-btn{
-                width: 80%;
-            }
-            .subscribe-input{
-                border: 1px solid grey;
-                margin-bottom: 1rem;
-                height: 40px;
-                padding-left: 5px;
-            }
-            .subscribe-btn{
-                background-color: $main-color;
-                color: white;
-                height: 40px;
-                outline: none;
-                border-radius: 0;
-                &:focus, &:active{
-                    box-shadow: none;
-                }
-                &:active{
-                    background-color: #002c4a;
-                }
-            }
-        }
-    }
+	overflow-y: auto;
+	padding-right: 0px !important;
+
+	.modal-dialog-custom {
+		margin: 4rem auto;
+
+		.modal-design-background {
+			width: 450px;
+			height: 300px;
+			background-color: $grey-background;
+			position: relative;
+
+			.close-btn {
+				color: white;
+				margin-right: 10px;
+				margin-top: 5px;
+			}
+
+			.modal-design-header {
+				background-color: $main-color;
+				width: 100%;
+				height: 35%;
+			}
+		}
+
+		.modal-content-custom {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+			width: 80%;
+			border: 0;
+			box-shadow: $shadow;
+			border-radius: 0;
+			padding: 1.5rem;
+
+			.subscribe-form {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 1rem;
+			}
+
+			.subscribe-input,
+			.subscribe-btn {
+				width: 80%;
+			}
+
+			.subscribe-input {
+				border: 1px solid grey;
+				margin-bottom: 1rem;
+				height: 40px;
+				padding-left: 5px;
+			}
+
+			.subscribe-btn {
+				background-color: $main-color;
+				color: white;
+				height: 40px;
+				outline: none;
+				border-radius: 0;
+
+				&:focus,
+				&:active {
+					box-shadow: none;
+				}
+
+				&:active {
+					background-color: #002c4a;
+				}
+			}
+		}
+	}
 }
- 
+
 .modal-open {
-    overflow: auto;
-    padding-right: 0px !important;
+	overflow: auto;
+	padding-right: 0px !important;
 }
 
-#header{
-    height: 75vh;
-    background-image: url("images/mountains.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    #nav-custom{
-        transition: all 0.2s linear 0s;
-        padding-left: 18px !important;
-        padding-right: 18px !important;
-        a{
-            font-size: 1.1em;
-            color: $navbar_item_color;
-            padding: 0.6rem;
-        }
-        .current{
-            font-weight: 700;
-            color: rgba(255, 255, 255, 1);
-        }
-        .navbar-nav-custom{
-            
-            .nav-item-custom{
-                cursor: pointer;
-            }
-        }
-        
-    }
-    .company-name-wrap{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        h1{
-            font-size: 2.8rem;
-        }
-        p{
-            font-size: 1.3rem;
-        }
-        a,p{
-            color: rgb(255, 255, 255);
-        }
-    }
-    .about-company-wrap{
-        width: 85%;
-        position: absolute;
-        bottom: -35%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        padding: 20px;
-        background-color: $main-color;
-        box-shadow: $shadow;
-        p{
-            color: white;
-            text-align: center;
-            font-size: 1.3rem;
-        }
-    }
+#header {
+	height: 75vh;
+	background-image: url("images/mountains.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+
+	#nav-custom {
+		transition: all 0.2s linear 0s;
+		padding-left: 18px !important;
+		padding-right: 18px !important;
+
+		a {
+			font-size: 1.1em;
+			color: $navbar_item_color;
+			padding: 0.6rem;
+		}
+
+		.current {
+			font-weight: 700;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		.navbar-nav-custom {
+
+			.nav-item-custom {
+				cursor: pointer;
+			}
+		}
+
+	}
+
+	.company-name-wrap {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+
+		h1 {
+			font-size: 2.8rem;
+		}
+
+		p {
+			font-size: 1.3rem;
+		}
+
+		a,
+		p {
+			color: rgb(255, 255, 255);
+		}
+	}
+
+	.about-company-wrap {
+		width: 85%;
+		position: absolute;
+		bottom: -35%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		background-color: $main-color;
+		box-shadow: $shadow_2;
+
+		p {
+			color: white;
+			text-align: center;
+			font-size: 1.3rem;
+		}
+	}
 }
 
-#main{
-   .dashboard-items{
-       margin-top: 20%;
-       margin-bottom: 5%;
-       .dashboard-item{
-            .counter-amount{
-                text-align: center;
-                font-size: 2.3rem;
-                margin-bottom: 0;
-            }
-            .counter-title{
-                text-align: center;
-            }
-       } 
-   }
-   .community-involvement{
-        .section-title{
-            color: $main-color;
-            position: relative;
-            &::after{
-                content: "";
-                display: block;
-                position: absolute;
-                left: 50%;
-                margin-right: -50%;
-                transform: translate(-50%, -50%);
-                height: 4px;
-                width: 7%;
-                background-color: $main-color;
-                bottom: -30%;
-            }
-        }
-        .card-deck-custom{
-            .card-custom{
-                flex: 0 0 30%;
-                border-radius: 0;
-                margin-top: 15px;
-                .card-title{
-                    font-weight: 700;
-                    color: $main-color;
-                }
-                .main-btn{
-                    width: 150px;
-                    height: 40px;
-                    background-color: $main-color;
-                    color: white;
-                    border: none;
-                    margin-left: 1.25rem;
-                    margin-bottom: 1.25rem;
-                    border: 2px solid $main-color;
-                    box-shadow: $shadow-btn;
-                    transition: all 0.2s ease-in-out;
-                    &:hover{
-                        background-color: white;
-                        color: $main-color;
-                        transition: all 0.2s ease-in-out;
-                        box-shadow: none;
-                    }
-                }
-            }
-        }
-        
-    }
-}
+#main {
+	background-color: $grey-background;
+	
+	.dashboard-items {
+		margin-top: 20%;
+		margin-bottom: 5%;
 
+		.dashboard-item {
+			.counter-amount {
+				text-align: center;
+				font-size: 2.3rem;
+				margin-bottom: 0;
+			}
+
+			.counter-title {
+				text-align: center;
+			}
+		}
+	}
+
+	.community-involvement {
+		.card-deck-custom {
+			.card-custom {
+				flex: 0 0 30%;
+				border-radius: 0;
+				margin-top: 15px;
+				box-shadow: $shadow_2;
+
+				.card-title {
+					font-weight: 700;
+					color: $main-color;
+				}
+
+				.main-btn {
+					width: 150px;
+					height: 40px;
+					background-color: $main-color;
+					color: white;
+					border: none;
+					margin-left: 1.25rem;
+					margin-bottom: 1.25rem;
+					border: 2px solid $main-color;
+					box-shadow: $shadow_btn;
+					transition: all 0.2s ease-in-out;
+
+					&:hover {
+						background-color: white;
+						color: $main-color;
+						transition: all 0.2s ease-in-out;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+	.more-about-us {
+		display: flex;
+    justify-content: center;
+		padding: 30px;
+		a{
+			text-decoration: none;
+			color: $main-color;
+		}
+		.more-about-us-title{
+			display: flex;
+			align-items: center;
+		}
+		.arrow{
+			font-size: 15px;
+			margin-left: 10px;
+		}
+	}
+	.clients{
+		background-color: $main-color;
+		.section-title{
+			color: white;
+			&::after{
+			background-color: white;
+			}
+		}
+		.clients-logo-wrap{
+			width: 15%;
+			height: 100%;
+			.clients-logo{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
