@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: 'Libre Franklin', sans-serif;
   padding-right: 0 !important;
@@ -132,17 +131,38 @@ body {
 
 #header #nav-custom a {
   font-size: 1.1em;
-  color: rgba(255, 255, 255, 0.9);
-  padding: 0.6rem;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+#header #nav-custom a i {
+  margin-left: 5px;
+}
+
+#header #nav-custom a:hover, #header #nav-custom a:active {
+  color: white;
 }
 
 #header #nav-custom .current {
-  font-weight: 700;
   color: white;
 }
 
 #header #nav-custom .navbar-nav-custom .nav-item-custom {
   cursor: pointer;
+}
+
+#header #nav-custom .navbar-nav-custom .dropdown-menu-custom {
+  border-radius: 0;
+}
+
+#header #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom {
+  color: white;
+}
+
+#header #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom:hover {
+  color: #343a40;
 }
 
 #header .company-name-wrap {
@@ -176,6 +196,7 @@ body {
   padding: 20px;
   background-color: #014D80;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 #header .about-company-wrap p {
@@ -186,6 +207,8 @@ body {
 
 #main {
   background-color: #E2E6ED;
+  position: relative;
+  z-index: 1;
 }
 
 #main .dashboard-items {
@@ -290,23 +313,19 @@ body {
   content: '';
   position: absolute;
   background: white;
-  right: 5%;
-  bottom: -3%;
-  width: 20px;
-  height: 20px;
+  right: 10%;
+  bottom: -7%;
+  width: 40px;
+  height: 40px;
   z-index: -1;
-  /* Прячем за основным блоком */
   transform: rotate(45deg);
-  /* Поворачиваем на 45º */
   -webkit-transform: rotate(45deg);
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #main .quotes .carousel-item-custom .quote-wrap::after {
   z-index: 1;
-  /* Накладываем поверх, чтобы скрыть следы тени */
   box-shadow: none;
-  /* Прячем тень */
 }
 
 #main .quotes .carousel-item-custom .quote-wrap .fa-quote-left {
@@ -314,8 +333,11 @@ body {
 }
 
 #main .quotes .carousel-item-custom .quote-wrap .quote {
-  width: 85%;
-  margin: 0 auto;
+  margin-left: 10%;
+}
+
+#main .quotes .carousel-item-custom .quote-wrap .quote-symbol {
+  position: absolute;
 }
 
 #main .quotes .carousel-item-custom .quote-footer {
@@ -372,4 +394,29 @@ body {
 
 #main .article-blog .article-content .article-inner {
   border-right: 2px solid white;
+  padding-right: 1rem;
+  text-align: justify;
+}
+
+#main .article-blog .article-content .article-inner a {
+  color: white;
+}
+
+#main .article-blog .article-content .article-inner a i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+#main .article-blog .blog-list-wrap .blog-list-title {
+  color: white;
+}
+
+#main .article-blog .blog-list-wrap .blog-post a {
+  color: white;
+}
+
+#main .article-blog .blog-list-wrap .blog-post p {
+  display: inline-block;
+  color: white;
+  font-size: 15px;
 }

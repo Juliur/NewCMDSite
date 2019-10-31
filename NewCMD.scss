@@ -1,6 +1,6 @@
 $main-color: #014D80;
 $grey-background: #E2E6ED;
-$navbar_item_color: rgba(255, 255, 255, 0.9);
+$navbar_item_color: rgba(255, 255, 255, 0.8);
 $shadow : 0px 0px 7px rgba(0, 0, 0, 0.5);
 $shadow_2 : 2px 5px 10px rgba(0, 0, 0, 0.2);
 $shadow_btn: 1px 2px 3px rgba(0, 0, 0, 0.5);
@@ -137,18 +137,33 @@ body {
 		a {
 			font-size: 1.1em;
 			color: $navbar_item_color;
-			padding: 0.6rem;
+			padding: 0.7rem;
+			display: flex;
+			align-items: center;
+			i{
+				margin-left: 5px;
+			}
+			&:hover, &:active {
+			color: rgba(255, 255, 255, 1);
+			}
 		}
 
 		.current {
-			font-weight: 700;
 			color: rgba(255, 255, 255, 1);
 		}
 
 		.navbar-nav-custom {
-
 			.nav-item-custom {
 				cursor: pointer;
+			}
+			.dropdown-menu-custom{
+				border-radius: 0;
+				.dropdown-item-custom{
+					color: white;
+					&:hover{
+						color: #343a40;
+					}
+				}
 			}
 		}
 
@@ -185,6 +200,7 @@ body {
 		padding: 20px;
 		background-color: $main-color;
 		box-shadow: $shadow_2;
+		z-index: 2;
 
 		p {
 			color: white;
@@ -196,7 +212,8 @@ body {
 
 #main {
 	background-color: $grey-background;
-	
+	position: relative;
+	z-index: 1;
 	.dashboard-items {
 		margin-top: 20%;
 		margin-bottom: 5%;
@@ -295,25 +312,27 @@ body {
 					content: '';
 					position: absolute;
 					background: white;
-					right: 5%; 
-					bottom: -3%;
-					width: 20px; 
-					height: 20px;
-					z-index: -1; /* Прячем за основным блоком */
-					transform: rotate(45deg); /* Поворачиваем на 45º */
+					right: 10%; 
+					bottom: -7%;
+					width: 40px; 
+					height: 40px;
+					z-index: -1; 
+					transform: rotate(45deg);
 					-webkit-transform: rotate(45deg);
 					box-shadow: $shadow_2;
 				 }
 				 &::after {
-					z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
-					box-shadow: none; /* Прячем тень */
+					z-index: 1;
+					box-shadow: none; 
 				 }
 				.fa-quote-left{
 					color: $main-color;
 				}
 				.quote{
-					width: 85%;
-					margin: 0 auto;
+					margin-left: 10%;
+				}
+				.quote-symbol{
+					position: absolute;
 				}
 			}
 			.quote-footer{
@@ -362,6 +381,30 @@ body {
 			color: white;
 			.article-inner{
 				border-right: 2px solid white;
+				padding-right: 1rem;
+				text-align: justify;
+				a{
+					color: white;
+					i{
+						font-size: 15px;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+		.blog-list-wrap{
+			.blog-list-title{
+				color: white;
+			}
+			.blog-post{
+				a{
+				color: white;
+				}
+				p{
+					display: inline-block;
+					color: white;
+					font-size: 15px;
+				}
 			}
 		}
 	}
