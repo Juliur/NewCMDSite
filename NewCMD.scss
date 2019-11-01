@@ -4,24 +4,27 @@ $navbar_item_color: rgba(255, 255, 255, 0.8);
 $shadow : 0px 0px 7px rgba(0, 0, 0, 0.5);
 $shadow_2 : 2px 5px 10px rgba(0, 0, 0, 0.2);
 $shadow_btn: 1px 2px 3px rgba(0, 0, 0, 0.5);
+$transition_animation: all 0.2s linear 0s;
 
 body {
 	font-family: 'Libre Franklin', sans-serif;
 	padding-right: 0 !important;
+	max-width:100%;
 
 }
 
 .scrolled {
 	background-color: $main-color;
 	padding: 0 15px;
-	transition: all 0.5s linear 0s;
+	transition: $transition_animation;
 	box-shadow: $shadow_2;
 }
 .general-title {
 	color: $main-color;
 	position: relative;
+	margin-bottom: 2rem;
 
-	&:after {
+	&::after {
 		content: "";
 		display: block;
 		position: absolute;
@@ -34,6 +37,25 @@ body {
 		bottom: -30%;
 	}
 }
+.general-title-white{
+	color: white;
+	&::after{
+	background-color: white;
+	}
+}
+.btn-effect{
+	background-color: $main-color;
+	color: white;
+	border: none;
+	border: 2px solid $main-color;
+	transition: $transition_animation;
+	&:hover {
+		background-color: white;
+		color: $main-color;
+		transition: $transition_animation;
+		box-shadow: none;
+	}
+}
 //popup style
 .modal-backdrop {
 	z-index: 1;
@@ -44,72 +66,48 @@ body {
 
 	.modal-dialog-custom {
 		margin: 4rem auto;
-
-		.modal-design-background {
-			width: 450px;
-			height: 300px;
-			background-color: $grey-background;
-			position: relative;
-
-			.close-btn {
-				color: white;
-				margin-right: 10px;
-				margin-top: 5px;
-			}
-
-			.modal-design-header {
-				background-color: $main-color;
-				width: 100%;
-				height: 35%;
-			}
-		}
-
+		width: 400px;
 		.modal-content-custom {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-right: -50%;
-			transform: translate(-50%, -50%);
-			width: 80%;
+			position: relative;
 			border: 0;
 			box-shadow: $shadow;
 			border-radius: 0;
-			padding: 1.5rem;
-
+			padding: 1rem;
+			.close-btn {
+				color: $main-color;
+				margin-right: 10px;
+				margin-top: 10px;
+				position: absolute;
+				right: 0;
+				top: 0%;
+				font-size: 25px;
+			}
+			.envelope-icon{
+				color: $main-color;
+			}
+			h4{
+				color: $main-color;
+			}
 			.subscribe-form {
-				display: flex;
-				flex-direction: column;
 				align-items: center;
 				margin-top: 1rem;
 			}
-
-			.subscribe-input,
-			.subscribe-btn {
-				width: 80%;
-			}
-
 			.subscribe-input {
-				border: 1px solid grey;
-				margin-bottom: 1rem;
+				border: 2px solid $main-color;
+				border-right: 0;
 				height: 40px;
-				padding-left: 5px;
+				padding-left: 10px;
+				&:focus{
+					outline: none;
+					box-shadow: $shadow_2;
+				}
 			}
-
 			.subscribe-btn {
-				background-color: $main-color;
-				color: white;
 				height: 40px;
 				outline: none;
 				border-radius: 0;
-
-				&:focus,
-				&:active {
-					box-shadow: none;
-				}
-
-				&:active {
-					background-color: #002c4a;
-				}
+				padding: 0 10px;
+				box-shadow: $shadow_2;
 			}
 		}
 	}
@@ -130,7 +128,7 @@ body {
 	position: relative;
 
 	#nav-custom {
-		transition: all 0.2s linear 0s;
+		transition: $transition_animation;
 		padding-left: 18px !important;
 		padding-right: 18px !important;
 
@@ -160,8 +158,10 @@ body {
 				border-radius: 0;
 				.dropdown-item-custom{
 					color: white;
+					transition: $transition_animation;
 					&:hover{
 						color: #343a40;
+						transition: $transition_animation;
 					}
 				}
 			}
@@ -217,7 +217,7 @@ body {
 	.dashboard-items {
 		margin-top: 20%;
 		margin-bottom: 5%;
-
+		justify-content: space-between;
 		.dashboard-item {
 			.counter-amount {
 				text-align: center;
@@ -247,28 +247,16 @@ body {
 				.main-btn {
 					width: 150px;
 					height: 40px;
-					background-color: $main-color;
-					color: white;
-					border: none;
 					margin-left: 1.25rem;
 					margin-bottom: 1.25rem;
-					border: 2px solid $main-color;
 					box-shadow: $shadow_btn;
-					transition: all 0.2s ease-in-out;
-
-					&:hover {
-						background-color: white;
-						color: $main-color;
-						transition: all 0.2s ease-in-out;
-						box-shadow: none;
-					}
 				}
 			}
 		}
 	}
 	.more-about-us {
 		display: flex;
-    justify-content: center;
+    	justify-content: center;
 		padding: 30px;
 		a{
 			text-decoration: none;
@@ -285,12 +273,7 @@ body {
 	}
 	.clients{
 		background-color: $main-color;
-		.general-title{
-			color: white;
-			&::after{
-			background-color: white;
-			}
-		}
+
 		.clients-logo-wrap{
 			width: 15%;
 			height: 100%;
@@ -301,38 +284,35 @@ body {
 		}
 	}
 	.quotes{
+		height: 72vh;
 		.carousel-item-custom {
 			.quote-wrap{
-				padding: 2rem;
 				background-color: white;
 				box-shadow: $shadow_2;
 				position: relative;
-				margin-bottom: 5%;
-				 &::before, &:after {
-					content: '';
-					position: absolute;
-					background: white;
-					right: 10%; 
-					bottom: -7%;
-					width: 40px; 
-					height: 40px;
-					z-index: -1; 
-					transform: rotate(45deg);
-					-webkit-transform: rotate(45deg);
-					box-shadow: $shadow_2;
-				 }
-				 &::after {
-					z-index: 1;
-					box-shadow: none; 
-				 }
+				margin-bottom: 3%;
+				//  &::before, &:after {
+				// 	content: '';
+				// 	position: absolute;
+				// 	background: white;
+				// 	right: 10%; 
+				// 	bottom: -7%;
+				// 	width: 40px; 
+				// 	height: 40px;
+				// 	z-index: -1; 
+				// 	transform: rotate(45deg);
+				// 	-webkit-transform: rotate(45deg);
+				// 	box-shadow: $shadow_2;
+				//  }
+				//  &::after {
+				// 	z-index: 1;
+				// 	box-shadow: none; 
+				//  }
 				.fa-quote-left{
 					color: $main-color;
 				}
 				.quote{
-					margin-left: 10%;
-				}
-				.quote-symbol{
-					position: absolute;
+					text-align: center;
 				}
 			}
 			.quote-footer{
@@ -408,4 +388,136 @@ body {
 			}
 		}
 	}
+}
+#footer{
+	color: white;
+	.general-title{
+		color: white;
+	}
+	a{
+		color: white;
+		display: block;	
+	}
+}
+
+@media(max-width: 575px){
+	.general-title{
+		font-size: 1.5rem;
+	}
+	#header{
+		height: 375px;
+		background-attachment: scroll;
+		#nav-custom{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			background-color: $main-color;
+			box-shadow: $shadow_2;
+			padding-top: 18px;
+			padding-bottom: 18px;
+			.navbar-title{
+				color: white;
+			}
+			.hamburger{
+				width: 40px;
+				height: 40px;
+				i{
+				color: white;
+				}
+			}
+			a{
+				color: white;
+			}
+			.navbar-nav-custom{
+				.nav-item-custom{
+					.dropdown-menu-custom{
+						width: 100%;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+		.company-name-wrap{
+			top: 41%;
+			h1{
+				font-size: 2rem;
+				padding-top: 0 !important;
+			}
+			p{
+				font-size: 1rem;
+			}
+		}
+		.about-company-wrap{
+			width: 90%;
+			bottom: -60%;
+			p{
+				font-size: 1rem;
+			}
+		}
+	}
+	#main{
+		.dashboard-items{
+			margin-top: 40%;
+			margin-bottom: 0;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			.dashboard-item{
+				margin-bottom: 1rem;
+				.counter-amount{
+					font-size: 1.5rem;
+				}
+				.counter-title{
+				font-size: 1.2rem;
+				}
+			}
+		}
+		.card-deck-custom{
+			margin: 15px;
+			.card-custom{
+				margin-bottom: 0;
+			}
+		}
+		.more-about-us{
+			padding: 15px;
+		}
+		.clients{
+			.clients-logo-wrap{
+				width: 30%;
+			}
+		}
+		.quotes{
+			.carousel-item-custom {
+				.quote-wrap{
+					padding: 1rem;
+					&::after, &::before{
+						bottom: -4%;
+					}
+					i{
+						display: none;
+					}
+					.quote{
+						margin-left: 0;
+					}
+				}
+			}
+		} 
+		.article-blog{
+			.article-img{
+				.article-title{
+					font-size: 2rem;
+					margin-bottom: 0;
+				}
+			}
+			.article-content{
+				.article-inner{
+					border: 0;
+					padding-right: 0;
+				}
+			}
+			.blog-list-wrap{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	} 
 }
