@@ -399,14 +399,14 @@ body {
 		display: block;	
 	}
 }
-
-@media(max-width: 575px){
+@media (max-width: 991px) {
+	body{
+		font-size: .8rem;
+	}
 	.general-title{
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 	}
 	#header{
-		height: 375px;
-		background-attachment: scroll;
 		#nav-custom{
 			display: flex;
 			align-items: center;
@@ -415,19 +415,98 @@ body {
 			box-shadow: $shadow_2;
 			padding-top: 15px;
 			padding-bottom: 15px;
-			.navbar-title{
-				color: white;
+			a{
+				font-size: .9rem;
 			}
+		
+		}
+		.company-name-wrap{
+			display: block;
+			h1{
+				font-size: 2.5rem;
+			}
+			p{
+				font-size: 1.1rem;
+			}
+		}
+		.about-company-wrap{
+			bottom: -38%;
+			p{
+				font-size: 1.1rem;
+			}
+		}
+	}
+	#main{
+		.dashboard-items{
+			margin-top: 25%;
+			.dashboard-item{
+				.counter-amount{
+					font-size: 1.5rem;
+				}
+				.counter-title{
+				font-size: 1.2rem;
+				}
+			}
+		}
+		.community-involvement{
+			.container{
+				max-width: 840px !important;
+				.card-deck-custom{
+					.card-custom{
+						flex: 0 0 29%;
+					}
+				}
+			}
+		}	
+		.article-blog{
+			.article-img{
+				.article-title{
+					font-size: 2.3rem;
+				}
+			}
+			.article-content{
+				a{
+					font-size: 1.1rem;
+				}
+			}
+			.blog-list-wrap{
+				padding-right: 1rem;
+				.blog-post{
+					p{
+						font-size: .8rem;
+						&:first-of-type{
+							margin-bottom: 0;
+						}
+					}	
+				}
+			}
+		}
+	}
+	#footer{
+		.copyright{
+			font-size: .9rem;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.general-title{
+		font-size: 1.7rem;
+	}
+	#header{
+		#nav-custom{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			background-color: $main-color;
+			box-shadow: $shadow_2;
+			padding-top: 15px;
+			padding-bottom: 15px;
 			.hamburger{
 				width: 30px;
 				height: 30px;
 				i{
-				color: white;
+					color: white;
 				}
-			}
-			a{
-				color: white;
-				padding: 0.7rem 0;
 			}
 			.navbar-nav-custom{
 				.nav-item-custom{
@@ -435,10 +514,80 @@ body {
 						width: 100%;
 						border: 0;
 						background-color: $main-color !important;
+						padding-left: 1rem;
+						padding-top: 0;
+	
 					}
 				}
 			}
 		}
+		.company-name-wrap{
+			display: block;
+		}
+		.about-company-wrap{
+			width: 90%;
+			bottom: -45%;
+		}
+
+	}
+	#main{
+		.dashboard-items{
+			margin-top: 27%;
+		}
+		.community-involvement{
+			.container{
+				max-width: 650px !important;
+			}
+			.card-deck-custom{
+				justify-content: space-around;
+				.card-custom{
+					flex: 0 0 45%;
+					&:last-child{
+						margin: 30px;
+					}
+				}
+			}
+		}
+		.quotes{
+			height: 90vh;
+		}
+		.article-blog{
+			.article-img{
+				.article-title{
+					font-size: 2rem;
+					margin-bottom: 0;
+				}
+			}
+			.article-content{
+				.article-inner{
+					border: 0;
+					padding-right: 0;
+				}
+			}
+			.blog-list-wrap{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+}
+@media(max-width: 575px){
+	.general-title{
+		font-size: 1.5rem;
+	}
+	.modal-custom{
+		.modal-dialog-custom{
+			width: 100%;
+		}
+	}
+	
+	#header{
+		height: 375px;
+		background-attachment: scroll;
+			a{
+				color: white;
+				padding: 0.7rem 0;
+			}
 		.company-name-wrap{
 			top: 41%;
 			h1{
@@ -450,13 +599,13 @@ body {
 			}
 		}
 		.about-company-wrap{
-			width: 90%;
 			bottom: -60%;
 			p{
 				font-size: 1rem;
 			}
 		}
 	}
+
 	#main{
 		.dashboard-items{
 			margin-top: 40%;
@@ -503,23 +652,5 @@ body {
 				}
 			}
 		} 
-		.article-blog{
-			.article-img{
-				.article-title{
-					font-size: 2rem;
-					margin-bottom: 0;
-				}
-			}
-			.article-content{
-				.article-inner{
-					border: 0;
-					padding-right: 0;
-				}
-			}
-			.blog-list-wrap{
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-		}
 	} 
 }

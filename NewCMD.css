@@ -407,13 +407,12 @@ body {
   display: block;
 }
 
-@media (max-width: 575px) {
-  .general-title {
-    font-size: 1.5rem;
+@media (max-width: 991px) {
+  body {
+    font-size: .8rem;
   }
-  #header {
-    height: 375px;
-    background-attachment: scroll;
+  .general-title {
+    font-size: 1.8rem;
   }
   #header #nav-custom {
     display: flex;
@@ -424,8 +423,71 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #header #nav-custom .navbar-title {
-    color: white;
+  #header #nav-custom a {
+    font-size: .9rem;
+  }
+  #header .company-name-wrap {
+    display: block;
+  }
+  #header .company-name-wrap h1 {
+    font-size: 2.5rem;
+  }
+  #header .company-name-wrap p {
+    font-size: 1.1rem;
+  }
+  #header .about-company-wrap {
+    bottom: -38%;
+  }
+  #header .about-company-wrap p {
+    font-size: 1.1rem;
+  }
+  #main .dashboard-items {
+    margin-top: 25%;
+  }
+  #main .dashboard-items .dashboard-item .counter-amount {
+    font-size: 1.5rem;
+  }
+  #main .dashboard-items .dashboard-item .counter-title {
+    font-size: 1.2rem;
+  }
+  #main .community-involvement .container {
+    max-width: 840px !important;
+  }
+  #main .community-involvement .container .card-deck-custom .card-custom {
+    flex: 0 0 29%;
+  }
+  #main .article-blog .article-img .article-title {
+    font-size: 2.3rem;
+  }
+  #main .article-blog .article-content a {
+    font-size: 1.1rem;
+  }
+  #main .article-blog .blog-list-wrap {
+    padding-right: 1rem;
+  }
+  #main .article-blog .blog-list-wrap .blog-post p {
+    font-size: .8rem;
+  }
+  #main .article-blog .blog-list-wrap .blog-post p:first-of-type {
+    margin-bottom: 0;
+  }
+  #footer .copyright {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .general-title {
+    font-size: 1.7rem;
+  }
+  #header #nav-custom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #014D80;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   #header #nav-custom .hamburger {
     width: 30px;
@@ -434,14 +496,66 @@ body {
   #header #nav-custom .hamburger i {
     color: white;
   }
-  #header #nav-custom a {
-    color: white;
-    padding: 0.7rem 0;
-  }
   #header #nav-custom .navbar-nav-custom .nav-item-custom .dropdown-menu-custom {
     width: 100%;
     border: 0;
     background-color: #014D80 !important;
+    padding-left: 1rem;
+    padding-top: 0;
+  }
+  #header .company-name-wrap {
+    display: block;
+  }
+  #header .about-company-wrap {
+    width: 90%;
+    bottom: -45%;
+  }
+  #main .dashboard-items {
+    margin-top: 27%;
+  }
+  #main .community-involvement .container {
+    max-width: 650px !important;
+  }
+  #main .community-involvement .card-deck-custom {
+    justify-content: space-around;
+  }
+  #main .community-involvement .card-deck-custom .card-custom {
+    flex: 0 0 45%;
+  }
+  #main .community-involvement .card-deck-custom .card-custom:last-child {
+    margin: 30px;
+  }
+  #main .quotes {
+    height: 90vh;
+  }
+  #main .article-blog .article-img .article-title {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  #main .article-blog .article-content .article-inner {
+    border: 0;
+    padding-right: 0;
+  }
+  #main .article-blog .blog-list-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .general-title {
+    font-size: 1.5rem;
+  }
+  .modal-custom .modal-dialog-custom {
+    width: 100%;
+  }
+  #header {
+    height: 375px;
+    background-attachment: scroll;
+  }
+  #header a {
+    color: white;
+    padding: 0.7rem 0;
   }
   #header .company-name-wrap {
     top: 41%;
@@ -454,7 +568,6 @@ body {
     font-size: 1rem;
   }
   #header .about-company-wrap {
-    width: 90%;
     bottom: -60%;
   }
   #header .about-company-wrap p {
@@ -498,17 +611,5 @@ body {
   }
   #main .quotes .carousel-item-custom .quote-wrap .quote {
     margin-left: 0;
-  }
-  #main .article-blog .article-img .article-title {
-    font-size: 2rem;
-    margin-bottom: 0;
-  }
-  #main .article-blog .article-content .article-inner {
-    border: 0;
-    padding-right: 0;
-  }
-  #main .article-blog .blog-list-wrap {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
