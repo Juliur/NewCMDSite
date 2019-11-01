@@ -421,25 +421,27 @@ body {
     justify-content: flex-start;
     background-color: #014D80;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   #header #nav-custom .navbar-title {
     color: white;
   }
   #header #nav-custom .hamburger {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   #header #nav-custom .hamburger i {
     color: white;
   }
   #header #nav-custom a {
     color: white;
+    padding: 0.7rem 0;
   }
   #header #nav-custom .navbar-nav-custom .nav-item-custom .dropdown-menu-custom {
     width: 100%;
-    box-shadow: none;
+    border: 0;
+    background-color: #014D80 !important;
   }
   #header .company-name-wrap {
     top: 41%;
