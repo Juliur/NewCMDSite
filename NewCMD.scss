@@ -399,12 +399,64 @@ body {
 		display: block;	
 	}
 }
+@media (min-width: 1592px){
+	body{
+		font-size: 1.2rem;
+	}
+	.container-fluid-custom{
+		width: 90%;
+	}
+	#header{
+		.company-name-wrap{
+			h1{
+				font-size: 3.5rem;
+			}
+			p{
+				font-size: 1.8rem;
+			}
+		}
+		.about-company-wrap{
+			bottom: -30%;
+			p{
+				font-size: 1.5rem;
+			}
+		}
+	}	
+}
+@media (max-width: 1199px){
+	.container-fluid-custom{
+		width: 85%;
+	}
+	#header{
+		.about-company-wrap{
+			bottom: -40%;
+		}
+	}
+	#main{
+		.quotes{
+			height: 90vh;
+		}
+		.article-blog{
+			.article-img{
+				.article-title{
+					font-size: 2.8rem;
+				}
+			}
+			.blog-list-wrap{
+				padding-right: 1rem;
+			}	
+		}	
+	}
+}
 @media (max-width: 991px) {
 	body{
-		font-size: .8rem;
+		font-size: .9rem;
 	}
 	.general-title{
 		font-size: 1.8rem;
+	}
+	.container-fluid-custom{
+		width: 85%;
 	}
 	#header{
 		#nav-custom{
@@ -413,8 +465,7 @@ body {
 			justify-content: flex-start;
 			background-color: $main-color;
 			box-shadow: $shadow_2;
-			padding-top: 15px;
-			padding-bottom: 15px;
+			padding: 0;
 			a{
 				font-size: .9rem;
 			}
@@ -470,7 +521,6 @@ body {
 				}
 			}
 			.blog-list-wrap{
-				padding-right: 1rem;
 				.blog-post{
 					p{
 						font-size: .8rem;
@@ -580,7 +630,9 @@ body {
 			width: 100%;
 		}
 	}
-	
+	.container-fluid-custom{
+		width: 90%;
+	}
 	#header{
 		height: 375px;
 		background-attachment: scroll;
