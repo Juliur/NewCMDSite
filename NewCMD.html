@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="NewCMD.css">
 	</link>
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700&display=swap" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -48,21 +47,21 @@
 								<a class="nav-link current" href="#">Home</a>
 							</li>
 							<li class="nav-item nav-item-custom dropdown">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										About
-										<i class="fa fa-angle-down" aria-hidden="true"></i>
-									</a>
-									<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item dropdown-item-custom dropdown-item dropdown-item-custom-custom" href="/products/hot_or_cold_standby">Careers</a>
-										<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">Partners</a>
-									</div>
+								<a class="nav-link" href="#" id="navbarDropdownMenuLink"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									About
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom dropdown-item dropdown-item-custom-custom" href="/products/hot_or_cold_standby">Careers</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">Partners</a>
+								</div>
 								</li>
 							<li class="nav-item nav-item-custom dropdown">
 								<a class="nav-link" href="#" id="navbarDropdownMenuLink"
 									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Products
-									<i class="fa fa-angle-down" aria-hidden="true"></i>
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
 								</a>
 								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item dropdown-item-custom" href="/products/hot_or_cold_standby">Hot Standby / Cold Standby / DRBD</a>
@@ -77,7 +76,7 @@
 								<a class="nav-link" href="#" id="navbarDropdownMenuLink"
 									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Services
-									<i class="fa fa-angle-down" aria-hidden="true"></i>
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
 								</a>
 								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item dropdown-item-custom" href="/services/performance_tuning">Performance Tuning</a>
@@ -93,7 +92,7 @@
 								<a class="nav-link" href="#" id="navbarDropdownMenuLink"
 									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Support
-									<i class="fa fa-angle-down" aria-hidden="true"></i>
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
 								</a>
 								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item dropdown-item-custom" href="/support/support_options">Support Options</a>
@@ -117,9 +116,9 @@
 											</button>
 											<div class="d-flex flex-column align-items-center">
 												<i class="fa fa-envelope fa-3x envelope-icon" aria-hidden="true"></i>
-												<h4 class="modal-title text-center ml-3" id="exampleModalLabel">Join Our Newsletter</h4>
+												<h4 class="modal-title text-center" id="exampleModalLabel">Join Our Newsletter</h4>
 											</div>
-											<div class="subscribe-form d-flex flex-row justify-content-center mb-2">
+											<div class="subscribe-form d-flex flex-row justify-content-center">
 												<input type="email" class="subscribe-input" placeholder="youremail@example.com">
 												<button type="button" class="btn subscribe-btn btn-effect">Subscribe</button>
 											</div>	
@@ -145,7 +144,7 @@
 
 		<div class="about-company-wrap">
 			<p class="mb-0">
-					Command Prompt, Inc. is the oldest and largest dedicated PostgreSQL support provider in North America. Since 1997, we have been developing, supporting, deploying and advocating the use of the World's Most Advanced Open Source Database.
+					Command Prompt, Inc. is the oldest and largest dedicated Postgres support provider in North America. Since 1997, we have been developing, supporting, deploying and advocating the use of the World's Most Advanced Open Source Database.
 			</p>	
 		</div>
 	</header>
@@ -175,7 +174,7 @@
 		<div class="community-involvement">
 			<h2 class="general-title text-center font-weight-bold mb-3">Community Involvement</h2>
 			<div class="container-fluid container-fluid-custom p-0 mx-auto">
-				<div class="card-deck card-deck-custom">
+				<div class="card-deck card-deck-custom justify-content-between">
 					<div class="card card-custom">
 						<img src="./images/NO_IMG.png" class="card-img-top" alt="">
 							<div class="card-body card-body-custom d-flex flex-column">
@@ -205,7 +204,7 @@
 		</div>
 
 		<div class="more-about-us">
-			<h5 class="more-about-us-title"><a href="#">More about us<i class="fa fa-arrow-right arrow" aria-hidden="true"></i></a></h5>
+			<h5 class="more-about-us-title mb-0"><a href="#" class="d-flex flex-row align-items-center">More about us<i class="fa fa-arrow-right arrow" aria-hidden="true"></i></a></h5>
 		</div>
 
 		<div class="clients pt-3 pb-3">
@@ -227,7 +226,7 @@
 							<div class="carousel-inner pt-0">
 								<div class="carousel-item carousel-item-custom active">
 									<div class="row">
-										<div class="col-lg-12">		
+										<div class="col-md-8 offset-md-2">		
 											<div class="quote-wrap d-flex align-items-center flex-column p-4">
 												<i class="fa fa-quote-left fa-2x quote-symbol mb-3" aria-hidden="true"></i>
 												<div class="quote">
@@ -307,20 +306,26 @@
 						<div class="blog-list-wrap pt-3">
 							<h4 class="blog-list-title font-weight-bold">Recent blogs</h4>
 								<div class="blog-post">
-									<h5><a class="text-decoration-none" href="/blog/copy-file-ssh-wormhole">Copy Files Through an SSH Wormhole!</a></h5>
-										<p>Oct. 16, 2017, 1:09 p.m.</p>
-										<p><a href="#">- Eric Worden</a></p>
+									<h5>
+										<a class="text-decoration-none" href="/blog/copy-file-ssh-wormhole">Copy Files Through an SSH Wormhole!</a>
+									</h5>
+									<p>Oct. 16, 2017, 1:09 p.m.</p>
+									<p><a href="#">- Eric Worden</a></p>
 								</div>
 								
 								<div class="blog-post">
-                  <h5><a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a></h5>
-										<p>Dec. 6, 2017, 7:16 p.m.</p>
-										<p><a href="/blog/author/eric">- Eric Worden</a></p>
+								  	<h5>
+										  <a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
+									</h5>
+									<p>Dec. 6, 2017, 7:16 p.m.</p>
+									<p><a href="/blog/author/eric">- Eric Worden</a></p>
 								</div>
 								<div class="blog-post">
-									<h5><a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a></h5>
-										<p>Dec. 6, 2017, 7:16 p.m.</p>
-										<p><a href="/blog/author/eric">- Eric Worden</a></p>
+									<h5>
+										<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
+									</h5>
+									<p>Dec. 6, 2017, 7:16 p.m.</p>
+									<p><a href="/blog/author/eric">- Eric Worden</a></p>
 								</div>		
 						</div>
 					</div>
@@ -332,9 +337,9 @@
 		<div class="container-fluid pb-3 pt-3 bg-dark">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<div class="d-flex flex-column connect">
+					<div class="d-flex flex-column">
 							<h2 class="general-title general-title-white text-center font-weight-bold">Connect with us</h2>
-							<ul class="list-unstyled list-inline network-icons">
+							<ul class="list-unstyled list-inline social-icons">
 							<li class="list-inline-item"><a href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
 							<li class="list-inline-item"><a href=""><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
 							<li class="list-inline-item"><a href=""><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>

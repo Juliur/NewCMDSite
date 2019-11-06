@@ -49,6 +49,7 @@ body {
 	border: none;
 	border: 2px solid $main-color;
 	transition: $transition_animation;
+	box-shadow: $shadow_2;
 	&:hover {
 		background-color: white;
 		color: $main-color;
@@ -96,18 +97,18 @@ body {
 				border: 2px solid $main-color;
 				border-right: 0;
 				height: 40px;
+				width: calc(100%*2/3);
 				padding-left: 10px;
 				&:focus{
 					outline: none;
-					box-shadow: $shadow_2;
 				}
 			}
 			.subscribe-btn {
 				height: 40px;
+				width: calc(100%*1/3);
 				outline: none;
 				border-radius: 0;
 				padding: 0 10px;
-				box-shadow: $shadow_2;
 			}
 		}
 	}
@@ -138,11 +139,17 @@ body {
 			padding: 0.7rem;
 			display: flex;
 			align-items: center;
-			i{
+			transition: $transition_animation;
+			.rotated-angle{
 				margin-left: 5px;
+				transition: transform .2s ease-in;
 			}
-			&:hover, &:active {
-			color: rgba(255, 255, 255, 1);
+			.rotate{
+				transform: rotate(180deg);
+			}
+			&:hover, &:active{
+				transition: $transition_animation;
+				color: rgba(255, 255, 255, 1);
 			}
 		}
 
@@ -153,6 +160,11 @@ body {
 		.navbar-nav-custom {
 			.nav-item-custom {
 				cursor: pointer;
+				 	&:active>.nav-link>.rotated-angle,
+					&:focus>.nav-link>.rotated-angle{
+						transform: rotate(180deg);
+						transition: transform .2s ease-in;
+				 }
 			}
 			.dropdown-menu-custom{
 				border-radius: 0;
@@ -193,10 +205,10 @@ body {
 	.about-company-wrap {
 		width: 85%;
 		position: absolute;
-		bottom: -35%;
 		left: 50%;
+		bottom: 0;
 		margin-right: -50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, 65%);
 		padding: 20px;
 		background-color: $main-color;
 		box-shadow: $shadow_2;
@@ -232,31 +244,32 @@ body {
 	}
 
 	.community-involvement {
-		.card-deck-custom {
-			.card-custom {
-				flex: 0 0 30%;
-				border-radius: 0;
-				margin-top: 15px;
-				box-shadow: $shadow_2;
-
-				.card-title {
-					font-weight: 700;
-					color: $main-color;
-				}
-
-				.main-btn {
-					width: 150px;
-					height: 40px;
-					margin-left: 1.25rem;
-					margin-bottom: 1.25rem;
-					box-shadow: $shadow_btn;
+		.container-fluid-custom{
+			width: 85%;
+			.card-deck-custom {
+				.card-custom {
+					flex: 0 0 30%;
+					border-radius: 0;
+					margin-top: 15px;
+					box-shadow: $shadow_2;
+	
+					.card-title {
+						font-weight: 700;
+						color: $main-color;
+					}
+	
+					.main-btn {
+						width: 130px;
+						height: 40px;
+						margin-left: 1.25rem;
+						margin-bottom: 1.25rem;
+					}
 				}
 			}
 		}
+		
 	}
 	.more-about-us {
-		display: flex;
-    	justify-content: center;
 		padding: 30px;
 		a{
 			text-decoration: none;
@@ -264,7 +277,7 @@ body {
 		}
 		.more-about-us-title{
 			display: flex;
-			align-items: center;
+			justify-content: center;
 		}
 		.arrow{
 			font-size: 15px;
@@ -285,48 +298,33 @@ body {
 	}
 	.quotes{
 		height: 72vh;
-		.carousel-item-custom {
-			.quote-wrap{
-				background-color: white;
-				box-shadow: $shadow_2;
-				position: relative;
-				margin-bottom: 3%;
-				//  &::before, &:after {
-				// 	content: '';
-				// 	position: absolute;
-				// 	background: white;
-				// 	right: 10%; 
-				// 	bottom: -7%;
-				// 	width: 40px; 
-				// 	height: 40px;
-				// 	z-index: -1; 
-				// 	transform: rotate(45deg);
-				// 	-webkit-transform: rotate(45deg);
-				// 	box-shadow: $shadow_2;
-				//  }
-				//  &::after {
-				// 	z-index: 1;
-				// 	box-shadow: none; 
-				//  }
-				.fa-quote-left{
-					color: $main-color;
+		#carouselTestimonials{
+			height: 340px;
+			.carousel-item-custom {
+				.quote-wrap{
+					background-color: white;
+					box-shadow: $shadow_2;
+					position: relative;
+					margin-bottom: 3%;
+					.fa-quote-left{
+						color: $main-color;
+					}
+					.quote{
+						text-align: center;
+					}
 				}
-				.quote{
-					text-align: center;
-				}
+				.quote-footer{
+					text-align: end;
+					.quote-author{
+						color: $main-color;
+					}
+					.author-company{
+						text-decoration: none;
+						color: $main-color;
+					}
+				}	
 			}
-			.quote-footer{
-				text-align: end;
-				.quote-author{
-					color: $main-color;
-				}
-				.author-company{
-					text-decoration: none;
-					color: $main-color;
-				}
-			}	
 		}
-		
 	}
 	.article-blog{
 		background-color: $main-color;
@@ -394,58 +392,188 @@ body {
 	.general-title{
 		color: white;
 	}
-	a{
-		color: white;
-		display: block;	
+	.social-icons{
+		a{
+			color: white;
+			display: block;	
+			transition: $transition_animation;
+			&:hover{
+				transform: scale(1.1);
+				transition: $transition_animation;
+			}
+		}
+		
+	}
+	.copyright{
+		a{
+			color: white;
+		}
 	}
 }
-@media (min-width: 1592px){
-	body{
-		font-size: 1.2rem;
+@media(max-width: 575px){
+	.general-title{
+		font-size: 1.5rem;
+	}
+	.modal-custom{
+		.modal-dialog-custom{
+			width: 100%;
+		}
 	}
 	.container-fluid-custom{
 		width: 90%;
 	}
 	#header{
+		height: 375px;
+		background-attachment: scroll;
+			a{
+				color: white;
+				padding: 0.7rem 0;
+			}
 		.company-name-wrap{
+			top: 41%;
 			h1{
-				font-size: 3.5rem;
+				font-size: 2rem;
+				padding-top: 0 !important;
 			}
 			p{
-				font-size: 1.8rem;
+				font-size: 1rem;
 			}
 		}
 		.about-company-wrap{
-			bottom: -30%;
 			p{
-				font-size: 1.5rem;
+				font-size: 1rem;
 			}
 		}
-	}	
+	}
+
+	#main{
+		.dashboard-items{
+			margin-top: 40%;
+			margin-bottom: 0;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			.dashboard-item{
+				margin-bottom: 1rem;
+				.counter-amount{
+					font-size: 1.5rem;
+				}
+				.counter-title{
+				font-size: 1.2rem;
+				}
+			}
+		}
+		.card-deck-custom{
+			margin: 15px;
+			.card-custom{
+				margin-bottom: 0;
+			}
+		}
+		.more-about-us{
+			padding: 15px;
+		}
+		.clients{
+			.clients-logo-wrap{
+				width: 30%;
+			}
+		}
+		.quotes{
+			.carousel-item-custom {
+				.quote-wrap{
+					padding: 1rem;
+					&::after, &::before{
+						bottom: -4%;
+					}
+					i{
+						display: none;
+					}
+					.quote{
+						margin-left: 0;
+					}
+				}
+			}
+		} 
+	} 
 }
-@media (max-width: 1199px){
-	.container-fluid-custom{
-		width: 85%;
+@media (max-width: 767px) {
+	.general-title{
+		font-size: 1.7rem;
 	}
 	#header{
-		.about-company-wrap{
-			bottom: -40%;
+		#nav-custom{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			background-color: $main-color;
+			box-shadow: $shadow_2;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			.hamburger{
+				width: 30px;
+				height: 30px;
+				i{
+					color: white;
+				}
+			}
+			.navbar-nav-custom{
+				.nav-item-custom{
+					.dropdown-menu-custom{
+						width: 100%;
+						border: 0;
+						background-color: $main-color !important;
+						padding-left: 1rem;
+						padding-top: 0;
+	
+					}
+				}
+			}
 		}
+		.company-name-wrap{
+			display: block;
+		}
+		.about-company-wrap{
+			width: 90%;
+		}
+
 	}
 	#main{
+		.dashboard-items{
+			margin-top: 27%;
+		}
+		.community-involvement{
+			.container{
+				max-width: 650px !important;
+			}
+			.card-deck-custom{
+				justify-content: space-around;
+				.card-custom{
+					flex: 0 0 45%;
+					&:last-child{
+						margin: 30px;
+					}
+				}
+			}
+		}
 		.quotes{
 			height: 90vh;
 		}
 		.article-blog{
 			.article-img{
 				.article-title{
-					font-size: 2.8rem;
+					font-size: 2rem;
+					margin-bottom: 0;
+				}
+			}
+			.article-content{
+				.article-inner{
+					border: 0;
+					padding-right: 0;
 				}
 			}
 			.blog-list-wrap{
-				padding-right: 1rem;
-			}	
-		}	
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
 	}
 }
 @media (max-width: 991px) {
@@ -481,7 +609,6 @@ body {
 			}
 		}
 		.about-company-wrap{
-			bottom: -38%;
 			p{
 				font-size: 1.1rem;
 			}
@@ -538,171 +665,191 @@ body {
 		}
 	}
 }
-@media (max-width: 767px) {
-	.general-title{
-		font-size: 1.7rem;
-	}
-	#header{
-		#nav-custom{
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			background-color: $main-color;
-			box-shadow: $shadow_2;
-			padding-top: 15px;
-			padding-bottom: 15px;
-			.hamburger{
-				width: 30px;
-				height: 30px;
-				i{
-					color: white;
-				}
-			}
-			.navbar-nav-custom{
-				.nav-item-custom{
-					.dropdown-menu-custom{
-						width: 100%;
-						border: 0;
-						background-color: $main-color !important;
-						padding-left: 1rem;
-						padding-top: 0;
-	
-					}
-				}
-			}
-		}
-		.company-name-wrap{
-			display: block;
-		}
-		.about-company-wrap{
-			width: 90%;
-			bottom: -45%;
-		}
-
+@media (max-width: 1199px){
+	.container-fluid-custom{
+		width: 85%;
 	}
 	#main{
-		.dashboard-items{
-			margin-top: 27%;
-		}
-		.community-involvement{
-			.container{
-				max-width: 650px !important;
-			}
-			.card-deck-custom{
-				justify-content: space-around;
-				.card-custom{
-					flex: 0 0 45%;
-					&:last-child{
-						margin: 30px;
-					}
-				}
-			}
-		}
 		.quotes{
 			height: 90vh;
 		}
 		.article-blog{
 			.article-img{
 				.article-title{
-					font-size: 2rem;
-					margin-bottom: 0;
-				}
-			}
-			.article-content{
-				.article-inner{
-					border: 0;
-					padding-right: 0;
+					font-size: 2.8rem;
 				}
 			}
 			.blog-list-wrap{
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-		}
+				padding-right: 1rem;
+			}	
+		}	
 	}
 }
-@media(max-width: 575px){
+
+@media (min-width: 1600px){
 	.general-title{
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 	}
-	.modal-custom{
-		.modal-dialog-custom{
-			width: 100%;
-		}
+	body{
+		font-size: 1.2rem;
 	}
 	.container-fluid-custom{
 		width: 90%;
 	}
 	#header{
-		height: 375px;
-		background-attachment: scroll;
-			a{
-				color: white;
-				padding: 0.7rem 0;
-			}
 		.company-name-wrap{
-			top: 41%;
 			h1{
-				font-size: 2rem;
-				padding-top: 0 !important;
+				font-size: 3.5rem;
 			}
 			p{
-				font-size: 1rem;
+				font-size: 1.8rem;
 			}
 		}
 		.about-company-wrap{
-			bottom: -60%;
 			p{
-				font-size: 1rem;
+				font-size: 1.5rem;
 			}
 		}
-	}
-
+	}	
 	#main{
 		.dashboard-items{
-			margin-top: 40%;
-			margin-bottom: 0;
-			justify-content: space-around;
-			flex-wrap: wrap;
 			.dashboard-item{
-				margin-bottom: 1rem;
 				.counter-amount{
-					font-size: 1.5rem;
+					font-size: 2.7rem;
 				}
 				.counter-title{
-				font-size: 1.2rem;
+					font-size: 1.7rem;
 				}
 			}
 		}
-		.card-deck-custom{
-			margin: 15px;
-			.card-custom{
-				margin-bottom: 0;
+		.community-involvement{
+			.container-fluid-custom{
+				.card-deck-custom{
+					.card-custom{
+						.card-title{
+							font-size: 1.6rem;
+						}
+						.main-btn{
+							width: 170px;
+							height: 50px;
+						}
+					}
+				}
 			}
 		}
 		.more-about-us{
-			padding: 15px;
-		}
-		.clients{
-			.clients-logo-wrap{
-				width: 30%;
+			.more-about-us-title{
+				a{
+					font-size: 1.5rem;
+				}
+				i{
+					font-size: 20px;
+				}
 			}
 		}
 		.quotes{
-			.carousel-item-custom {
-				.quote-wrap{
-					padding: 1rem;
-					&::after, &::before{
-						bottom: -4%;
+			height: 80vh;
+		}
+	}
+}
+@media (min-width: 1800px){
+	body{
+		font-size: 1.4rem;
+	}
+	.general-title{
+		margin-bottom: 2rem;
+	}
+	.modal-custom {
+		.modal-dialog-custom {
+			height: auto;
+			width: auto;
+			.modal-content-custom{
+				width: 530px;
+				height: 300px;
+				justify-content: center;
+				padding: 2rem;
+				.close-btn {
+					font-size: 40px;
+					margin-right: 1.2rem;
+					margin-top: 1.2rem;
+				}
+				.modal-title{
+					font-size: 2rem;
+					margin-top: 1.3rem;
+				}
+				.subscribe-form{
+					margin-top: 1.3rem;
+					.subscribe-input {
+						height: 50px;
+						// width: 300px;
 					}
-					i{
-						display: none;
-					}
-					.quote{
-						margin-left: 0;
+					.subscribe-btn{
+						font-size: inherit;
+						height: 50px;
 					}
 				}
 			}
-		} 
-	} 
+		}
+	}
+	#header{
+		#nav-custom{
+			a{
+				font-size: 1.4rem;
+			}
+		}
+		.about-company-wrap{
+			p{
+				font-size: 1.8rem;
+			}
+		}
+	}
+	#main{
+		.dashboard-items{
+			margin-top: 25%;
+			margin-bottom: 8%;
+		}
+		.community-involvement{
+			.container-fluid-custom{
+				.card-deck-custom{
+					.card-custom{
+						.card-title{
+							font-size: 2rem;
+						}
+						.main-btn{
+							width: 180px;
+							height: 50px;
+						}
+					}
+				}
+			}
+		}
+		.more-about-us{
+			.more-about-us-title{
+				a{
+					font-size: 1.7rem;
+				}
+				i{
+					font-size: 22px;
+				}
+			}
+		}
+		.clients{
+			padding-bottom: 2rem !important;
+		}
+		.article-blog{
+			.blog-list-wrap{
+				.blog-list-title{
+					font-size: 2.2rem;
+				}
+				.blog-post{
+					h5{
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
 }
+
+
+
