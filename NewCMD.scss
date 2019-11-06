@@ -57,6 +57,12 @@ body {
 		box-shadow: none;
 	}
 }
+.main-btn {
+	width: 130px;
+	height: 40px;
+	margin-left: 1.25rem;
+	margin-bottom: 1.25rem;
+}
 //popup style
 .modal-backdrop {
 	z-index: 1;
@@ -256,13 +262,6 @@ body {
 					.card-title {
 						font-weight: 700;
 						color: $main-color;
-					}
-	
-					.main-btn {
-						width: 130px;
-						height: 40px;
-						margin-left: 1.25rem;
-						margin-bottom: 1.25rem;
 					}
 				}
 			}

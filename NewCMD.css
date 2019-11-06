@@ -54,6 +54,13 @@ body {
   box-shadow: none;
 }
 
+.main-btn {
+  width: 130px;
+  height: 40px;
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .modal-backdrop {
   z-index: 1;
 }
@@ -267,13 +274,6 @@ body {
 #main .community-involvement .container-fluid-custom .card-deck-custom .card-custom .card-title {
   font-weight: 700;
   color: #014D80;
-}
-
-#main .community-involvement .container-fluid-custom .card-deck-custom .card-custom .main-btn {
-  width: 130px;
-  height: 40px;
-  margin-left: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 #main .more-about-us {

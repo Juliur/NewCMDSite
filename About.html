@@ -2,177 +2,209 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="About.css">
-    </link>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="./NewCMD.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="About.css">
+	</link>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+		integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="./NewCMD.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar fixed-top navbar-expand-md" id="nav-custom">
-            <button class="navbar-toggler p-0 hamburger" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation" type="button" data-toggle="collapse"
-                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-            </button>
+	<header id="header">
+		<nav class="navbar fixed-top navbar-expand-md" id="nav-custom">
+			<button class="navbar-toggler p-0 hamburger" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+				aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+				aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+			</button>
 
-            <div class="container-fluid p-0">
-                <div class="row w-100 m-0 no-gutters">
-                    <div class="col-md-1 d-none d-sm-none d-md-block">
-                        <a class="d-block brand-img" href="#">
-                            Logo
-                        </a>
-                    </div>
-                    <div class="col-md-9 offset-md-2 col-lg-7 offset-lg-4 col-xs-12">
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
-                            <ul class="navbar-nav navbar-nav-custom">
-                                <li class="nav-item nav-item-custom">
-                                    <a class="nav-link current" href="#">Home</a>
-                                </li>
-                                <li class="nav-item nav-item-custom dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        About
-                                        <i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="dropdown-menu bg-dark dropdown-menu-custom"
-                                        aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item dropdown-item-custom dropdown-item dropdown-item-custom-custom"
-                                            href="/products/hot_or_cold_standby">Careers</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/products/high_availability_clusters">Partners</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item nav-item-custom dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        Products
-                                        <i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="dropdown-menu bg-dark dropdown-menu-custom"
-                                        aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/products/hot_or_cold_standby">Hot Standby / Cold Standby / DRBD</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/products/high_availability_clusters">High Availability Clusters</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/products/performance_audit">Performance Audit</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/products/postgresql_core">PostgreSQL Core</a>
-                                        <a class="dropdown-item dropdown-item-custom" href="/products/warm_standby">Warm
-                                            Standby</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/products/audit_and_tune">Audit and Tune</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item nav-item-custom dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        Services
-                                        <i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="dropdown-menu bg-dark dropdown-menu-custom"
-                                        aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/services/performance_tuning">Performance Tuning</a>
-                                        <a class="dropdown-item dropdown-item-custom" href="/services/on_site">On
-                                            Site</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/services/training">Training</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/services/high_availability">High Availability</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/services/remote_hands">Remote Hands</a>
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/services/oracle_to_postgres_migrations">Oracle Migrations</a>
-                                        <a class="dropdown-item dropdown-item-custom" href="/services/fullstack">Full
-                                            Stack Offerings</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item nav-item-custom dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        Support
-                                        <i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="dropdown-menu bg-dark dropdown-menu-custom"
-                                        aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item dropdown-item-custom"
-                                            href="/support/support_options">Support Options</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item nav-item-custom">
-                                    <a class="nav-link">Blog</a>
-                                </li>
-                                <li class="nav-item nav-item-custom">
-                                    <a class="nav-link">Contact</a>
-                                </li>
-                                <li class="nav-item nav-item-custom">
-                                    <a class="nav-link" data-toggle="modal"
-                                        data-target="#newsletterModal">Newsletter</a>
-                                </li>
-                                <!-- Modal -->
-                                <div class="modal modal-custom fade" id="newsletterModal" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-custom" role="document">
-                                        <div class="modal-content modal-content-custom">
-                                            <button type="button" class="close close-btn" data-dismiss="modal"
-                                                aria-label="Close">
-                                                <span aria-hidden="true"><i class="fa fa-times"
-                                                        aria-hidden="true"></i></span>
-                                            </button>
-                                            <div class="d-flex flex-column align-items-center">
-                                                <i class="fa fa-envelope fa-3x envelope-icon" aria-hidden="true"></i>
-                                                <h4 class="modal-title text-center" id="exampleModalLabel">Join Our
-                                                    Newsletter</h4>
-                                            </div>
-                                            <div class="subscribe-form d-flex flex-row justify-content-center">
-                                                <input type="email" class="subscribe-input"
-                                                    placeholder="youremail@example.com">
-                                                <button type="button"
-                                                    class="btn subscribe-btn btn-effect">Subscribe</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid company-name-wrap">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="company-name">
-                        <h1 class="text-uppercase text-center font-weight-bold pt-5"><a class="text-decoration-none"
-                                href="/">Command Prompt, Inc.</a></h1>
-                        <p class="d-none d-xs-none d-sm-block font-weight-bold text-uppercase text-center pt-3 m-0">
-                            Postgres Centered full stack support, consulting &amp; development.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+			<div class="container-fluid p-0">
+				<div class="row w-100 m-0 no-gutters">
+					<div class="col-md-1 d-none d-sm-none d-md-block">
+						<a class="d-block brand-img" href="#">
+							Logo
+						</a>
+					</div>
+					<div class="col-md-9 offset-md-2 col-lg-7 offset-lg-4 col-xs-12">
+						<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
+							<ul class="navbar-nav navbar-nav-custom">
+								<li class="nav-item nav-item-custom">
+									<a class="nav-link current" href="#">Home</a>
+								</li>
+								<li class="nav-item nav-item-custom dropdown">
+									<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										About
+										<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+									</a>
+									<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item dropdown-item-custom dropdown-item dropdown-item-custom-custom"
+											href="/products/hot_or_cold_standby">Careers</a>
+										<a class="dropdown-item dropdown-item-custom"
+											href="/products/high_availability_clusters">Partners</a>
+									</div>
+								</li>
+								<li class="nav-item nav-item-custom dropdown">
+									<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										Products
+										<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+									</a>
+									<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item dropdown-item-custom" href="/products/hot_or_cold_standby">Hot Standby /
+											Cold Standby / DRBD</a>
+										<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">High
+											Availability Clusters</a>
+										<a class="dropdown-item dropdown-item-custom" href="/products/performance_audit">Performance
+											Audit</a>
+										<a class="dropdown-item dropdown-item-custom" href="/products/postgresql_core">PostgreSQL Core</a>
+										<a class="dropdown-item dropdown-item-custom" href="/products/warm_standby">Warm
+											Standby</a>
+										<a class="dropdown-item dropdown-item-custom" href="/products/audit_and_tune">Audit and Tune</a>
+									</div>
+								</li>
+								<li class="nav-item nav-item-custom dropdown">
+									<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										Services
+										<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+									</a>
+									<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item dropdown-item-custom" href="/services/performance_tuning">Performance
+											Tuning</a>
+										<a class="dropdown-item dropdown-item-custom" href="/services/on_site">On
+											Site</a>
+										<a class="dropdown-item dropdown-item-custom" href="/services/training">Training</a>
+										<a class="dropdown-item dropdown-item-custom" href="/services/high_availability">High
+											Availability</a>
+										<a class="dropdown-item dropdown-item-custom" href="/services/remote_hands">Remote Hands</a>
+										<a class="dropdown-item dropdown-item-custom" href="/services/oracle_to_postgres_migrations">Oracle
+											Migrations</a>
+										<a class="dropdown-item dropdown-item-custom" href="/services/fullstack">Full
+											Stack Offerings</a>
+									</div>
+								</li>
+								<li class="nav-item nav-item-custom dropdown">
+									<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										Support
+										<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+									</a>
+									<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item dropdown-item-custom" href="/support/support_options">Support Options</a>
+									</div>
+								</li>
+								<li class="nav-item nav-item-custom">
+									<a class="nav-link">Blog</a>
+								</li>
+								<li class="nav-item nav-item-custom">
+									<a class="nav-link">Contact</a>
+								</li>
+								<li class="nav-item nav-item-custom">
+									<a class="nav-link" data-toggle="modal" data-target="#newsletterModal">Newsletter</a>
+								</li>
+								<!-- Modal -->
+								<div class="modal modal-custom fade" id="newsletterModal" tabindex="-1" role="dialog"
+									aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-custom" role="document">
+										<div class="modal-content modal-content-custom">
+											<button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+											</button>
+											<div class="d-flex flex-column align-items-center">
+												<i class="fa fa-envelope fa-3x envelope-icon" aria-hidden="true"></i>
+												<h4 class="modal-title text-center" id="exampleModalLabel">Join Our
+													Newsletter</h4>
+											</div>
+											<div class="subscribe-form d-flex flex-row justify-content-center">
+												<input type="email" class="subscribe-input" placeholder="youremail@example.com">
+												<button type="button" class="btn subscribe-btn btn-effect">Subscribe</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid company-name-wrap">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="company-name">
+						<h1 class="text-uppercase text-center font-weight-bold"><a class="text-decoration-none" href="/">Command
+								Prompt, Inc.</a></h1>
+						<p class="d-none d-xs-none d-sm-block font-weight-bold text-uppercase text-center pt-3 m-0">
+							Postgres Centered full stack support, consulting &amp; development.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main id="main">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="our-company-content">
+							<h2 class="general-title text-center font-weight-bold mb-3 mt-3">Our Company</h2>
+							<p>
+								Command Prompt, Inc. is the oldest and largest dedicated PostgreSQL support provider in North America.
+								Since 1997, we have been developing, supporting, deploying and advocating the use of the World's Most
+								Advanced Open Source Database.
+								We are an Oregon corporation who enjoys the benefits of no outside investors, no debt, and being
+								profitable, since our first day of business in 1997.
+							</p>
+						</div>
+
+						<div class="container-fluid d-flex flex-column our-partners-content">
+							<h2 class="general-title text-center font-weight-bold mb-3 mt-3">Our Partners</h2>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="card card-custom p-3">
+										<div class="row">
+											<div class="col-xs-12 col-lg-3">
+												<img src="./images/Badge.png" class="card-img-top partners-logo">
+											</div>
+											<div class="col-xs-12 col-lg-9">
+												<div class="card-body card-body-custom d-flex flex-column h-100">
+													<h5 class="card-title font-weight-bold">AMAZON WEB SERVICES (AWS)</h5>
+													<p class="card-text">Happily supporting and consulting on all of Amazon's Postgres centered
+														services as a member of the AWS Partner Network.</p>
+														<button class="main-btn btn-effect mt-auto align-self-end">Learn more</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="our-team">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
 
 </html>
