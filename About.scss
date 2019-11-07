@@ -59,6 +59,7 @@ body {
 .card-custom{
 	box-shadow: $shadow_2;
 	border-radius: 0;
+	padding: 1rem;
 	.card-body-custom{
 		.card-title{
 			color: $main-color;
@@ -135,7 +136,7 @@ body {
 	height: 35vh;
     position: relative;
     background-color: $main-color;
-    // box-shadow: $shadow_2;
+    box-shadow: $shadow_2;
     background-image: url("images/mountains.jpg");
 	background-size: cover;
 	background-position: 50% 50%;
@@ -229,7 +230,10 @@ body {
             }
             .card-body-custom{
                 padding: 0;
-            }
+			}
+			.main-btn{
+				align-content: flex-end;
+			}
         }
         
     }
@@ -268,6 +272,7 @@ body {
 	.careers{
 		.card-custom{
 			flex: 0 0 40%;
+			margin: 0 1.5rem 1.5rem 1.5rem;
 			.briefcase-symbol{
 				color: $main-color;
 			}
@@ -284,3 +289,276 @@ body {
 		}
 	}
 }
+
+#footer{
+	color: white;
+	.general-title{
+		color: white;
+		&::after{
+			background-color: white;
+		}
+	}
+	.social-icons{
+		a{
+			color: white;
+			display: block;	
+			transition: $transition_animation;
+			&:hover{
+				transform: scale(1.1);
+				transition: $transition_animation;
+			}
+		}
+		
+	}
+	.copyright{
+		a{
+			color: white;
+		}
+	}
+}
+@media (max-width: 1199px){
+	body{
+		font-size: .9rem;
+	}
+	.general-title {
+		font-size: 1.6rem;
+	}
+	.card-custom{
+		.card-body-custom{
+			.card-title{
+				font-size: 1.2rem;
+			}
+			.card-subtitle{
+				font-size: 1rem;
+			}
+		}
+	}
+	#header {
+		height: 40vh;
+	}
+}
+@media (min-width: 1800px){
+	body{
+		font-size: 1.4rem;
+	}
+	.general-title{
+		margin-bottom: 2rem;
+		font-size: 2.3rem;
+	}
+	.modal-custom {
+		.modal-dialog-custom {
+			height: auto;
+			width: auto;
+			.modal-content-custom{
+				width: 530px;
+				height: 300px;
+				justify-content: center;
+				padding: 2rem;
+				.close-btn {
+					font-size: 40px;
+					margin-right: 1.2rem;
+					margin-top: 1.2rem;
+				}
+				.modal-title{
+					font-size: 2rem;
+					margin-top: 1.3rem;
+				}
+				.subscribe-form{
+					margin-top: 1.3rem;
+					.subscribe-input {
+						height: 50px;
+						// width: 300px;
+					}
+					.subscribe-btn{
+						font-size: inherit;
+						height: 50px;
+					}
+				}
+			}
+		}
+	}
+	.main-btn {
+		width: 180px;
+		height: 50px;
+	}
+	.card-custom{
+		padding: 1.5rem;
+		.card-body-custom{
+			.card-title{
+				font-size: 1.6rem;
+			}
+			.card-subtitle{
+				font-size: 1.5rem;
+			}
+		}
+	}
+	#header{
+		#nav-custom{
+			a{
+				font-size: 1.4rem;
+			}
+		}
+		.company-name-wrap{
+			h1{
+				font-size: 3rem;
+			}
+			p{
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+@media (min-width: 2000px){
+	body{
+		font-size: 1.5rem;
+	}
+	.main-btn {
+		width: 200px;
+		height: 60px;
+	}
+	.card-custom{
+		.card-body-custom{
+			.card-title{
+				font-size: 1.8rem;
+			}
+			.card-subtitle{
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+@media(max-width: 991px){
+	body {
+		font-size: .8rem;
+	}
+	.general-title {
+		font-size: 1.5rem;
+	}
+	.card-custom{
+		.card-body-custom{
+			.card-title{
+				font-size: 1rem;
+			}
+			.card-subtitle{
+				font-size: .9rem;
+			}
+		}
+	}
+	.main-btn {
+		width: 130px;
+		height: 35px;
+	}
+	#header{
+		#nav-custom{
+			.nav-link-custom{
+				font-size: .8rem;
+			}
+		}
+		.company-name{
+			h1{
+				font-size: 1.8rem;
+			}
+			p{
+				font-size: 1rem;
+			}
+		}
+	}
+	#main{
+		.advantages{
+			.advantage-item{
+				.serial-number{
+					width: 30px;
+					height: 30px;
+					.number{
+						font-size: 1.1rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media(max-width: 767px){
+	#header{
+		height: 35vh;
+		background-image: none;
+		background-color: $main-color;
+		#nav-custom{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			background-color: $main-color;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			.hamburger{
+				width: 30px;
+				height: 30px;
+				i{
+					color: white;
+				}
+			}
+			.navbar-nav-custom{
+				.nav-item-custom{
+					.dropdown-menu-custom{
+						width: 100%;
+						border: 0;
+						background-color: $main-color !important;
+						padding-left: 1rem;
+						padding-top: 0;
+	
+					}
+				}
+			}
+		}
+	}
+	#main{
+		.advantages{
+			.advantage-item{
+				.serial-number {
+					width: 35px;
+					height: 35px;
+				}
+			}
+		}   
+	}
+}
+@media(max-width: 575px){
+	#header{
+		height: 11vh;
+		#nav-custom{
+			.company-name-navbar{
+				font-size: 1.5rem;
+				font-weight: 700;
+				color: white;
+				margin-left: 90px;
+			}
+			.nav-link-custom{
+				font-size: .9rem;
+			}
+		}
+	}	
+	#main{
+		.our-partners-content{
+			.card-custom{
+				.partners-logo{
+					width: 50%;
+					margin: 0 auto;
+					display: block;
+				}
+				.card-body-custom{
+					text-align: center;
+					.card-title{
+						margin-top: .75rem;
+					}
+				}
+				.main-btn{
+					align-self: center;
+				}
+			}
+		}
+		.careers{
+			.card-custom{
+				flex: 0 1 auto;
+			}
+		}
+	}
+}	

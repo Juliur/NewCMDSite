@@ -33,7 +33,7 @@
 				aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
 			</button>
-
+			
 			<div class="container-fluid p-0">
 				<div class="row w-100 m-0 no-gutters">
 					<div class="col-md-1 d-none d-sm-none d-md-block">
@@ -45,10 +45,10 @@
 						<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
 							<ul class="navbar-nav navbar-nav-custom">
 								<li class="nav-item nav-item-custom">
-									<a class="nav-link current" href="#">Home</a>
+									<a class="nav-link nav-link-custom" href="#">Home</a>
 								</li>
 								<li class="nav-item nav-item-custom dropdown">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+									<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										About
 										<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
@@ -61,7 +61,7 @@
 									</div>
 								</li>
 								<li class="nav-item nav-item-custom dropdown">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+									<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										Products
 										<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
@@ -80,7 +80,7 @@
 									</div>
 								</li>
 								<li class="nav-item nav-item-custom dropdown">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+									<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										Services
 										<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
@@ -101,7 +101,7 @@
 									</div>
 								</li>
 								<li class="nav-item nav-item-custom dropdown">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+									<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										Support
 										<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
@@ -111,13 +111,13 @@
 									</div>
 								</li>
 								<li class="nav-item nav-item-custom">
-									<a class="nav-link">Blog</a>
+									<a class="nav-link nav-link-custom">Blog</a>
 								</li>
 								<li class="nav-item nav-item-custom">
-									<a class="nav-link">Contact</a>
+									<a class="nav-link nav-link-custom">Contact</a>
 								</li>
 								<li class="nav-item nav-item-custom">
-									<a class="nav-link" data-toggle="modal" data-target="#newsletterModal">Newsletter</a>
+									<a class="nav-link nav-link-custom" data-toggle="modal" data-target="#newsletterModal">Newsletter</a>
 								</li>
 								<!-- Modal -->
 								<div class="modal modal-custom fade" id="newsletterModal" tabindex="-1" role="dialog"
@@ -145,9 +145,9 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container-fluid company-name-wrap">
+		<div class="container-fluid company-name-wrap d-none d-xs-none d-sm-none d-md-block">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-sm-12">
 					<div class="company-name">
 						<h1 class="text-uppercase text-center font-weight-bold"><a class="text-decoration-none" href="/">Command
 								Prompt, Inc.</a></h1>
@@ -162,7 +162,7 @@
 	<main id="main">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-10 offset-lg-1">
+				<div class="col-md-10 offset-md-1">
 						<div class="our-company-content">
 							<h2 class="general-title text-center font-weight-bold mb-4 mt-4">About us</h2>
 							<p class="mb-0">
@@ -177,18 +177,18 @@
 						<div class="container-fluid d-flex flex-column our-partners-content">
 							<h2 class="general-title text-center font-weight-bold mb-4 mt-4">Partners</h2>
 							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
-									<div class="card card-custom p-3">
+								<div class="col-md-10 offset-md-1">
+									<div class="card card-custom">
 										<div class="row">
-											<div class="col-xs-12 col-lg-3">
+											<div class="col-xs-12 col-sm-3">
 												<img src="./images/Badge.png" class="card-img-top partners-logo">
 											</div>
-											<div class="col-xs-12 col-lg-9">
+											<div class="col-xs-12 col-sm-9">
 												<div class="card-body card-body-custom d-flex flex-column h-100">
-													<h5 class="card-title font-weight-bold">AMAZON WEB SERVICES (AWS)</h5>
+													<h5 class="card-title font-weight-bold">Amazon Web Services (AWS)</h5>
 													<p class="card-text">Happily supporting and consulting on all of Amazon's Postgres centered
 														services as a member of the AWS Partner Network.</p>
-														<button class="main-btn btn-effect mt-auto align-self-end">Learn more</button>
+														<button class="main-btn btn-effect mt-auto">Learn more</button>
 												</div>
 											</div>
 										</div>
@@ -203,10 +203,10 @@
 		<div class="container-fluid">
 			<div class="our-team">
 				<h2 class="general-title text-center font-weight-bold mb-4 mt-4">Our Team</h2>
-				<div class="col-lg-10 offset-lg-1">
+				<div class="col-lg-10 offset-lg-1 col-xs-12">
 					<div class="row">
-					<div class="col-md-4 d-flex">
-						<div class="card card-custom p-3">
+					<div class="col-md-4 col-sm-6 d-flex">
+						<div class="card card-custom">
 							<img src="./images/uder.jpg" class="w-50 mx-auto card-img-top">
 								<div class="card-body card-body-custom p-0">
 									<h4 class="card-title">Name</h4>
@@ -215,8 +215,8 @@
 								</div>
 						</div>
 					</div>
-					<div class="col-md-4 d-flex">
-							<div class="card card-custom p-3">
+					<div class="col-md-4 col-sm-6 d-flex">
+							<div class="card card-custom">
 								<img src="./images/uder.jpg" class="w-50 mx-auto card-img-top">
 									<div class="card-body card-body-custom p-0">
 										<h4 class="card-title">Name</h4>
@@ -225,8 +225,8 @@
 									</div>
 							</div>
 					</div>	
-					<div class="col-md-4 d-flex">
-						<div class="card card-custom p-3">
+					<div class="col-md-4 col-sm-6 d-flex">
+						<div class="card card-custom">
 							<img src="./images/uder.jpg" class="w-50 mx-auto card-img-top">
 								<div class="card-body card-body-custom p-0">
 									<h4 class="card-title">Name</h4>
@@ -235,8 +235,8 @@
 								</div>
 						</div>
 					</div>	
-					<div class="col-md-4 d-flex">
-						<div class="card card-custom p-3">
+					<div class="col-md-4 col-sm-6 d-flex">
+						<div class="card card-custom">
 							<img src="./images/uder.jpg" class="w-50 mx-auto card-img-top">
 								<div class="card-body card-body-custom p-0">
 									<h4 class="card-title">Name</h4>
@@ -245,8 +245,8 @@
 								</div>
 						</div>
 					</div>
-					<div class="col-md-4 d-flex">
-						<div class="card card-custom p-3">
+					<div class="col-md-4 col-sm-6 d-flex">
+						<div class="card card-custom">
 							<img src="./images/uder.jpg" class="w-50 mx-auto card-img-top">
 								<div class="card-body card-body-custom p-0">
 									<h4 class="card-title">Name</h4>
@@ -254,8 +254,8 @@
 								</div>
 						</div>
 					</div>
-					<div class="col-md-4 d-flex">
-						<div class="card card-custom p-3">
+					<div class="col-md-4 col-sm-6 d-flex">
+						<div class="card card-custom">
 							<img src="./images/uder.jpg" class="w-50 mx-auto card-img-top">
 								<div class="card-body card-body-custom p-0">
 									<h4 class="card-title">Name</h4>
@@ -275,7 +275,7 @@
 				<div class="col-lg-10 offset-lg-1">
 					<div class="advantages-wrapper d-flex flex-column align-items-end">
 						<div class="mb-4 advantage-item">
-							<div class="serial-number d-flex flex-row justify-content-center">
+							<div class="serial-number d-flex flex-row align-items-center justify-content-center">
 								<p class="number mb-0">1</p>
 							</div>
 							<div class="content d-flex flex-row align-items-center">
@@ -285,7 +285,7 @@
 							</div>	
 						</div>
 						<div class="mb-4 advantage-item">
-							<div class="serial-number d-flex flex-row justify-content-center">
+							<div class="serial-number d-flex flex-row align-items-center justify-content-center">
 								<p class="number mb-0">2</p>
 							</div>
 							<div class="content d-flex flex-row align-items-center">
@@ -295,7 +295,7 @@
 							</div>	
 						</div>
 						<div class="mb-4 advantage-item">
-							<div class="serial-number d-flex flex-row justify-content-center">
+							<div class="serial-number d-flex flex-row align-items-center justify-content-center">
 								<p class="number mb-0">3</p>
 							</div>
 							<div class="content d-flex flex-row align-items-center">
@@ -305,7 +305,7 @@
 							</div>	
 						</div>
 						<div class="mb-4 advantage-item">
-							<div class="serial-number d-flex flex-row justify-content-center">
+							<div class="serial-number d-flex flex-row align-items-center justify-content-center">
 								<p class="number mb-0">4</p>
 							</div>
 							<div class="content d-flex flex-row align-items-center">
@@ -315,7 +315,7 @@
 							</div>	
 						</div>
 						<div class="mb-4 advantage-item">
-							<div class="serial-number d-flex flex-row justify-content-center">
+							<div class="serial-number d-flex flex-row align-items-center justify-content-center">
 								<p class="number mb-0">5</p>
 							</div>
 							<div class="content d-flex flex-row align-items-center">
@@ -332,20 +332,46 @@
 
 		<div class="container-fluid">
 			<h2 class="general-title text-center font-weight-bold mb-4 mt-4">Careers</h2>
-				<div class="careers d-flex flex-row justify-content-center">
-						<div class="card card-custom p-4 d-flex flex-column justify-content-center">
-							<i class="fa fa-briefcase fa-4x mx-auto briefcase-symbol" aria-hidden="true"></i>
-								<div class="card-body card-body-custom p-0 text-center">
-									<h4 class="card-title">Systems/Postgres Administrator</h4>
-									<div class="vacancy-content mb-3">
-										<p class="vacancy-description">Command Prompt, Inc. is looking for an Intermediate systems/PostgreSQL administrator.</p>
-									</div>
+				<div class="careers d-flex flex-row justify-content-center flex-wrap">
+					<div class="card card-custom p-4 d-flex flex-column justify-content-center">
+						<i class="fa fa-briefcase fa-4x mx-auto briefcase-symbol" aria-hidden="true"></i>
+							<div class="card-body card-body-custom p-0 text-center">
+								<h4 class="card-title">Systems/Postgres Administrator</h4>
+								<div class="vacancy-content mb-3">
+									<p class="vacancy-description">Command Prompt, Inc. is looking for an Intermediate systems/PostgreSQL administrator.</p>
 								</div>
-								<button class="main-btn btn-effect mt-auto align-self-center">Learn more</button>
-						</div>
+							</div>
+							<button class="main-btn btn-effect mt-auto align-self-center">Learn more</button>
+					</div>
 				</div>
 		</div>
 	</main>
+
+	<footer id="footer">
+		<div class="container-fluid pb-3 pt-3 bg-dark">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="d-flex flex-column">
+								<h2 class="general-title general-title-white text-center font-weight-bold mb-4 mt-3">Connect with us</h2>
+								<ul class="list-unstyled list-inline social-icons">
+								<li class="list-inline-item"><a href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+								<li class="list-inline-item"><a href=""><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
+								<li class="list-inline-item"><a href=""><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+								<li class="list-inline-item"><a href="" data-toggle="modal" data-target="#newsletterModal"><i class="fa fa-envelope fa-3x envelope-icon" aria-hidden="true"></i></a></li>
+							</ul>
+	
+							<ul class="list-unstyled list-inline copyright m-3">
+							<li class="list-inline-item">© Copyright © 2000-2019 Command Prompt, Inc. All Rights Reserved. All trademarks property of their respective owners.</li>
+							<li class="list-inline-item"><a href="/legal/terms_of_use">Terms of Use</a></li>
+							<li class="list-inline-item"><a href="/legal/privacy_policy">Privacy Policy</a></li>
+							</ul>
+						
+						</div>
+				</div>
+		</div>
+		</div>
+	</footer>
+	
 </body>
 
 </html>

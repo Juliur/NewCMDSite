@@ -57,6 +57,7 @@ body {
 .card-custom {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0;
+  padding: 1rem;
 }
 
 .card-custom .card-body-custom .card-title {
@@ -143,6 +144,7 @@ body {
   height: 35vh;
   position: relative;
   background-color: #014D80;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
   background-image: url("images/mountains.jpg");
   background-size: cover;
   background-position: 50% 50%;
@@ -239,6 +241,10 @@ body {
   padding: 0;
 }
 
+#main .our-partners-content .card-custom .main-btn {
+  align-content: flex-end;
+}
+
 #main .advantages .advantage-item {
   background-color: white;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
@@ -274,6 +280,7 @@ body {
 
 #main .careers .card-custom {
   flex: 0 0 40%;
+  margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
 #main .careers .card-custom .briefcase-symbol {
@@ -286,4 +293,227 @@ body {
 
 #main .careers .card-custom .card-body-custom .vacancy-content .vacancy-description {
   margin-bottom: 15px;
+}
+
+#footer {
+  color: white;
+}
+
+#footer .general-title {
+  color: white;
+}
+
+#footer .general-title::after {
+  background-color: white;
+}
+
+#footer .social-icons a {
+  color: white;
+  display: block;
+  transition: all 0.2s linear 0s;
+}
+
+#footer .social-icons a:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear 0s;
+}
+
+#footer .copyright a {
+  color: white;
+}
+
+@media (max-width: 1199px) {
+  body {
+    font-size: .9rem;
+  }
+  .general-title {
+    font-size: 1.6rem;
+  }
+  .card-custom .card-body-custom .card-title {
+    font-size: 1.2rem;
+  }
+  .card-custom .card-body-custom .card-subtitle {
+    font-size: 1rem;
+  }
+  #header {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1800px) {
+  body {
+    font-size: 1.4rem;
+  }
+  .general-title {
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+  }
+  .modal-custom .modal-dialog-custom {
+    height: auto;
+    width: auto;
+  }
+  .modal-custom .modal-dialog-custom .modal-content-custom {
+    width: 530px;
+    height: 300px;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .modal-custom .modal-dialog-custom .modal-content-custom .close-btn {
+    font-size: 40px;
+    margin-right: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .modal-custom .modal-dialog-custom .modal-content-custom .modal-title {
+    font-size: 2rem;
+    margin-top: 1.3rem;
+  }
+  .modal-custom .modal-dialog-custom .modal-content-custom .subscribe-form {
+    margin-top: 1.3rem;
+  }
+  .modal-custom .modal-dialog-custom .modal-content-custom .subscribe-form .subscribe-input {
+    height: 50px;
+  }
+  .modal-custom .modal-dialog-custom .modal-content-custom .subscribe-form .subscribe-btn {
+    font-size: inherit;
+    height: 50px;
+  }
+  .main-btn {
+    width: 180px;
+    height: 50px;
+  }
+  .card-custom {
+    padding: 1.5rem;
+  }
+  .card-custom .card-body-custom .card-title {
+    font-size: 1.6rem;
+  }
+  .card-custom .card-body-custom .card-subtitle {
+    font-size: 1.5rem;
+  }
+  #header #nav-custom a {
+    font-size: 1.4rem;
+  }
+  #header .company-name-wrap h1 {
+    font-size: 3rem;
+  }
+  #header .company-name-wrap p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .main-btn {
+    width: 200px;
+    height: 60px;
+  }
+  .card-custom .card-body-custom .card-title {
+    font-size: 1.8rem;
+  }
+  .card-custom .card-body-custom .card-subtitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: .8rem;
+  }
+  .general-title {
+    font-size: 1.5rem;
+  }
+  .card-custom .card-body-custom .card-title {
+    font-size: 1rem;
+  }
+  .card-custom .card-body-custom .card-subtitle {
+    font-size: .9rem;
+  }
+  .main-btn {
+    width: 130px;
+    height: 35px;
+  }
+  #header #nav-custom .nav-link-custom {
+    font-size: .8rem;
+  }
+  #header .company-name h1 {
+    font-size: 1.8rem;
+  }
+  #header .company-name p {
+    font-size: 1rem;
+  }
+  #main .advantages .advantage-item .serial-number {
+    width: 30px;
+    height: 30px;
+  }
+  #main .advantages .advantage-item .serial-number .number {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #header {
+    height: 35vh;
+    background-image: none;
+    background-color: #014D80;
+  }
+  #header #nav-custom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #014D80;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #header #nav-custom .hamburger {
+    width: 30px;
+    height: 30px;
+  }
+  #header #nav-custom .hamburger i {
+    color: white;
+  }
+  #header #nav-custom .navbar-nav-custom .nav-item-custom .dropdown-menu-custom {
+    width: 100%;
+    border: 0;
+    background-color: #014D80 !important;
+    padding-left: 1rem;
+    padding-top: 0;
+  }
+  #main .advantages .advantage-item .serial-number {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  #header {
+    height: 11vh;
+  }
+  #header #nav-custom .company-name-navbar {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-left: 90px;
+  }
+  #header #nav-custom .nav-link-custom {
+    font-size: .9rem;
+  }
+  #main .our-partners-content .card-custom .partners-logo {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  #main .our-partners-content .card-custom .card-body-custom {
+    text-align: center;
+  }
+  #main .our-partners-content .card-custom .card-body-custom .card-title {
+    margin-top: .75rem;
+  }
+  #main .our-partners-content .card-custom .main-btn {
+    align-self: center;
+  }
+  #main .careers .card-custom {
+    flex: 0 1 auto;
+  }
 }

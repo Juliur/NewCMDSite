@@ -140,7 +140,7 @@ body {
 		padding-left: 18px !important;
 		padding-right: 18px !important;
 
-		a {
+		.nav-link-custom {
 			font-size: 1.1em;
 			color: $navbar_item_color;
 			padding: 0.7rem;
@@ -402,7 +402,6 @@ body {
 				transition: $transition_animation;
 			}
 		}
-		
 	}
 	.copyright{
 		a{
@@ -504,7 +503,6 @@ body {
 			align-items: center;
 			justify-content: flex-start;
 			background-color: $main-color;
-			box-shadow: $shadow_2;
 			padding-top: 15px;
 			padding-bottom: 15px;
 			.hamburger{
@@ -594,7 +592,7 @@ body {
 			background-color: $main-color;
 			box-shadow: $shadow_2;
 			padding: 0;
-			a{
+			.nav-link-custom{
 				font-size: .9rem;
 			}
 		
@@ -793,7 +791,7 @@ body {
 	}
 	#header{
 		#nav-custom{
-			a{
+			.nav-link-custom{
 				font-size: 1.4rem;
 			}
 		}
