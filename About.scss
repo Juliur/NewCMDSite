@@ -9,7 +9,14 @@ $transition_animation: all 0.2s linear 0s;
 body {
 	font-family: 'Libre Franklin', sans-serif;
 	padding-right: 0 !important;
-	max-width: 100%;
+    max-width: 100%;
+    background-color: $grey-background;
+}
+.scrolled {
+	background-color: $main-color;
+	padding: 0 15px;
+	transition: $transition_animation;
+	box-shadow: $shadow_2;
 }
 .general-title {
 	color: $main-color;
@@ -110,18 +117,35 @@ body {
 }
 
 #header {
-	height: 40vh;
+	height: 35vh;
     position: relative;
-    background-color: $grey-background;
+    background-color: $main-color;
+    // box-shadow: $shadow_2;
+    background-image: url("images/mountains.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+    background-attachment: scroll;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $main-color;
+        opacity: 0.7;
+        // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #052235 85%);
+        z-index: 1;
+    }
 
 	#nav-custom {
 		transition: $transition_animation;
 		padding-left: 18px !important;
         padding-right: 18px !important;
-        background-color: $main-color;
 
 		a {
-			font-size: 1.1em;
+			font-size: 1rem;
 			color: $navbar_item_color;
 			padding: 0.7rem;
 			display: flex;
@@ -164,19 +188,20 @@ body {
 		top: 50%;
 		left: 50%;
 		margin-right: -50%;
-		transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 2;
 
 		h1 {
-            font-size: 2.5rem;
-            padding-top: 4rem;
+            font-size: 2rem;
+            padding-top: 3rem;
 		}
 
 		p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
 		}
 
 		a,p {
-            color: $main-color;
+            color: white;
 		}
 	}
 }
@@ -184,17 +209,64 @@ body {
 #main{
     .our-partners-content{
         .card-custom{
-            background-color: $grey-background;
             border-radius: 0;
             box-shadow: $shadow_2;
+            .partners-logo{
+                box-shadow: $shadow_2;
+            }
             .card-body-custom{
                 padding: 0;
-                // margin: 1.5rem 0;
-                h5{
+                .card-title{
                     color: $main-color;
                 }
             }
         }
         
+    }
+    .advantages{
+        .advantage-item{
+			background-color: white;
+			box-shadow: $shadow_2;
+			position: relative;
+			padding: 1rem;
+			width: 98%;
+            .serial-number{
+                width:40px;
+                height: 40px;
+				background-color: $main-color;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				box-shadow: $shadow_2;
+
+                .number{
+                    color: white;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+			}
+			.content{
+				margin-left: 1.5rem;
+			}
+        }
+    }
+    .our-team{
+        .card-custom{
+            box-shadow: $shadow_2;
+            border-radius: 0;
+            margin-bottom: 30px;
+            .card-body-custom{
+                .card-title{
+                    color: $main-color;
+                    font-weight: 700;
+                    margin-bottom: .75rem;
+                }
+                .card-subtitle{
+                    color: #343a40;
+                    margin-bottom: .75rem;
+                }
+            }
+        }
     }
 }
