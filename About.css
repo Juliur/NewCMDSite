@@ -35,6 +35,7 @@ body {
   width: 150px;
   height: 40px;
   border-radius: 0;
+  font-weight: 700;
 }
 
 .btn-effect {
@@ -51,6 +52,21 @@ body {
   color: #014D80;
   transition: all 0.2s linear 0s;
   box-shadow: none;
+}
+
+.card-custom {
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+}
+
+.card-custom .card-body-custom .card-title {
+  color: #014D80;
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+
+.card-custom .card-body-custom .card-subtitle {
+  margin-bottom: .75rem;
 }
 
 .modal-backdrop {
@@ -215,21 +231,12 @@ body {
   color: white;
 }
 
-#main .our-partners-content .card-custom {
-  border-radius: 0;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
 #main .our-partners-content .card-custom .partners-logo {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #main .our-partners-content .card-custom .card-body-custom {
   padding: 0;
-}
-
-#main .our-partners-content .card-custom .card-body-custom .card-title {
-  color: #014D80;
 }
 
 #main .advantages .advantage-item {
@@ -262,18 +269,21 @@ body {
 }
 
 #main .our-team .card-custom {
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 0;
   margin-bottom: 30px;
 }
 
-#main .our-team .card-custom .card-body-custom .card-title {
-  color: #014D80;
-  font-weight: 700;
-  margin-bottom: .75rem;
+#main .careers .card-custom {
+  flex: 0 0 40%;
 }
 
-#main .our-team .card-custom .card-body-custom .card-subtitle {
-  color: #343a40;
-  margin-bottom: .75rem;
+#main .careers .card-custom .briefcase-symbol {
+  color: #014D80;
+}
+
+#main .careers .card-custom .card-title {
+  margin-top: .75rem;
+}
+
+#main .careers .card-custom .card-body-custom .vacancy-content .vacancy-description {
+  margin-bottom: 15px;
 }
