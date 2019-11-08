@@ -395,8 +395,13 @@ body {
 	}
 	#header{
 		#nav-custom{
-			a{
+			.nav-link-custom{
 				font-size: 1.4rem;
+			}
+			.dropdown-menu-custom{
+				.dropdown-item-custom{
+					font-size: 1.4rem;
+				}
 			}
 		}
 		.company-name-wrap{
