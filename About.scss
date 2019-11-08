@@ -4,7 +4,7 @@ $navbar_item_color: rgba(255, 255, 255, 0.8);
 $shadow : 0px 0px 7px rgba(0, 0, 0, 0.5);
 $shadow_2 : 2px 5px 10px rgba(0, 0, 0, 0.2);
 $shadow_btn: 1px 2px 3px rgba(0, 0, 0, 0.5);
-$transition_animation: all 0.2s linear 0s;
+$transition_animation: all 0.1s linear 0s;
 
 body {
 	font-family: 'Libre Franklin', sans-serif;
@@ -160,7 +160,7 @@ body {
 		padding-left: 18px !important;
         padding-right: 18px !important;
 
-		a {
+		.nav-link-custom {
 			font-size: 1rem;
 			color: $navbar_item_color;
 			padding: 0.7rem;
@@ -188,6 +188,7 @@ body {
 				border-radius: 0;
 				.dropdown-item-custom{
 					color: white;
+					padding: 0.7rem;
 					transition: $transition_animation;
 					&:hover{
 						color: #343a40;
@@ -232,7 +233,7 @@ body {
                 padding: 0;
 			}
 			.main-btn{
-				align-content: flex-end;
+				align-self: flex-end;
 			}
         }
         
@@ -350,7 +351,7 @@ body {
 			height: auto;
 			width: auto;
 			.modal-content-custom{
-				width: 530px;
+				width: 550px;
 				height: 300px;
 				justify-content: center;
 				padding: 2rem;
@@ -367,7 +368,7 @@ body {
 					margin-top: 1.3rem;
 					.subscribe-input {
 						height: 50px;
-						// width: 300px;
+						font-size: 1.3rem;
 					}
 					.subscribe-btn{
 						font-size: inherit;
@@ -426,6 +427,22 @@ body {
 			}
 		}
 	}
+	#header{
+		height: 40vh;
+		#nav-custom{
+			.nav-item-custom{
+				.nav-link-custom{
+					font-size: inherit;
+				}
+				.dropdown-menu-custom{
+					.dropdown-item-custom{
+						font-size: 1.5rem;
+					}
+				}
+			}
+			
+		}
+	}
 }
 @media(max-width: 991px){
 	body {
@@ -450,9 +467,17 @@ body {
 	}
 	#header{
 		#nav-custom{
-			.nav-link-custom{
-				font-size: .8rem;
+			.nav-item-custom{
+				.nav-link-custom{
+					font-size: .8rem;
+				}
+				.dropdown-menu-custom{
+					.dropdown-item-custom{
+						font-size: .8rem;
+					}
+				}
 			}
+			
 		}
 		.company-name{
 			h1{
@@ -479,7 +504,7 @@ body {
 }
 @media(max-width: 767px){
 	#header{
-		height: 35vh;
+		height: 25vh;
 		background-image: none;
 		background-color: $main-color;
 		#nav-custom{
@@ -498,6 +523,9 @@ body {
 			}
 			.navbar-nav-custom{
 				.nav-item-custom{
+					.nav-link-custom{
+						font-size: 1rem;
+					}
 					.dropdown-menu-custom{
 						width: 100%;
 						border: 0;
@@ -518,22 +546,36 @@ body {
 					height: 35px;
 				}
 			}
-		}   
+		}  
+		.careers{
+			.card-custom{
+				flex: 0 0 50%;
+			}
+		} 
 	}
 }
 @media(max-width: 575px){
 	#header{
-		height: 11vh;
+		height: 7vh;
 		#nav-custom{
-			.company-name-navbar{
-				font-size: 1.5rem;
-				font-weight: 700;
-				color: white;
-				margin-left: 90px;
-			}
-			.nav-link-custom{
-				font-size: .9rem;
-			}
+			// .company-name-navbar{
+			// 	font-size: 1.5rem;
+			// 	font-weight: 700;
+			// 	color: white;
+			// 	margin-left: 90px;
+			// }
+			.navbar-nav-custom{
+				.nav-item-custom{
+					.nav-link-custom{
+						font-size: 1rem;
+					}
+					.dropdown-menu-custom{
+						.dropdown-item-custom{
+							font-size: 1rem;
+						}
+					}
+				}
+			}		
 		}
 	}	
 	#main{

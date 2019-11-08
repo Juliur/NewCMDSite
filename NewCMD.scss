@@ -177,6 +177,7 @@ body {
 				border-radius: 0;
 				.dropdown-item-custom{
 					color: white;
+					padding: 0.7rem;
 					transition: $transition_animation;
 					&:hover{
 						color: #343a40;

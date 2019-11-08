@@ -191,6 +191,7 @@ body {
 
 #header #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom {
   color: white;
+  padding: 0.7rem;
   transition: all 0.2s linear 0s;
 }
 

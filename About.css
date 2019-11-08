@@ -8,7 +8,7 @@ body {
 .scrolled {
   background-color: #014D80;
   padding: 0 15px;
-  transition: all 0.2s linear 0s;
+  transition: all 0.1s linear 0s;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -43,14 +43,14 @@ body {
   color: white;
   border: none;
   border: 2px solid #014D80;
-  transition: all 0.2s linear 0s;
+  transition: all 0.1s linear 0s;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-effect:hover {
   background-color: transparent;
   color: #014D80;
-  transition: all 0.2s linear 0s;
+  transition: all 0.1s linear 0s;
   box-shadow: none;
 }
 
@@ -165,31 +165,31 @@ body {
 }
 
 #header #nav-custom {
-  transition: all 0.2s linear 0s;
+  transition: all 0.1s linear 0s;
   padding-left: 18px !important;
   padding-right: 18px !important;
 }
 
-#header #nav-custom a {
+#header #nav-custom .nav-link-custom {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
   padding: 0.7rem;
   display: flex;
   align-items: center;
-  transition: all 0.2s linear 0s;
+  transition: all 0.1s linear 0s;
 }
 
-#header #nav-custom a .rotated-angle {
+#header #nav-custom .nav-link-custom .rotated-angle {
   margin-left: 5px;
   transition: transform .2s ease-in;
 }
 
-#header #nav-custom a .rotate {
+#header #nav-custom .nav-link-custom .rotate {
   transform: rotate(180deg);
 }
 
-#header #nav-custom a:hover, #header #nav-custom a:active {
-  transition: all 0.2s linear 0s;
+#header #nav-custom .nav-link-custom:hover, #header #nav-custom .nav-link-custom:active {
+  transition: all 0.1s linear 0s;
   color: white;
 }
 
@@ -203,12 +203,13 @@ body {
 
 #header #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom {
   color: white;
-  transition: all 0.2s linear 0s;
+  padding: 0.7rem;
+  transition: all 0.1s linear 0s;
 }
 
 #header #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom:hover {
   color: #343a40;
-  transition: all 0.2s linear 0s;
+  transition: all 0.1s linear 0s;
 }
 
 #header .company-name-wrap {
@@ -242,7 +243,7 @@ body {
 }
 
 #main .our-partners-content .card-custom .main-btn {
-  align-content: flex-end;
+  align-self: flex-end;
 }
 
 #main .advantages .advantage-item {
@@ -310,12 +311,12 @@ body {
 #footer .social-icons a {
   color: white;
   display: block;
-  transition: all 0.2s linear 0s;
+  transition: all 0.1s linear 0s;
 }
 
 #footer .social-icons a:hover {
   transform: scale(1.1);
-  transition: all 0.2s linear 0s;
+  transition: all 0.1s linear 0s;
 }
 
 #footer .copyright a {
@@ -353,7 +354,7 @@ body {
     width: auto;
   }
   .modal-custom .modal-dialog-custom .modal-content-custom {
-    width: 530px;
+    width: 550px;
     height: 300px;
     justify-content: center;
     padding: 2rem;
@@ -372,6 +373,7 @@ body {
   }
   .modal-custom .modal-dialog-custom .modal-content-custom .subscribe-form .subscribe-input {
     height: 50px;
+    font-size: 1.3rem;
   }
   .modal-custom .modal-dialog-custom .modal-content-custom .subscribe-form .subscribe-btn {
     font-size: inherit;
@@ -415,6 +417,15 @@ body {
   .card-custom .card-body-custom .card-subtitle {
     font-size: 1.6rem;
   }
+  #header {
+    height: 40vh;
+  }
+  #header #nav-custom .nav-item-custom .nav-link-custom {
+    font-size: inherit;
+  }
+  #header #nav-custom .nav-item-custom .dropdown-menu-custom .dropdown-item-custom {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -434,7 +445,10 @@ body {
     width: 130px;
     height: 35px;
   }
-  #header #nav-custom .nav-link-custom {
+  #header #nav-custom .nav-item-custom .nav-link-custom {
+    font-size: .8rem;
+  }
+  #header #nav-custom .nav-item-custom .dropdown-menu-custom .dropdown-item-custom {
     font-size: .8rem;
   }
   #header .company-name h1 {
@@ -454,7 +468,7 @@ body {
 
 @media (max-width: 767px) {
   #header {
-    height: 35vh;
+    height: 25vh;
     background-image: none;
     background-color: #014D80;
   }
@@ -473,6 +487,9 @@ body {
   #header #nav-custom .hamburger i {
     color: white;
   }
+  #header #nav-custom .navbar-nav-custom .nav-item-custom .nav-link-custom {
+    font-size: 1rem;
+  }
   #header #nav-custom .navbar-nav-custom .nav-item-custom .dropdown-menu-custom {
     width: 100%;
     border: 0;
@@ -484,20 +501,20 @@ body {
     width: 35px;
     height: 35px;
   }
+  #main .careers .card-custom {
+    flex: 0 0 50%;
+  }
 }
 
 @media (max-width: 575px) {
   #header {
-    height: 11vh;
+    height: 7vh;
   }
-  #header #nav-custom .company-name-navbar {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: white;
-    margin-left: 90px;
+  #header #nav-custom .navbar-nav-custom .nav-item-custom .nav-link-custom {
+    font-size: 1rem;
   }
-  #header #nav-custom .nav-link-custom {
-    font-size: .9rem;
+  #header #nav-custom .navbar-nav-custom .nav-item-custom .dropdown-menu-custom .dropdown-item-custom {
+    font-size: 1rem;
   }
   #main .our-partners-content .card-custom .partners-logo {
     width: 50%;
