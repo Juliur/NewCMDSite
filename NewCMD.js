@@ -18,7 +18,7 @@ function handleTopNavAnimation () {
 //     });
 // });
 
-document.getElementByClassName("about").onclick = function()
+document.getElementsByClassName(".about").onclick = function()
 {
   document.location.href = "https://juliur.github.io/NewCMDSite/About.html";
 }

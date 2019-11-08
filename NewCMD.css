@@ -784,6 +784,9 @@ body {
   #header #nav-custom .nav-link-custom {
     font-size: 1.4rem;
   }
+  #header #nav-custom .dropdown-menu-custom .dropdown-item-custom {
+    font-size: 1.4rem;
+  }
   #header .about-company-wrap p {
     font-size: 1.8rem;
   }
