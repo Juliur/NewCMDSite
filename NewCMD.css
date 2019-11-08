@@ -785,7 +785,7 @@ body {
     font-size: 1.4rem;
   }
   #header #nav-custom .dropdown-menu-custom .dropdown-item-custom {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
   #header .about-company-wrap p {
     font-size: 1.8rem;
