@@ -10,7 +10,7 @@ body {
 	font-family: 'Libre Franklin', sans-serif;
 	padding-right: 0 !important;
 	max-width:100%;
-
+	font-size: 1rem;
 }
 
 .scrolled {
@@ -141,7 +141,7 @@ body {
 		padding-right: 18px !important;
 
 		.nav-link-custom {
-			font-size: 1.1em;
+			font-size: 1rem;
 			color: $navbar_item_color;
 			padding: 0.7rem;
 			display: flex;
@@ -167,17 +167,19 @@ body {
 		.navbar-nav-custom {
 			.nav-item-custom {
 				cursor: pointer;
-				 	&:active>.nav-link>.rotated-angle,
-					&:focus>.nav-link>.rotated-angle{
-						transform: rotate(180deg);
-						transition: transform .2s ease-in;
-				 }
+
+				//  	&:active>.nav-link>.rotated-angle,
+				// 	&:focus>.nav-link>.rotated-angle{
+				// 		transform: rotate(180deg);
+				// 		transition: transform .2s ease-in;
+				//  }
 			}
 			.dropdown-menu-custom{
 				border-radius: 0;
 				.dropdown-item-custom{
 					color: white;
 					padding: 0.7rem;
+					font-size: 1rem;
 					transition: $transition_animation;
 					&:hover{
 						color: #343a40;
@@ -255,6 +257,7 @@ body {
 		.container-fluid-custom{
 			width: 85%;
 			.card-deck-custom {
+				justify-content: space-between;
 				.card-custom {
 					flex: 0 0 30%;
 					border-radius: 0;
@@ -298,7 +301,7 @@ body {
 		}
 	}
 	.quotes{
-		height: 72vh;
+		height: 75vh;
 		#carouselTestimonials{
 			height: 340px;
 			.carousel-item-custom {
@@ -372,17 +375,20 @@ body {
 			}
 		}
 		.blog-list-wrap{
+			padding-right: 1rem;
 			.blog-list-title{
 				color: white;
+				font-size: 1.1rem;
 			}
 			.blog-post{
-				a{
+				margin-bottom: 15px;
+				.post-title>a, .post-author>a, .post-date{
 				color: white;
 				}
-				p{
-					display: inline-block;
+				.post-author, .post-date{
 					color: white;
-					font-size: 15px;
+					margin-bottom: 0;
+					font-size: .7rem;
 				}
 			}
 		}
@@ -407,6 +413,88 @@ body {
 	.copyright{
 		a{
 			color: white;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.general-title{
+		font-size: 1.7rem;
+	}
+	#header{
+		#nav-custom{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			background-color: $main-color;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			.hamburger{
+				width: 30px;
+				height: 30px;
+				i{
+					color: white;
+				}
+			}
+			.navbar-nav-custom{
+				.nav-item-custom{
+					.dropdown-menu-custom{
+						width: 100%;
+						border: 0;
+						background-color: $main-color !important;
+						padding-left: 1rem;
+						padding-top: 0;
+	
+					}
+				}
+			}
+		}
+		.company-name-wrap{
+			display: block;
+		}
+		.about-company-wrap{
+			width: 90%;
+		}
+
+	}
+	#main{
+		.dashboard-items{
+			margin-top: 27%;
+		}
+		.community-involvement{
+			.container{
+				max-width: 650px !important;
+			}
+			.card-deck-custom{
+				justify-content: space-around;
+				.card-custom{
+					flex: 0 0 45%;
+					&:last-child{
+						// margin: 30px;
+					}
+				}
+			}
+		}
+		.quotes{
+			height: 90vh;
+		}
+		.article-blog{
+			.article-img{
+				.article-title{
+					font-size: 2rem;
+					margin-bottom: 0;
+				}
+			}
+			.article-content{
+				.article-inner{
+					border: 0;
+					padding-right: 0;
+				}
+			}
+			.blog-list-wrap{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 	}
 }
@@ -494,61 +582,46 @@ body {
 		} 
 	} 
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px){
+	body{
+		font-size: 1rem;
+	}
 	.general-title{
-		font-size: 1.7rem;
+		font-size: 1.8rem;
+	}
+	.container-fluid-custom{
+		width: 85%;
 	}
 	#header{
 		#nav-custom{
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			background-color: $main-color;
-			padding-top: 15px;
-			padding-bottom: 15px;
-			.hamburger{
-				width: 30px;
-				height: 30px;
-				i{
-					color: white;
-				}
-			}
 			.navbar-nav-custom{
 				.nav-item-custom{
+					.nav-link-custom{
+						font-size: 1rem;
+					}
 					.dropdown-menu-custom{
-						width: 100%;
-						border: 0;
-						background-color: $main-color !important;
-						padding-left: 1rem;
-						padding-top: 0;
-	
+						.dropdown-item-custom{
+							font-size: 1rem;
+						}
 					}
 				}
 			}
-		}
-		.company-name-wrap{
-			display: block;
+			
 		}
 		.about-company-wrap{
-			width: 90%;
+			p{
+				font-size: 1.2rem;
+			}
 		}
-
-	}
+	}	
 	#main{
 		.dashboard-items{
-			margin-top: 27%;
-		}
-		.community-involvement{
-			.container{
-				max-width: 650px !important;
-			}
-			.card-deck-custom{
-				justify-content: space-around;
-				.card-custom{
-					flex: 0 0 45%;
-					&:last-child{
-						margin: 30px;
-					}
+			.dashboard-item{
+				.counter-amount{
+					font-size: 2rem;
+				}
+				.counter-title{
+				font-size: 1.1rem;
 				}
 			}
 		}
@@ -558,21 +631,39 @@ body {
 		.article-blog{
 			.article-img{
 				.article-title{
-					font-size: 2rem;
-					margin-bottom: 0;
-				}
-			}
-			.article-content{
-				.article-inner{
-					border: 0;
-					padding-right: 0;
+					font-size: 2.8rem;
 				}
 			}
 			.blog-list-wrap{
-				padding-left: 15px;
-				padding-right: 15px;
-			}
+				padding-right: 1rem;
+			}	
+		}	
+	}
+}
+@media(max-width: 1100px){
+	body{
+		font-size: .9rem;
+	}
+	#main{
+		.quotes{
+			height: 77vh;
 		}
+		.community-involvement{
+			.container-fluid-custom{
+				.card-deck-custom{
+					.card-custom{
+						flex: 0 0 29%;
+					}
+				}
+			}
+		}	
+		.article-blog{
+			.article-img{
+				.article-title{
+					font-size: 2.5rem;
+				}
+			}
+		}	
 	}
 }
 @media (max-width: 991px) {
@@ -626,15 +717,19 @@ body {
 			}
 		}
 		.community-involvement{
-			.container{
+			.container-fluid-custom{
 				max-width: 840px !important;
 				.card-deck-custom{
+					justify-content: center;
 					.card-custom{
-						flex: 0 0 29%;
+						flex: 0 0 33%;
 					}
 				}
 			}
 		}	
+		.quotes{
+			height: 78vh;
+		}
 		.article-blog{
 			.article-img{
 				.article-title{
@@ -664,27 +759,6 @@ body {
 		}
 	}
 }
-@media (max-width: 1199px){
-	.container-fluid-custom{
-		width: 85%;
-	}
-	#main{
-		.quotes{
-			height: 90vh;
-		}
-		.article-blog{
-			.article-img{
-				.article-title{
-					font-size: 2.8rem;
-				}
-			}
-			.blog-list-wrap{
-				padding-right: 1rem;
-			}	
-		}	
-	}
-}
-
 @media (min-width: 1600px){
 	.general-title{
 		font-size: 2.5rem;
@@ -835,6 +909,9 @@ body {
 		.clients{
 			padding-bottom: 2rem !important;
 		}
+		.quotes{
+			height:70vh;
+		}
 		.article-blog{
 			.blog-list-wrap{
 				.blog-list-title{
@@ -847,6 +924,22 @@ body {
 				}
 			}
 		}
+	}
+}
+@media (min-width: 1999px){
+	#main{
+		.quotes{
+			height: 70vh;
+		}
+		.article-blog{
+			.blog-list-wrap{
+				.blog-post{
+					.post-title{
+						font-size: 1.1rem;
+					}
+				}
+			}	
+		}	
 	}
 }
 

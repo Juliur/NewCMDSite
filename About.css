@@ -477,8 +477,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: #014D80;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
   }
   #header #nav-custom .hamburger {
     width: 30px;
