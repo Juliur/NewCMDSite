@@ -302,7 +302,7 @@ button:focus,
   font-size: 1.1rem;
 }
 
-#header-about {
+#header-about, #header-products {
   height: 35vh;
   position: relative;
   background-color: #014D80;
@@ -313,7 +313,7 @@ button:focus,
   background-attachment: scroll;
 }
 
-#header-about::before {
+#header-about::before, #header-products::before {
   content: '';
   position: absolute;
   top: 0;
@@ -325,7 +325,7 @@ button:focus,
   z-index: 1;
 }
 
-#header-about .company-name-wrap {
+#header-about .company-name-wrap, #header-products .company-name-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -334,16 +334,16 @@ button:focus,
   z-index: 2;
 }
 
-#header-about .company-name-wrap h1 {
+#header-about .company-name-wrap h1, #header-products .company-name-wrap h1 {
   font-size: 2rem;
   padding-top: 3rem;
 }
 
-#header-about .company-name-wrap p {
+#header-about .company-name-wrap p, #header-products .company-name-wrap p {
   font-size: 1.1rem;
 }
 
-#header-about .company-name-wrap a, #header-about .company-name-wrap p {
+#header-about .company-name-wrap a, #header-about .company-name-wrap p, #header-products .company-name-wrap a, #header-products .company-name-wrap p {
   color: white;
 }
 
@@ -671,13 +671,28 @@ button:focus,
   .container-fluid-custom {
     width: 90%;
   }
-  #header .company-name-wrap h1 {
+  .sidebar-wrap .sidebar-items-wrap {
+    margin-bottom: 1.3rem;
+  }
+  .sidebar-wrap .sidebar-items-wrap .sidebar-title {
+    font-size: 1.5rem;
+  }
+  .sidebar-wrap .sidebar-items-wrap .sidebar-item {
+    font-size: 1.2rem;
+  }
+  #nav-custom .navbar-nav-custom .nav-link-custom {
+    font-size: 1.2rem;
+  }
+  #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom {
+    font-size: 1.2rem;
+  }
+  #header .company-name-wrap h1, #header-about .company-name-wrap h1, #header-products .company-name-wrap h1 {
     font-size: 3.5rem;
   }
-  #header .company-name-wrap p {
+  #header .company-name-wrap p, #header-about .company-name-wrap p, #header-products .company-name-wrap p {
     font-size: 1.8rem;
   }
-  #header .about-company-wrap p {
+  #header .about-company-wrap p, #header-about .about-company-wrap p, #header-products .about-company-wrap p {
     font-size: 1.5rem;
   }
   #main .dashboard-items .dashboard-item .counter-amount {
@@ -740,19 +755,19 @@ button:focus,
     font-size: inherit;
     height: 50px;
   }
-  #nav-custom .nav-link-custom {
+  #nav-custom .navbar-nav-custom .nav-link-custom {
     font-size: 1.4rem;
   }
-  #nav-custom .dropdown-menu-custom .dropdown-item-custom {
+  #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom {
     font-size: 1.4rem !important;
   }
   #header .about-company-wrap p {
     font-size: 1.8rem;
   }
-  #header-about .company-name-wrap h1 {
+  #header-about .company-name-wrap h1, #header-products .company-name-wrap h1 {
     font-size: 3.5rem;
   }
-  #header-about .company-name-wrap p {
+  #header-about .company-name-wrap p, #header-products .company-name-wrap p {
     font-size: 1.8rem;
   }
   #main .dashboard-items {
@@ -856,7 +871,7 @@ button:focus,
     justify-content: flex-start;
     padding: 0;
   }
-  #nav-custom .nav-link-custom {
+  #nav-custom .navbar-nav-custom .nav-item-custom .nav-link-custom {
     font-size: .9rem;
   }
   #header .company-name-wrap {
@@ -902,6 +917,15 @@ button:focus,
   #main .article-blog .blog-list .blog-post p:first-of-type {
     margin-bottom: 0;
   }
+  #main-products .info {
+    padding-top: 3rem;
+  }
+  #main-products .cards-section {
+    padding: 1.5rem 0;
+  }
+  #main-products .sidebar-wrap {
+    padding-top: 0;
+  }
   #footer .copyright {
     font-size: .9rem;
   }
@@ -939,6 +963,9 @@ button:focus,
   #header .about-company-wrap {
     width: 90%;
   }
+  #header-about, #header-products {
+    height: 30vh;
+  }
   #main .dashboard-items {
     margin-top: 27%;
   }
@@ -973,9 +1000,6 @@ button:focus,
   #main .article-blog .blog-list .blog-list-title {
     font-size: 1.5rem;
   }
-  #main-about {
-    margin-top: 10%;
-  }
 }
 
 @media (max-width: 575px) {
@@ -991,7 +1015,14 @@ button:focus,
   #nav-custom {
     background-color: #014D80;
   }
-  #nav-custom .nav-link-custom {
+  #nav-custom .navbar-nav-custom .nav-item-custom .nav-link-custom {
+    font-size: .9rem;
+    padding-left: 0;
+  }
+  #nav-custom .navbar-nav-custom .nav-item-custom .dropdown-menu-custom {
+    padding-left: 0;
+  }
+  #nav-custom .navbar-nav-custom .nav-item-custom .dropdown-menu-custom .dropdown-item-custom {
     font-size: .9rem;
   }
   #header {
@@ -1008,7 +1039,7 @@ button:focus,
   #header .about-company-wrap p {
     font-size: 1rem;
   }
-  #header-about {
+  #header-about, #header-products {
     display: none;
   }
   #main .dashboard-items {
@@ -1050,6 +1081,9 @@ button:focus,
 }
 
 @media (max-width: 374px) {
+  body {
+    font-size: .8rem;
+  }
   #header {
     height: 270px;
   }

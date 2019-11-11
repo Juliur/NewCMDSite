@@ -282,7 +282,7 @@ button:focus,
 		}
 	}
 }
-#header-about {
+#header-about, #header-products {
 	height: 35vh;
     position: relative;
     background-color: $main-color;
@@ -625,7 +625,31 @@ button:focus,
 	.container-fluid-custom{
 		width: 90%;
 	}
-	#header{
+	.sidebar-wrap{
+		.sidebar-items-wrap{
+			margin-bottom: 1.3rem;
+			.sidebar-title{
+				font-size: 1.5rem;
+			}
+			.sidebar-item{
+				font-size: 1.2rem;
+			}
+		}
+	}
+	#nav-custom{
+		.navbar-nav-custom{
+			.nav-link-custom{
+				font-size: 1.2rem;
+			}
+			.dropdown-menu-custom{
+				.dropdown-item-custom{
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	
+	#header, #header-about, #header-products{
 		.company-name-wrap{
 			h1{
 				font-size: 3.5rem;
@@ -676,6 +700,7 @@ button:focus,
 			height: 80vh;
 		}
 	}
+
 }
 @media (min-width: 1800px){
 	body{
@@ -721,12 +746,14 @@ button:focus,
 		}
 	}
 	#nav-custom{
-		.nav-link-custom{
-			font-size: 1.4rem;
-		}
-		.dropdown-menu-custom{
-			.dropdown-item-custom{
-				font-size: 1.4rem !important;
+		.navbar-nav-custom{
+			.nav-link-custom{
+				font-size: 1.4rem;
+			}
+			.dropdown-menu-custom{
+				.dropdown-item-custom{
+					font-size: 1.4rem !important;
+				}
 			}
 		}
 	}
@@ -737,7 +764,7 @@ button:focus,
 			}
 		}
 	}
-	#header-about{
+	#header-about, #header-products{
 		.company-name-wrap{
 			h1{
 				font-size: 3.5rem;
@@ -896,10 +923,13 @@ button:focus,
 		align-items: center;
 		justify-content: flex-start;
 		padding: 0;
-		.nav-link-custom{
-			font-size: .9rem;
+		.navbar-nav-custom{
+			.nav-item-custom{
+				.nav-link-custom{
+					font-size: .9rem;
+				}
+			}
 		}
-	
 	}
 	#header{
 		.company-name-wrap{
@@ -966,6 +996,17 @@ button:focus,
 			}
 		}
 	}
+	#main-products{
+		.info{
+			padding-top: 3rem;
+		}
+		.cards-section{
+			padding: 1.5rem 0;
+		}
+		.sidebar-wrap{
+			padding-top: 0;
+		}
+	}
 	#footer{
 		.copyright{
 			font-size: .9rem;
@@ -1011,6 +1052,9 @@ button:focus,
 			width: 90%;
 		}
 
+	}
+	#header-about, #header-products{
+		height: 30vh;
 	}
 	#main{
 		.dashboard-items{
@@ -1058,9 +1102,6 @@ button:focus,
 			}
 		}
 	}
-	#main-about{
-		margin-top: 10%;
-	}
 }
 @media(max-width: 575px){
 	.general-title{
@@ -1076,8 +1117,19 @@ button:focus,
 	}
 	#nav-custom{
 		background-color: $main-color;
-		.nav-link-custom{
-			font-size: .9rem;
+		.navbar-nav-custom{
+			.nav-item-custom{
+				.nav-link-custom{
+				font-size: .9rem;
+				padding-left: 0;
+				}
+				.dropdown-menu-custom{
+					padding-left: 0;
+					.dropdown-item-custom{
+						font-size:.9rem;
+					}
+				}
+			}
 		}
 	}
 	#header{
@@ -1096,7 +1148,7 @@ button:focus,
 			}
 		}
 	}
-	#header-about{
+	#header-about, #header-products{
 		display: none;
 	}
 	#main{
@@ -1147,6 +1199,9 @@ button:focus,
 	} 
 }
 @media(max-width: 374px){
+	body {
+		font-size: .8rem;
+	}
 	#header{
 		height: 270px;
 		.company-name-wrap{
