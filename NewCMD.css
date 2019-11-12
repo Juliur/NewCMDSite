@@ -253,7 +253,7 @@ button:focus,
   transition: all 0.1s ease-in 0s;
 }
 
-#header {
+#header-home {
   height: 65vh;
   background-image: url("images/mountains.jpg");
   background-size: cover;
@@ -262,7 +262,7 @@ button:focus,
   position: relative;
 }
 
-#header .company-name-wrap {
+#header-home .company-name-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -270,20 +270,20 @@ button:focus,
   transform: translate(-50%, -50%);
 }
 
-#header .company-name-wrap h1 {
+#header-home .company-name-wrap h1 {
   font-size: 2.8rem;
 }
 
-#header .company-name-wrap p {
+#header-home .company-name-wrap p {
   font-size: 1.3rem;
 }
 
-#header .company-name-wrap a,
-#header .company-name-wrap p {
+#header-home .company-name-wrap a,
+#header-home .company-name-wrap p {
   color: white;
 }
 
-#header .about-company-wrap {
+#header-home .about-company-wrap {
   width: 85%;
   position: absolute;
   left: 50%;
@@ -296,13 +296,13 @@ button:focus,
   z-index: 2;
 }
 
-#header .about-company-wrap p {
+#header-home .about-company-wrap p {
   color: white;
   text-align: center;
   font-size: 1.1rem;
 }
 
-#header-about, #header-products, #header-services {
+#header-secondary {
   height: 35vh;
   position: relative;
   background-color: #014D80;
@@ -313,7 +313,7 @@ button:focus,
   background-attachment: scroll;
 }
 
-#header-about::before, #header-products::before, #header-services::before {
+#header-secondary::before {
   content: '';
   position: absolute;
   top: 0;
@@ -325,7 +325,7 @@ button:focus,
   z-index: 1;
 }
 
-#header-about .company-name-wrap, #header-products .company-name-wrap, #header-services .company-name-wrap {
+#header-secondary .company-name-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -334,16 +334,16 @@ button:focus,
   z-index: 2;
 }
 
-#header-about .company-name-wrap h1, #header-products .company-name-wrap h1, #header-services .company-name-wrap h1 {
+#header-secondary .company-name-wrap h1 {
   font-size: 2rem;
   padding-top: 3rem;
 }
 
-#header-about .company-name-wrap p, #header-products .company-name-wrap p, #header-services .company-name-wrap p {
+#header-secondary .company-name-wrap p {
   font-size: 1.1rem;
 }
 
-#header-about .company-name-wrap a, #header-about .company-name-wrap p, #header-products .company-name-wrap a, #header-products .company-name-wrap p, #header-services .company-name-wrap a, #header-services .company-name-wrap p {
+#header-secondary .company-name-wrap a, #header-secondary .company-name-wrap p {
   color: white;
 }
 
@@ -638,6 +638,35 @@ button:focus,
   padding: 0 0 3rem 0;
 }
 
+#main-support {
+  padding-top: 3rem;
+}
+
+#main-support .sidebar-wrap {
+  padding-top: 0;
+}
+
+#main-support .card-custom {
+  padding: 0;
+}
+
+#main-support .card-custom .card-body-custom {
+  padding: 1.5rem;
+}
+
+#main-support .card-custom .card-footer .attached-doc a {
+  color: #014D80;
+  font-weight: 700;
+}
+
+#main-support .card-custom .card-footer .attached-doc a .icon {
+  margin-right: 5px;
+}
+
+#main-support .card-custom .card-footer .main-btn {
+  width: 200px;
+}
+
 #footer {
   color: white;
 }
@@ -699,13 +728,13 @@ button:focus,
   #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom {
     font-size: 1.2rem;
   }
-  #header .company-name-wrap h1, #header-about .company-name-wrap h1, #header-products .company-name-wrap h1, #header-services .company-name-wrap h1 {
+  #header-home .company-name-wrap h1, #header-secondary .company-name-wrap h1 {
     font-size: 3.5rem;
   }
-  #header .company-name-wrap p, #header-about .company-name-wrap p, #header-products .company-name-wrap p, #header-services .company-name-wrap p {
+  #header-home .company-name-wrap p, #header-secondary .company-name-wrap p {
     font-size: 1.8rem;
   }
-  #header .about-company-wrap p, #header-about .about-company-wrap p, #header-products .about-company-wrap p, #header-services .about-company-wrap p {
+  #header-home .about-company-wrap p, #header-secondary .about-company-wrap p {
     font-size: 1.5rem;
   }
   #main .dashboard-items .dashboard-item .counter-amount {
@@ -725,6 +754,9 @@ button:focus,
   }
   #main .quotes {
     height: 80vh;
+  }
+  #main-support .card-custom .card-footer .main-btn {
+    width: 270px;
   }
 }
 
@@ -774,13 +806,13 @@ button:focus,
   #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom {
     font-size: 1.4rem !important;
   }
-  #header .about-company-wrap p {
+  #header-home .about-company-wrap p {
     font-size: 1.8rem;
   }
-  #header-about .company-name-wrap h1, #header-products .company-name-wrap h1 {
+  #header-secondary .company-name-wrap h1 {
     font-size: 3.5rem;
   }
-  #header-about .company-name-wrap p, #header-products .company-name-wrap p {
+  #header-secondary .company-name-wrap p {
     font-size: 1.8rem;
   }
   #main .dashboard-items {
@@ -826,7 +858,7 @@ button:focus,
   .general-title {
     font-size: 1.8rem;
   }
-  #header {
+  #header-home {
     height: 40vh;
     background-attachment: scroll;
   }
@@ -836,7 +868,7 @@ button:focus,
   #nav-custom .nav-item-custom .dropdown-menu-custom .dropdown-item-custom {
     font-size: 1rem;
   }
-  #header .about-company-wrap p {
+  #header-home .about-company-wrap p {
     font-size: 1.2rem;
   }
   #main .dashboard-items .dashboard-item .counter-amount {
@@ -887,16 +919,16 @@ button:focus,
   #nav-custom .navbar-nav-custom .nav-item-custom .nav-link-custom {
     font-size: .9rem;
   }
-  #header .company-name-wrap {
+  #header-home .company-name-wrap {
     display: block;
   }
-  #header .company-name-wrap h1 {
+  #header-home .company-name-wrap h1 {
     font-size: 2.5rem;
   }
-  #header .company-name-wrap p {
+  #header-home .company-name-wrap p {
     font-size: 1.1rem;
   }
-  #header .about-company-wrap p {
+  #header-home .about-company-wrap p {
     font-size: 1.1rem;
   }
   #main .dashboard-items {
@@ -970,13 +1002,13 @@ button:focus,
     padding-left: 1rem;
     padding-top: 0;
   }
-  #header .company-name-wrap {
+  #header-home .company-name-wrap {
     display: block;
   }
-  #header .about-company-wrap {
+  #header-home .about-company-wrap {
     width: 90%;
   }
-  #header-about, #header-products {
+  #header-secondary {
     height: 30vh;
   }
   #main .dashboard-items {
@@ -1038,21 +1070,21 @@ button:focus,
   #nav-custom .navbar-nav-custom .nav-item-custom .dropdown-menu-custom .dropdown-item-custom {
     font-size: .9rem;
   }
-  #header {
+  #header-home {
     height: 300px;
     background-attachment: scroll;
   }
-  #header .company-name-wrap {
+  #header-home .company-name-wrap {
     top: 55%;
   }
-  #header .company-name-wrap h1 {
+  #header-home .company-name-wrap h1 {
     font-size: 2rem;
     padding-top: 0 !important;
   }
-  #header .about-company-wrap p {
+  #header-home .about-company-wrap p {
     font-size: 1rem;
   }
-  #header-about, #header-products {
+  #header-secondary {
     display: none;
   }
   #main .dashboard-items {
@@ -1091,25 +1123,31 @@ button:focus,
   #main .quotes #carouselTestimonials .carousel-item-custom .quote-wrap .quote {
     margin-left: 0;
   }
+  #main-support {
+    padding-top: 20%;
+  }
+  #main-support .card-custom .card-footer .main-btn {
+    width: 180px;
+  }
 }
 
 @media (max-width: 374px) {
   body {
     font-size: .8rem;
   }
-  #header {
+  #header-home {
     height: 270px;
   }
-  #header .company-name-wrap {
+  #header-home .company-name-wrap {
     top: 53%;
   }
-  #header .company-name-wrap h1 {
+  #header-home .company-name-wrap h1 {
     font-size: 1.4rem;
   }
-  #header .company-name-wrap p {
+  #header-home .company-name-wrap p {
     font-size: 1.1rem;
   }
-  #header .about-company-wrap p {
+  #header-home .about-company-wrap p {
     font-size: 1rem;
   }
   #main .dashboard-items {

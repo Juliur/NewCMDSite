@@ -234,7 +234,7 @@ button:focus,
 	}
 
 }
-#header {
+#header-home {
 	height: 65vh;
 	background-image: url("images/mountains.jpg");
 	background-size: cover;
@@ -282,7 +282,7 @@ button:focus,
 		}
 	}
 }
-#header-about, #header-products, #header-services {
+#header-secondary {
 	height: 35vh;
     position: relative;
     background-color: $main-color;
@@ -585,6 +585,33 @@ button:focus,
 		
 	}	
 }
+#main-support{
+	padding-top: 3rem;
+	.sidebar-wrap{
+		padding-top: 0;
+	}
+	.card-custom{
+		padding: 0;
+		.card-body-custom{
+			padding: 1.5rem;
+		}
+		.card-footer{
+			.attached-doc{
+				a{
+					color: $main-color;
+					font-weight: 700;
+					.icon{
+						margin-right: 5px;
+					}
+				}
+			}
+			.main-btn{
+				width: 200px;
+			}
+		}
+	}
+	
+}
 #footer{
 	color: white;
 	.general-title{
@@ -662,7 +689,7 @@ button:focus,
 		}
 	}
 	
-	#header, #header-about, #header-products, #header-services{
+	#header-home, #header-secondary{
 		.company-name-wrap{
 			h1{
 				font-size: 3.5rem;
@@ -713,7 +740,15 @@ button:focus,
 			height: 80vh;
 		}
 	}
-
+	#main-support{
+		.card-custom{
+			.card-footer{
+				.main-btn{
+					width: 270px;
+				}
+			}
+		}
+	}
 }
 @media (min-width: 1800px){
 	body{
@@ -770,14 +805,14 @@ button:focus,
 			}
 		}
 	}
-	#header{
+	#header-home{
 		.about-company-wrap{
 			p{
 				font-size: 1.8rem;
 			}
 		}
 	}
-	#header-about, #header-products{
+	#header-secondary{
 		.company-name-wrap{
 			h1{
 				font-size: 3.5rem;
@@ -847,7 +882,7 @@ button:focus,
 	.general-title{
 		font-size: 1.8rem;
 	}
-	#header{
+	#header-home{
 		height: 40vh;
 		background-attachment: scroll;
 	}
@@ -864,7 +899,7 @@ button:focus,
 		}
 		
 	}
-	#header{
+	#header-home{
 		
 		.about-company-wrap{
 			p{
@@ -944,7 +979,7 @@ button:focus,
 			}
 		}
 	}
-	#header{
+	#header-home{
 		.company-name-wrap{
 			display: block;
 			h1{
@@ -1057,7 +1092,7 @@ button:focus,
 			}
 		}
 	}
-	#header{
+	#header-home{
 		.company-name-wrap{
 			display: block;
 		}
@@ -1066,7 +1101,7 @@ button:focus,
 		}
 
 	}
-	#header-about, #header-products{
+	#header-secondary{
 		height: 30vh;
 	}
 	#main{
@@ -1145,7 +1180,7 @@ button:focus,
 			}
 		}
 	}
-	#header{
+	#header-home{
 		height: 300px;
 		background-attachment: scroll;
 		.company-name-wrap{
@@ -1161,7 +1196,7 @@ button:focus,
 			}
 		}
 	}
-	#header-about, #header-products{
+	#header-secondary{
 		display: none;
 	}
 	#main{
@@ -1210,12 +1245,22 @@ button:focus,
 			}
 		} 
 	} 
+	#main-support{
+		padding-top: 20%;
+		.card-custom{
+			.card-footer{
+				.main-btn{
+					width: 180px;
+				}
+			}
+		}
+	}
 }
 @media(max-width: 374px){
 	body {
 		font-size: .8rem;
 	}
-	#header{
+	#header-home{
 		height: 270px;
 		.company-name-wrap{
 			top: 53%;
