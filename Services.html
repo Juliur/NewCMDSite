@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="NewCMD.css">
+	</link>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+		integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="./NewCMD.js"></script>
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-md" id="nav-custom">
+
+		<button class="navbar-toggler p-0 hamburger" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+			aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+			aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+		</button>
+
+		<div class="container-fluid p-0">
+			<div class="row w-100 m-0 no-gutters">
+				<div class="col-lg-1 d-none d-sm-none d-md-none d-lg-block">
+					<a class="d-block brand-img" href="#">
+
+					</a>
+				</div>
+				<div class="col-lg-7 offset-lg-4 col-xs-12">
+					<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
+						<ul class="navbar-nav navbar-nav-custom">
+							<li class="nav-item nav-item-custom">
+								<a class="nav-link nav-link-custom" href="#">Home</a>
+							</li>
+							<li class="nav-item nav-item-custom dropdown">
+								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									About
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom dropdown-item dropdown-item-custom-custom"
+										href="/products/hot_or_cold_standby">Partners</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">Careers</a>
+								</div>
+							</li>
+							<li class="nav-item nav-item-custom dropdown">
+								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									Products
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom" href="/products/hot_or_cold_standby">Hot Standby /
+										Cold Standby / DRBD</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">High
+										Availability Clusters</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/performance_audit">Performance
+										Audit</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/postgresql_core">PostgresCore</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/warm_standby">Warm
+										Standby</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/audit_and_tune">Audit and Tune</a>
+								</div>
+							</li>
+							<li class="nav-item nav-item-custom dropdown">
+								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									Services
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom" href="/services/performance_tuning">Performance
+										Tuning</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/on_site">On
+										Site</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/training">Training</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/high_availability">High
+										Availability</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/remote_hands">Remote Hands</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/oracle_to_postgres_migrations">Oracle
+										Migrations</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/fullstack">Full
+										Stack Offerings</a>
+								</div>
+							</li>
+							<li class="nav-item nav-item-custom dropdown">
+								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									Support
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom" href="/support/support_options">Support Options</a>
+								</div>
+							</li>
+							<li class="nav-item nav-item-custom">
+								<a class="nav-link nav-link-custom">Blog</a>
+							</li>
+							<li class="nav-item nav-item-custom">
+								<a class="nav-link nav-link-custom">Contact</a>
+							</li>
+							<li class="nav-item nav-item-custom">
+								<a class="nav-link nav-link-custom" data-toggle="modal" data-target="#newsletterModal">Newsletter</a>
+							</li>
+							<!-- Modal -->
+							<div class="modal modal-custom fade" id="newsletterModal" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-custom" role="document">
+									<div class="modal-content modal-content-custom">
+										<button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+										</button>
+										<div class="d-flex flex-column align-items-center">
+											<i class="fa fa-envelope fa-3x envelope-icon" aria-hidden="true"></i>
+											<h4 class="modal-title text-center" id="exampleModalLabel">Join Our
+												Newsletter</h4>
+										</div>
+										<div class="subscribe-form d-flex flex-row justify-content-center">
+											<input type="email" class="subscribe-input" placeholder="youremail@example.com">
+											<button type="button" class="btn subscribe-btn btn-effect">Subscribe</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header id="header-services">
+		<div class="container-fluid company-name-wrap d-none d-xs-none d-sm-block">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="company-name">
+						<h1 class="text-uppercase text-center font-weight-bold"><a class="text-decoration-none" href="/">Command
+								Prompt, Inc.</a></h1>
+						<p class="d-none d-xs-none d-sm-none d-md-block font-weight-bold text-uppercase text-center pt-3 m-0">
+							Postgres Centered full stack support, consulting &amp; development.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main id="main-services">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-1 col-md-10 offset-md-1">
+					<div class="info">
+						<h2 class="general-title text-center font-weight-bold">Our Services</h2>
+						<p class="mb-0">
+							As the oldest company providing PostgreSQL centered full stack consulting and support we are in a unique
+							position to be able to provide best in class services for your platform.
+						</p>
+					</div>
+					<div class="container-fluid p-0">
+						<div class="cards-section">
+							<h2 class="general-title text-center font-weight-bold">Packaged Services</h2>
+							<div class="row ">
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Perfomance Tunning</h5>
+											<p class="card-text">Catch the 80% of low hanging fruit of your Hardware, OS and PostgreSQL
+												installation configuration.</p>
+											<button class="main-btn btn-effect mt-auto">Learn more</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">On Site</h5>
+											<p class="card-text">DESCRIPTION WANTED</p>
+											<button class="main-btn btn-effect mt-auto">Learn more</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Training</h5>
+											<p class="card-text">DESCRIPTION WANTED</p>
+											<button class="main-btn btn-effect mt-auto">Learn more</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">High Availability</h5>
+											<p class="card-text">Maximize up-time with true Highly Availability configurations for Linux and
+												PostgreSQL.</p>
+											<button class="main-btn btn-effect mt-auto">Learn more</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Remote Hands</h5>
+											<p class="card-text">We provide best practices Remote DBA and Sysadmin services for almost every
+												environment. Just remember, it has to be PostgreSQL centered because every other database wishes
+												it could be this awesome </p>
+											<button class="main-btn btn-effect mt-auto">Learn more</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Oracle Migrations</h5>
+											<p class="card-text">DESCRIPTION WANTED</p>
+											<button class="main-btn btn-effect mt-auto">Learn more</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Full Stack Offerings</h5>
+											<p class="card-text">DESCRIPTION WANTED</p>
+											<button class="main-btn btn-effect mt-auto">Learn more</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid p-0">
+						<div class="cards-section">
+							<h2 class="general-title text-center font-weight-bold">Proffesional services</h2>
+							<div class="row ">
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Optimization services</h5>
+											<p class="card-text">When our packaged Audit and Tune or Performance Audit doesn't quite get the tps you are looking for, search no further than our planned and executed optimization services.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Custom Development</h5>
+											<p class="card-text">Let's face it, sometimes that front-end developer just doesn't have the database chops you need to achieve your business and technical requirements. Let us join your team and show you how PostgreSQL can really shine in your environment.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Project <br>Management</h5>
+											<p class="card-text">Every project we perform has a dedicated project manager. As a mixed team between the client and the vendor, we can have our project managers help things move smoothly.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 offset-lg-2 col-md-6 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Disaster Recovery</h5>
+											<p class="card-text">Every week we take a call that says, "Uhmmm.... help!" You can call us before or after that need, but we like to be proactive. Let's talk about how to prevent disasters as a whole!</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3 d-flex">
+									<div class="card card-custom">
+										<div class="card-body card-body-custom d-flex flex-column p-0">
+											<h5 class="card-title">Migration Services</h5>
+											<p class="card-text">When you want to move to the excellence that is PostgreSQL, we are your source. Whether you want to migrate from Oracle (our favorite), Sybase, Microsoft SQL, MySQL or even upgrade from MongoDB or SQLite. We can also help you migrate your database to the cloud.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid p-0">
+							<div class="cards-section">
+								<h2 class="general-title text-center font-weight-bold">Cloud Consulting</h2>
+								<div class="row ">
+									<div class="col-lg-4 col-md-6 d-flex">
+										<div class="card card-custom">
+											<div class="card-body card-body-custom d-flex flex-column p-0">
+												<h5 class="card-title">Softlayer</h5>
+												<p class="card-text">The choice when you need a full range of virtualized and bare metal services for increased flexibility, better price per performance unit and a full range of traditional and new model computing services. This option provides content delivery, load balancing, raw bare metal performance, an attractive price point and solid international performance. Now owned by IBM they are part of the IBM cloud and come with the significant backing that provides.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 d-flex">
+										<div class="card card-custom">
+											<div class="card-body card-body-custom d-flex flex-column p-0">
+												<h5 class="card-title">Amazon Web Services (AWS)</h5>
+												<p class="card-text">The obvious choice for name recognition, flexibility and dynamic provisioning. Amazon Web Services also offers a wide range of content delivery, load balancing and HA options to insure service availability to clients. If you need assistance it deploying the best range of services for AWS, don't hesitate to contact Command Prompt.
+
+													</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 d-flex">
+										<div class="card card-custom">
+											<div class="card-body card-body-custom d-flex flex-column p-0">
+												<h5 class="card-title">Google Compute Engine (GCE)</h5>
+												<p class="card-text">Not to be out done by their rivals, Google Compute Engine (GCE) also offers a wide range of cloud based services. Although our clients generally use Softlayer or AWS, GCE offers a solid performance reputation and a geeks geek of services.
+
+														If you have a need in determining the best route to take for your business, do not hesitate to call or email sales@commandprompt.com.  We have deployed on each of the above services (as well as others) with great success.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="col-lg-2 offset-lg-0 col-md-10 offset-md-1">
+					<div class="sidebar-wrap">
+						<div class="sidebar-items-wrap d-flex flex-column">
+							<h2 class="sidebar-title font-weight-bold">Our Products</h2>
+							<a href="#" class="sidebar-item">Hot Standby / Cold Standby / DRBD</a>
+							<a href="#" class="sidebar-item">High Availability Clusters</a>
+							<a href="#" class="sidebar-item">Performance Audit</a>
+							<a href="#" class="sidebar-item">Postgres Core</a>
+							<a href="#" class="sidebar-item">Warm Standby</a>
+							<a href="#" class="sidebar-item">Audit and Tune</a>
+						</div>
+						<div class="sidebar-items-wrap d-flex flex-column">
+							<h2 class="sidebar-title font-weight-bold">Our Services</h2>
+							<a href="#" class="sidebar-item">Performance Tuning</a>
+							<a href="#" class="sidebar-item">On site</a>
+							<a href="#" class="sidebar-item">Training</a>
+							<a href="#" class="sidebar-item">High Availability</a>
+							<a href="#" class="sidebar-item">Remote Hands</a>
+							<a href="#" class="sidebar-item">Oracle Migrations</a>
+							<a href="#" class="sidebar-item">Full Stack Offerings</a>
+						</div>
+					</div>
+				</div>
+	</main>
+	<footer id="footer">
+			<div class="container-fluid pt-5 pb-5 bg-dark">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="d-flex flex-column">
+							<h2 class="general-title general-title-white text-center font-weight-bold">Connect with us</h2>
+							<ul class="list-unstyled list-inline social-icons">
+							<li class="list-inline-item"><a href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+							<li class="list-inline-item"><a href=""><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
+							<li class="list-inline-item"><a href=""><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+							<li class="list-inline-item"><a href="" data-toggle="modal" data-target="#newsletterModal"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
+						</ul>
+
+						<ul class="list-unstyled list-inline copyright m-3">
+						<li class="list-inline-item">© Copyright © 2000-2019 Command Prompt, Inc. All Rights Reserved. All trademarks property of their respective owners.</li>
+						<li class="list-inline-item"><a href="/legal/terms_of_use">Terms of Use</a></li>
+						<li class="list-inline-item"><a href="/legal/privacy_policy">Privacy Policy</a></li>
+						</ul>
+					
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+</body>
+
+</html>

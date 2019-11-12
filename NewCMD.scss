@@ -10,7 +10,7 @@ body {
 	font-family: 'Libre Franklin', sans-serif;
 	padding-right: 0 !important;
 	max-width:100%;
-	font-size: .8rem;
+	font-size: .9rem;
 	background-color: $grey-background;
 }
 a.active.focus,
@@ -282,7 +282,7 @@ button:focus,
 		}
 	}
 }
-#header-about, #header-products {
+#header-about, #header-products, #header-services {
 	height: 35vh;
     position: relative;
     background-color: $main-color;
@@ -443,7 +443,7 @@ button:focus,
 				color: white;
 				bottom: 0;
 				z-index:2;
-				font-size: 3rem;
+				font-size: 2.5rem;
 				    line-height: 1;
 			}
 		}
@@ -466,17 +466,20 @@ button:focus,
 			padding: 1rem 1rem 1rem 0 ;
 			.blog-list-title{
 				color: white;
-				font-size: 1.1rem;
+				font-size: .9rem;
 			}
 			.blog-post{
 				margin-bottom: 15px;
+				.post-title{
+					font-size: .9rem;
+				}
 				.post-title>a, .post-author>a, .post-date{
 				color: white;
 				}
 				.post-author, .post-date{
 					color: white;
 					margin-bottom: 0;
-					font-size: .7rem;
+					font-size: .6rem;
 				}
 			}
 		}
@@ -558,19 +561,29 @@ button:focus,
 		}
 	}
 }
-#main-products{
+#main-products, #main-services{
 	.info{
 		padding-top: 3rem;
 	}
 	.cards-section{
 		padding: 3rem 0;
 		.card-custom{
+			width: 100%;
 			margin-bottom: 30px;
 			.card-body-custom{
 				margin-bottom: 0;
 			}
 		}
 	}
+}
+#main-services{
+	.info{
+		padding-bottom: 3rem;
+	}
+	.cards-section{
+		padding: 0 0 3rem 0;
+		
+	}	
 }
 #footer{
 	color: white;
@@ -649,7 +662,7 @@ button:focus,
 		}
 	}
 	
-	#header, #header-about, #header-products{
+	#header, #header-about, #header-products, #header-services{
 		.company-name-wrap{
 			h1{
 				font-size: 3.5rem;

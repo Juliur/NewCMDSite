@@ -2,7 +2,7 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   padding-right: 0 !important;
   max-width: 100%;
-  font-size: .8rem;
+  font-size: .9rem;
   background-color: #E2E6ED;
 }
 
@@ -302,7 +302,7 @@ button:focus,
   font-size: 1.1rem;
 }
 
-#header-about, #header-products {
+#header-about, #header-products, #header-services {
   height: 35vh;
   position: relative;
   background-color: #014D80;
@@ -313,7 +313,7 @@ button:focus,
   background-attachment: scroll;
 }
 
-#header-about::before, #header-products::before {
+#header-about::before, #header-products::before, #header-services::before {
   content: '';
   position: absolute;
   top: 0;
@@ -325,7 +325,7 @@ button:focus,
   z-index: 1;
 }
 
-#header-about .company-name-wrap, #header-products .company-name-wrap {
+#header-about .company-name-wrap, #header-products .company-name-wrap, #header-services .company-name-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -334,16 +334,16 @@ button:focus,
   z-index: 2;
 }
 
-#header-about .company-name-wrap h1, #header-products .company-name-wrap h1 {
+#header-about .company-name-wrap h1, #header-products .company-name-wrap h1, #header-services .company-name-wrap h1 {
   font-size: 2rem;
   padding-top: 3rem;
 }
 
-#header-about .company-name-wrap p, #header-products .company-name-wrap p {
+#header-about .company-name-wrap p, #header-products .company-name-wrap p, #header-services .company-name-wrap p {
   font-size: 1.1rem;
 }
 
-#header-about .company-name-wrap a, #header-about .company-name-wrap p, #header-products .company-name-wrap a, #header-products .company-name-wrap p {
+#header-about .company-name-wrap a, #header-about .company-name-wrap p, #header-products .company-name-wrap a, #header-products .company-name-wrap p, #header-services .company-name-wrap a, #header-services .company-name-wrap p {
   color: white;
 }
 
@@ -484,7 +484,7 @@ button:focus,
   color: white;
   bottom: 0;
   z-index: 2;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
@@ -513,11 +513,15 @@ button:focus,
 
 #main .article-blog .blog-list .blog-list-title {
   color: white;
-  font-size: 1.1rem;
+  font-size: .9rem;
 }
 
 #main .article-blog .blog-list .blog-post {
   margin-bottom: 15px;
+}
+
+#main .article-blog .blog-list .blog-post .post-title {
+  font-size: .9rem;
 }
 
 #main .article-blog .blog-list .blog-post .post-title > a, #main .article-blog .blog-list .blog-post .post-author > a, #main .article-blog .blog-list .blog-post .post-date {
@@ -527,7 +531,7 @@ button:focus,
 #main .article-blog .blog-list .blog-post .post-author, #main .article-blog .blog-list .blog-post .post-date {
   color: white;
   margin-bottom: 0;
-  font-size: .7rem;
+  font-size: .6rem;
 }
 
 #main-about .info {
@@ -609,20 +613,29 @@ button:focus,
   margin-bottom: 15px;
 }
 
-#main-products .info {
+#main-products .info, #main-services .info {
   padding-top: 3rem;
 }
 
-#main-products .cards-section {
+#main-products .cards-section, #main-services .cards-section {
   padding: 3rem 0;
 }
 
-#main-products .cards-section .card-custom {
+#main-products .cards-section .card-custom, #main-services .cards-section .card-custom {
+  width: 100%;
   margin-bottom: 30px;
 }
 
-#main-products .cards-section .card-custom .card-body-custom {
+#main-products .cards-section .card-custom .card-body-custom, #main-services .cards-section .card-custom .card-body-custom {
   margin-bottom: 0;
+}
+
+#main-services .info {
+  padding-bottom: 3rem;
+}
+
+#main-services .cards-section {
+  padding: 0 0 3rem 0;
 }
 
 #footer {
@@ -686,13 +699,13 @@ button:focus,
   #nav-custom .navbar-nav-custom .dropdown-menu-custom .dropdown-item-custom {
     font-size: 1.2rem;
   }
-  #header .company-name-wrap h1, #header-about .company-name-wrap h1, #header-products .company-name-wrap h1 {
+  #header .company-name-wrap h1, #header-about .company-name-wrap h1, #header-products .company-name-wrap h1, #header-services .company-name-wrap h1 {
     font-size: 3.5rem;
   }
-  #header .company-name-wrap p, #header-about .company-name-wrap p, #header-products .company-name-wrap p {
+  #header .company-name-wrap p, #header-about .company-name-wrap p, #header-products .company-name-wrap p, #header-services .company-name-wrap p {
     font-size: 1.8rem;
   }
-  #header .about-company-wrap p, #header-about .about-company-wrap p, #header-products .about-company-wrap p {
+  #header .about-company-wrap p, #header-about .about-company-wrap p, #header-products .about-company-wrap p, #header-services .about-company-wrap p {
     font-size: 1.5rem;
   }
   #main .dashboard-items .dashboard-item .counter-amount {
