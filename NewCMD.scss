@@ -617,10 +617,12 @@ input:focus{
 }
 #main-contact{
 	.general-title{
-		margin-top: 2rem;
+		margin-top: 3rem;
 	}
 	#contact-form{
 		.form-group{
+			margin-right: 1rem;
+			width: 50%;
 			.input-wrap{
 				width: 100%;
 				position: relative;
@@ -647,9 +649,11 @@ input:focus{
 			}
 		}
 		textarea{
+			height: 100%;
 			resize: none;
 			border: 0;
 			padding: .5rem;
+			width: 50%;
 		}
 		.custom-checkbox{
 			.custom-control-label::before {
@@ -1202,6 +1206,30 @@ input:focus{
 					.blog-list-title{
 						font-size: 1.5rem;
 					}
+			}
+		}
+	}
+	#main-contact{
+		#contact-form{
+			.form-group{
+				margin-right: 5px;
+				width: 80%;
+				.input-wrap{
+					.color-square{
+						left:0;
+					}
+					input{
+						width:100%;
+						padding-left: 1.4rem;
+					}
+				}
+			}
+			textarea{
+				height: 200px;
+				width: 80%;
+			}
+			.form-check{
+				padding-left: 0;
 			}
 		}
 	}

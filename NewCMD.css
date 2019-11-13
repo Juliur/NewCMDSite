@@ -672,7 +672,12 @@ input:focus {
 }
 
 #main-contact .general-title {
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+#main-contact #contact-form .form-group {
+  margin-right: 1rem;
+  width: 50%;
 }
 
 #main-contact #contact-form .form-group .input-wrap {
@@ -705,9 +710,11 @@ input:focus {
 }
 
 #main-contact #contact-form textarea {
+  height: 100%;
   resize: none;
   border: 0;
   padding: .5rem;
+  width: 50%;
 }
 
 #main-contact #contact-form .custom-checkbox .custom-control-label::before {
@@ -1101,6 +1108,24 @@ input:focus {
   }
   #main .article-blog .blog-list .blog-list-title {
     font-size: 1.5rem;
+  }
+  #main-contact #contact-form .form-group {
+    margin-right: 5px;
+    width: 80%;
+  }
+  #main-contact #contact-form .form-group .input-wrap .color-square {
+    left: 0;
+  }
+  #main-contact #contact-form .form-group .input-wrap input {
+    width: 100%;
+    padding-left: 1.4rem;
+  }
+  #main-contact #contact-form textarea {
+    height: 200px;
+    width: 80%;
+  }
+  #main-contact #contact-form .form-check {
+    padding-left: 0;
   }
 }
 
