@@ -87,7 +87,6 @@ button:focus,
 	
 	}
 }
-
 .btn-effect{
 	background-color: $main-color;
 	color: white;
@@ -109,6 +108,21 @@ button:focus,
 }
 .icon{
 	color: $main-color;
+}
+.color-square{
+	width:40px;
+	height: 40px;
+	background-color: $main-color;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: $shadow_2;
+	.color-square-inner{
+		color: white;
+		font-weight: 700;
+		font-size: 1.5rem;
+	}
 }
 //popup style
 .modal-backdrop {
@@ -516,21 +530,6 @@ button:focus,
 			&:last-child{
 				margin-bottom: 0;
 			}
-            .serial-number{
-                width:40px;
-                height: 40px;
-				background-color: $main-color;
-				position: absolute;
-				left: 0;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				box-shadow: $shadow_2;
-                .number{
-                    color: white;
-                    font-weight: 700;
-                    font-size: 1.5rem;
-                }
-			}
 			.content{
 				margin-left: 1.5rem;
 			}
@@ -611,6 +610,30 @@ button:focus,
 		}
 	}
 	
+}
+#main-contact{
+	.form-group{
+		.input-wrap{
+			width: 100%;
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 1rem;
+			.color-square{
+				left: 15px;
+				width: 35px;
+				height: 35px;
+				.color-square-inner{
+					font-size: 1.1rem;
+				}
+			}
+			input{
+				height: 50px;
+				width: 95%;
+				padding-left: 15px;
+			}
+		}
+	}
 }
 #footer{
 	color: white;
@@ -1259,6 +1282,11 @@ button:focus,
 @media(max-width: 374px){
 	body {
 		font-size: .8rem;
+	}
+	.general-title{
+		&::after{
+			width: 10%;
+		}
 	}
 	#header-home{
 		height: 270px;

@@ -159,106 +159,81 @@
 				</div>
 			</div>
 		</div>
-  </header>
+    </header>
 
-  <main id="main-support">
-      <div class="container-fluid">
+    <main id="main-contact">
+			<div class="container-fluid">
 				<div class="row justify-content-md-center">
 					<div class="col-lg-8 col-md-10">
-						<div class="card card-custom mb-5">
-							<div class="card-body card-body-custom d-flex flex-column">
-								<h2 class="general-title text-center font-weight-bold">Support</h2>
-								<p class="card-text">Command Prompt, Inc. offers several levels of Linux & PostgreSQL support.
-										We have full time, in house, Open Source experts to help you with your professional services and support needs. We offer a range of support options including on demand and monthly 24x7 support contracts. All professional services (consulting), custom development or support provided by Command Prompt is subject to our services agreement.
-								</p>
-							</div>	
-							<div class="card-footer d-flex flex-row justify-content-between align-items-center">	
-									<div class="attached-doc d-flex flex-column">
-											<a href=""><i class="fa fa-file-text-o icon" aria-hidden="true"></i>Procedure in case of emergency</a>
+						<h2 class="general-title text-center font-weight-bold">Contact us</h2>
+							<form name="contact" id="contact-form" method="post" action="/contact/">
+								<div class="d-flex flex-row">
+									<div class="form-group d-flex flex-column align-items-end mr-3 w-50">
+										<div class="input-wrap">
+											<div class="color-square d-flex flex-row align-items-center justify-content-center">
+												<i class="fa fa-user color-square-inner" aria-hidden="true"></i>
+											</div>
+											<input type="text" d="id_contact_name" name="contact_name" placeholder="Full Name">
+										</div>
+										<div class="input-wrap">
+											<div class="color-square d-flex flex-row align-items-center justify-content-center">
+												<i class="fa fa-envelope-o color-square-inner" aria-hidden="true"></i>
+											</div>
+											<input id="id_contact_email" name="contact_email" placeholder="Email" type="text">
+										</div>
+										<div class="input-wrap">
+											<div class="color-square d-flex flex-row align-items-center justify-content-center">
+												<i class="fa fa-phone color-square-inner" aria-hidden="true"></i>
+											</div>
+											<input id="id_contact_phone" maxlength="12" name="contact_phone" placeholder="Phone" type="text">
+										</div>
+										<div class="input-wrap">
+											<div class="color-square d-flex flex-row align-items-center justify-content-center">
+													<i class="fa fa-comment-o color-square-inner" aria-hidden="true"></i>
+											</div>
+											<input id="id_contact_subject" name="contact_subject" placeholder="Subject" type="text">
+										</div>
 									</div>
-									<button class="main-btn btn-effect">Support Options</button>
-							</div>
-						</div>
-
-						<div class="card card-custom mb-5">
-							<div class="card-body card-body-custom d-flex flex-column">
-									<h2 class="general-title text-center font-weight-bold">New Customers</h2>
-									<p class="card-text">To view our 24x7 support options please visit our support options page. We offer a full range of 24x7 support starting at just $500.00/month company wide.
-											All customers must have a signed services agreement and payment details on file with CMD. If you are a new customer we have provided the documents below for your signature. You may email or fax the signed copies to billing@commandprompt.com or +1-503-210-0334 respectively. If you wish to pay by Visa or Mastercard, you could find our credit card authorization form below.					
-									</p>
-							</div>
-							<div class="card-footer d-flex flex-row justify-content-between align-items-center">	
-									<div class="attached-doc d-flex flex-column">
-											<a href=""><i class="fa fa-file-text-o icon" aria-hidden="true"></i>Credit card authorization form</a>
+									<div class="form-group d-flex flex-column w-50">
+										<textarea cols="40" id="id_content" name="content" placeholder="Message Text" rows="10"></textarea>
+										<div class="col-auto">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+												<label class="form-check-label" for="autoSizingCheck">
+													Subscribe me to CMD newsletter
+												</label>
+											</div>
+										</div>
+										<button type="submit" class="main-btn btn-effect">Send Message</button>
 									</div>
-							</div>
-						</div>
-
-						<div class="card card-custom mb-5 p-4">
-								<div class="card-body card-body-custom d-flex flex-column p-0">
-										<h2 class="general-title text-center font-weight-bold">Existing Customers</h2>
-										<p class="card-text">If you are an existing customer, please use your CMD provided support environment or call 1-503-667-4564.
-										</p>
-								</div>
-						</div>
-
-						<div class="card card-custom mb-5 p-4">
-								<div class="card-body card-body-custom d-flex flex-column p-0">
-										<h2 class="general-title text-center font-weight-bold">24x7</h2>
-										<p class="card-text">Command Prompt offers 24x7 service to any customer, new or existing. To receive Around the Clock support just call one of the following numbers (note prices subject to the below support packages): Monday through Friday, 8:00am - 5:00pm PST/PDT (West Coast) 1-503-667-4564.
-										</p>
-								</div>
-						</div>
-          </div>
-          <div class="col-lg-2 col-md-10">
+								</div>	
+							</form>
+					</div>	
+					<div class="col-lg-2 col-md-10">
 						<div class="sidebar-wrap">
-							<div class="sidebar-items-wrap d-flex flex-column">
-								<h2 class="sidebar-title font-weight-bold">Our Products</h2>
-								<a href="#" class="sidebar-item">Hot Standby / Cold Standby / DRBD</a>
-								<a href="#" class="sidebar-item">High Availability Clusters</a>
-								<a href="#" class="sidebar-item">Performance Audit</a>
-								<a href="#" class="sidebar-item">Postgres Core</a>
-								<a href="#" class="sidebar-item">Warm Standby</a>
-								<a href="#" class="sidebar-item">Audit and Tune</a>
-							</div>
-							<div class="sidebar-items-wrap d-flex flex-column">
-								<h2 class="sidebar-title font-weight-bold">Our Services</h2>
-								<a href="#" class="sidebar-item">Performance Tuning</a>
-								<a href="#" class="sidebar-item">On site</a>
-								<a href="#" class="sidebar-item">Training</a>
-								<a href="#" class="sidebar-item">High Availability</a>
-								<a href="#" class="sidebar-item">Remote Hands</a>
-								<a href="#" class="sidebar-item">Oracle Migrations</a>
-								<a href="#" class="sidebar-item">Full Stack Offerings</a>
-							</div>
+								<div class="sidebar-items-wrap d-flex flex-column">
+									<h2 class="sidebar-title font-weight-bold">Our Products</h2>
+									<a href="#" class="sidebar-item">Hot Standby / Cold Standby / DRBD</a>
+									<a href="#" class="sidebar-item">High Availability Clusters</a>
+									<a href="#" class="sidebar-item">Performance Audit</a>
+									<a href="#" class="sidebar-item">Postgres Core</a>
+									<a href="#" class="sidebar-item">Warm Standby</a>
+									<a href="#" class="sidebar-item">Audit and Tune</a>
+								</div>
+								<div class="sidebar-items-wrap d-flex flex-column">
+									<h2 class="sidebar-title font-weight-bold">Our Services</h2>
+									<a href="#" class="sidebar-item">Performance Tuning</a>
+									<a href="#" class="sidebar-item">On site</a>
+									<a href="#" class="sidebar-item">Training</a>
+									<a href="#" class="sidebar-item">High Availability</a>
+									<a href="#" class="sidebar-item">Remote Hands</a>
+									<a href="#" class="sidebar-item">Oracle Migrations</a>
+									<a href="#" class="sidebar-item">Full Stack Offerings</a>
+								</div>
 						</div>
-					</div>
-			</div> 
-    </div>       
-  </main>
-
-  <footer id="footer">
-		<div class="container-fluid pb-5 pt-5 bg-dark">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<div class="d-flex flex-column">
-						<h2 class="general-title general-title-white text-center font-weight-bold">Connect with us</h2>
-						<ul class="list-unstyled list-inline social-icons">
-								<li class="list-inline-item"><a href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
-								<li class="list-inline-item"><a href=""><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
-								<li class="list-inline-item"><a href=""><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
-								<li class="list-inline-item"><a href="" data-toggle="modal" data-target="#newsletterModal"><i class="fa fa-envelope fa-3x envelope-icon" aria-hidden="true"></i></a></li>
-						</ul>
-	
-						<ul class="list-unstyled list-inline copyright m-3">
-							<li class="list-inline-item">© Copyright © 2000-2019 Command Prompt, Inc. All Rights Reserved. All trademarks property of their respective owners.</li>
-							<li class="list-inline-item"><a href="/legal/terms_of_use">Terms of Use</a></li>
-							<li class="list-inline-item"><a href="/legal/privacy_policy">Privacy Policy</a></li>
-						</ul>
 					</div>
 				</div>
-		    </div>
-		</div>
-	</footer>
+			</div>				
+    </main>
 </body>
-</html>    
+</html>

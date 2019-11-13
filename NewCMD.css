@@ -113,6 +113,23 @@ button:focus,
   color: #014D80;
 }
 
+.color-square {
+  width: 40px;
+  height: 40px;
+  background-color: #014D80;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.color-square .color-square-inner {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 .modal-backdrop {
   z-index: 1;
 }
@@ -571,23 +588,6 @@ button:focus,
   margin-bottom: 0;
 }
 
-#main-about .promises .promise-item .serial-number {
-  width: 40px;
-  height: 40px;
-  background-color: #014D80;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-#main-about .promises .promise-item .serial-number .number {
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
 #main-about .promises .promise-item .content {
   margin-left: 1.5rem;
 }
@@ -665,6 +665,30 @@ button:focus,
 
 #main-support .card-custom .card-footer .main-btn {
   width: 200px;
+}
+
+#main-contact .form-group .input-wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+#main-contact .form-group .input-wrap .color-square {
+  left: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+#main-contact .form-group .input-wrap .color-square .color-square-inner {
+  font-size: 1.1rem;
+}
+
+#main-contact .form-group .input-wrap input {
+  height: 50px;
+  width: 95%;
+  padding-left: 15px;
 }
 
 #footer {
@@ -1134,6 +1158,9 @@ button:focus,
 @media (max-width: 374px) {
   body {
     font-size: .8rem;
+  }
+  .general-title::after {
+    width: 10%;
   }
   #header-home {
     height: 270px;
