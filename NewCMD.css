@@ -32,7 +32,6 @@ input:focus {
   outline-color: transparent !important;
   outline-width: 0 !important;
   outline-style: none !important;
-  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
 }
 
 .scrolled {
@@ -204,6 +203,7 @@ input:focus {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0;
   padding: 1rem;
+  width: 100%;
 }
 
 .card-custom .card-body-custom {
@@ -731,6 +731,18 @@ input:focus {
   width: 150px;
 }
 
+#main-contact .cards-section {
+  padding: 0 0 3rem 0;
+}
+
+#main-contact .cards-section .card-custom .open-envelope {
+  background-image: url("./images/opened.png");
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #footer {
   color: white;
 }
@@ -821,6 +833,9 @@ input:focus {
   }
   #main-support .card-custom .card-footer .main-btn {
     width: 270px;
+  }
+  #main-contact #contact-form .main-btn {
+    width: 200px;
   }
 }
 
