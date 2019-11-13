@@ -23,7 +23,11 @@ button:focus,
 .btn.focus,
 .btn:active.focus,
 .btn:active:focus,
-.btn:focus {
+.btn:focus,
+textarea:active,
+textarea:focus,
+input:active,
+input:focus {
   outline: 0 !important;
   outline-color: transparent !important;
   outline-width: 0 !important;
@@ -667,7 +671,11 @@ button:focus,
   width: 200px;
 }
 
-#main-contact .form-group .input-wrap {
+#main-contact .general-title {
+  margin-top: 2rem;
+}
+
+#main-contact #contact-form .form-group .input-wrap {
   width: 100%;
   position: relative;
   display: flex;
@@ -675,20 +683,45 @@ button:focus,
   margin-bottom: 1rem;
 }
 
-#main-contact .form-group .input-wrap .color-square {
+#main-contact #contact-form .form-group .input-wrap:last-of-type {
+  margin-bottom: 0;
+}
+
+#main-contact #contact-form .form-group .input-wrap .color-square {
   left: 15px;
   width: 35px;
   height: 35px;
 }
 
-#main-contact .form-group .input-wrap .color-square .color-square-inner {
+#main-contact #contact-form .form-group .input-wrap .color-square .color-square-inner {
   font-size: 1.1rem;
 }
 
-#main-contact .form-group .input-wrap input {
+#main-contact #contact-form .form-group .input-wrap input {
   height: 50px;
   width: 95%;
-  padding-left: 15px;
+  padding-left: 1.2rem;
+  border: 0;
+}
+
+#main-contact #contact-form textarea {
+  resize: none;
+  border: 0;
+  padding: .5rem;
+}
+
+#main-contact #contact-form .custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+}
+
+#main-contact #contact-form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #014D80;
+  background-color: #014D80;
+}
+
+#main-contact #contact-form .main-btn {
+  width: 150px;
 }
 
 #footer {

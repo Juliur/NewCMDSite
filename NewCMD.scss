@@ -30,7 +30,11 @@ button:focus,
 .btn.focus,
 .btn:active.focus,
 .btn:active:focus,
-.btn:focus {
+.btn:focus,
+textarea:active,
+textarea:focus,
+input:active,
+input:focus{
 	outline: 0!important;
 	outline-color: transparent!important;
 	outline-width: 0!important;
@@ -612,26 +616,54 @@ button:focus,
 	
 }
 #main-contact{
-	.form-group{
-		.input-wrap{
-			width: 100%;
-			position: relative;
-			display: flex;
-			justify-content: flex-end;
-			margin-bottom: 1rem;
-			.color-square{
-				left: 15px;
-				width: 35px;
-				height: 35px;
-				.color-square-inner{
-					font-size: 1.1rem;
+	.general-title{
+		margin-top: 2rem;
+	}
+	#contact-form{
+		.form-group{
+			.input-wrap{
+				width: 100%;
+				position: relative;
+				display: flex;
+				justify-content: flex-end;
+				margin-bottom: 1rem;
+				&:last-of-type{
+					margin-bottom: 0;
+				}
+				.color-square{
+					left: 15px;
+					width: 35px;
+					height: 35px;
+					.color-square-inner{
+						font-size: 1.1rem;
+					}
+				}
+				input{
+					height: 50px;
+					width: 95%;
+					padding-left: 1.2rem;
+					border: 0;
 				}
 			}
-			input{
-				height: 50px;
-				width: 95%;
-				padding-left: 15px;
+		}
+		textarea{
+			resize: none;
+			border: 0;
+			padding: .5rem;
+		}
+		.custom-checkbox{
+			.custom-control-label::before {
+				border-radius: 0;
 			}
+			.custom-control-input:checked~.custom-control-label::before {
+				color: #fff;
+				border-color: $main-color;
+				background-color: $main-color;
+			}
+		}
+		
+		.main-btn{
+			width: 150px;
 		}
 	}
 }
