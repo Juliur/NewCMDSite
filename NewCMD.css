@@ -771,6 +771,7 @@ input:focus {
 
 #main-blog .post-item .post-footer .meta {
   display: inline-flex;
+  flex-wrap: wrap;
   list-style: none;
   font-size: 13px;
   padding-left: 0;
@@ -917,6 +918,15 @@ input:focus {
   }
   #main-contact #contact-form .main-btn {
     width: 200px;
+  }
+  #main-blog .post-item .post-title {
+    font-size: 1.8rem;
+  }
+  #main-blog .blog-list .blog-list-title {
+    font-size: 1.5rem;
+  }
+  #main-blog .blog-list .blog-post .post-title > a {
+    font-size: 1rem;
   }
 }
 
@@ -1133,6 +1143,9 @@ input:focus {
   }
   #main-contact .cards-section .card-custom {
     margin-bottom: 30px;
+  }
+  #main-blog .blog-list {
+    margin-top: 0;
   }
   #footer .copyright {
     font-size: .9rem;
