@@ -437,9 +437,10 @@ input:focus
 			}
 		}
 	}
-	.article-blog{
+	.featured-article-blog{
 		background-color: $main-color;
-		.article-img{
+		.featured-img-wrap{
+			background-image: url('images/blue-gradient-mountains.jpg');
 			position: relative;
 			height: 100%;
 			&::before{
@@ -452,23 +453,23 @@ input:focus
 				background: linear-gradient(180deg, rgba(255,255,255,0) 25%, rgb(37, 37, 37) 90%);
 				z-index: 1;
 			}
-			img{
+			.featured-img{
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 			}
-			.article-title{
+			.featured-article-title{
 				position: absolute;
 				color: white;
 				bottom: 0;
 				z-index:2;
-				font-size: 2.5rem;
+				font-size: 3rem;
 				    line-height: 1;
 			}
 		}
-		.article-content{
+		.featured-article-content{
 			color: white;
-			.article-inner{
+			.featured-article-inner{
 				border-right: 2px solid white;
 				padding-right: 1rem;
 				text-align: justify;
@@ -711,7 +712,7 @@ input:focus
 		.quotes{
 			height: 70vh;
 		}
-		.article-blog{
+		.featured-featured-featured-article-blog{
 			.blog-list{
 				.blog-post{
 					.post-title{
@@ -809,6 +810,13 @@ input:focus
 		}
 		.quotes{
 			height: 80vh;
+		}
+		.featured-article-blog{
+			.featured-img-wrap{
+				.featured-article-title{
+					font-size: 4rem;
+				}
+			}
 		}
 	}
 	#main-support{
@@ -931,7 +939,7 @@ input:focus
 		.quotes{
 			height: 600px;
 		}
-		.article-blog{
+		.featured-featured-featured-article-blog{
 			.blog-list{
 				padding-left: 0;
 				.blog-list-title{
@@ -999,9 +1007,9 @@ input:focus
 		.quotes{
 			height: 50vh;
 		}
-		.article-blog{
-			.article-img{
-				.article-title{
+		.featured-featured-featured-article-blog{
+			.featured-img-wrap{
+				.featured-article-title{
 					font-size: 2.8rem;
 				}
 			}
@@ -1025,9 +1033,9 @@ input:focus
 				}
 			}
 		}	
-		.article-blog{
-			.article-img{
-				.article-title{
+		.featured-featured-featured-article-blog{
+			.featured-img-wrap{
+				.featured-article-title{
 					font-size: 2.5rem;
 				}
 			}
@@ -1099,9 +1107,9 @@ input:focus
 		.quotes{
 			height: 40vh;
 		}
-		.article-blog{
-			.article-img{
-				.article-title{
+		.featured-featured-featured-article-blog{
+			.featured-img-wrap{
+				.featured-article-title{
 					font-size: 2.3rem;
 				}
 			}
@@ -1131,6 +1139,13 @@ input:focus
 		}
 		.sidebar-wrap{
 			padding-top: 0;
+		}
+	}
+	#main-contact{
+		.cards-section{
+			.card-custom{
+				margin-bottom: 30px;
+			}
 		}
 	}
 	#footer{
@@ -1196,15 +1211,15 @@ input:focus
 			
 		}
 		
-		.article-blog{
-			.article-img{
-				.article-title{
+		.featured-featured-featured-article-blog{
+			.featured-featured-img-wrap{
+				.featured-featured-article-title{
 					font-size: 2rem;
 					margin-bottom: 0;
 				}
 			}
-			.article-content{
-				.article-inner{
+			.featured-article-content{
+				.featured-article-inner{
 					border: 0;
 					padding-right: 0;
 				}
@@ -1355,6 +1370,19 @@ input:focus
 					width: 180px;
 				}
 			}
+		}
+	}
+	#main-contact{
+		.general-title{
+			margin-top: 4rem;
+		}
+		.cards-section{
+			.card-custom{
+				margin-bottom: 15px;
+			}
+		}
+		.sidebar-wrap{
+			padding-top: 0;
 		}
 	}
 }
