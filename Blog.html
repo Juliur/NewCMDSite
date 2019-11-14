@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="NewCMD.css">
+	</link>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+		integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="./NewCMD.js"></script>
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-md" id="nav-custom">
+		<button class="navbar-toggler p-0 hamburger" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+			aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+			aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+		</button>
+
+		<div class="container-fluid p-0">
+			<div class="row w-100 m-0 no-gutters">
+				<div class="col-lg-1 d-none d-sm-none d-md-none d-lg-block">
+					<a class="d-block brand-img" href="#">
+
+					</a>
+				</div>
+				<div class="col-lg-7 offset-lg-4 col-xs-12">
+					<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
+						<ul class="navbar-nav navbar-nav-custom">
+							<li class="nav-item nav-item-custom">
+								<a class="nav-link nav-link-custom current" href="#">Home</a>
+							</li>
+							<li class="nav-item nav-item-custom dropdown about">
+								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false" target="_blank">
+									About
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom dropdown-item dropdown-item-custom-custom"
+										href="/products/hot_or_cold_standby">Partners</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">Careers</a>
+								</div>
+							</li>
+							<li class="nav-item nav-item-custom dropdown">
+								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									Products
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom" href="/products/hot_or_cold_standby">Hot Standby / Cold
+										Standby / DRBD</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">High
+										Availability Clusters</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/performance_audit">Performance Audit</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/postgresql_core">PostgreSQL Core</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/warm_standby">Warm Standby</a>
+									<a class="dropdown-item dropdown-item-custom" href="/products/audit_and_tune">Audit and Tune</a>
+								</div>
+							</li>
+							<li class="nav-item nav-item-custom dropdown">
+								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									Services
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom" href="/services/performance_tuning">Performance
+										Tuning</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/on_site">On Site</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/training">Training</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/high_availability">High Availability</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/remote_hands">Remote Hands</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/oracle_to_postgres_migrations">Oracle
+										Migrations</a>
+									<a class="dropdown-item dropdown-item-custom" href="/services/fullstack">Full Stack Offerings</a>
+								</div>
+							</li>
+							<li class="nav-item nav-item-custom dropdown">
+								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									Support
+									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+								</a>
+								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item dropdown-item-custom" href="/support/support_options">Support Options</a>
+								</div>
+							</li>
+							<li class="nav-item nav-item-custom">
+								<a class="nav-link nav-link-custom">Blog</a>
+							</li>
+							<li class="nav-item nav-item-custom">
+								<a class="nav-link nav-link-custom">Contact</a>
+							</li>
+							<li class="nav-item nav-item-custom">
+								<a class="nav-link nav-link-custom" data-toggle="modal" data-target="#newsletterModal">Newsletter</a>
+							</li>
+							<!-- Modal -->
+							<div class="modal modal-custom fade" id="newsletterModal" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-custom" role="document">
+									<div class="modal-content modal-content-custom">
+										<button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+										</button>
+										<div class="d-flex flex-column align-items-center">
+											<i class="fa fa-envelope fa-3x icon" aria-hidden="true"></i>
+											<h4 class="modal-title text-center" id="exampleModalLabel">Join Our Newsletter</h4>
+										</div>
+										<div class="subscribe-form d-flex flex-row justify-content-center">
+											<input type="email" class="subscribe-input" placeholder="youremail@example.com">
+											<button type="button" class="btn subscribe-btn btn-effect">Subscribe</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header id="header-secondary">
+		<div class="container-fluid company-name-wrap d-none d-xs-none d-sm-block">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="company-name">
+						<h1 class="text-uppercase text-center font-weight-bold"><a class="text-decoration-none" href="/">Command
+								Prompt, Inc.</a></h1>
+						<p class="d-none d-xs-none d-sm-none d-md-block font-weight-bold text-uppercase text-center pt-3 m-0">
+							Postgres Centered full stack support, consulting &amp; development.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main id="main-blog">
+		<div class="container-fluid">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-8 col-md-10">
+					<h2 class="general-title text-center font-weight-bold">Blog</h2>
+					<div class="post-item mb-5">
+						<h5 class="post-title font-weight-bold">Keys to moving forward in your life and career - making the leap to uncomfortable</h5>
+						<div class="post-body d-flex flex-column">
+							<img src="./images/selfdefinedbox_(1).jpg">
+							<p class="post-inner mt-3 mb-0">
+									Finding the right path when trying to move forward with your career can be challenging. From the difficult subject of compensation increases, to knowing when you are ready to move up in a role, to refining the skill set you have; there are many stepping stones that have to be put in place in order to successfully move forward in your career. In this article series I provide tips as Senior Management for what I look for and what has been expected of me over the years to help you reach your professional and personal goals.
+									---
+									Making the Leap to Uncomfortable
+									In the last article I discussed the importance of getting out of your own way and becoming uncomfortable .
+							</p>
+						</div>	
+						<div class="post-footer d-flex flex-row justify-content-between align-items-center">
+							<ul class="meta">
+									<li class="meta-item"><i class="fa fa-clock-o" aria-hidden="true"></i>Nov. 12, 2019, 11:32 a.m.</li>
+									<li class="meta-item"><i class="fa fa-comments" aria-hidden="true"></i>Amanda Nystrom</li>
+									<li class="meta-item"><a href="" title="Follow"><i class="fa fa-rss" aria-hidden="true"></i>Follow</a></li>
+									<li class="meta-item"><i class="fa fa-tags" aria-hidden="true"></i>Business</li>
+								</ul>	
+							<a href="#" class="d-flex align-items-center font-weight-bold read-more-link">Read more<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					
+					<div class="post-item mb-5">
+						<h5 class="post-title font-weight-bold">Hacking on PostgreSQL Snap at Snapcraft summit 2018</h5>
+						<div class="post-body d-flex flex-column">
+							<div class="post-inner m-0">
+								<p class="post-text">
+									As you may know, Command Prompt, Inc. develops and maintains PostgreSQL snap packages as a service to community. If you used it, you also know that unfortunately it is not yet a drop-in replacement for DEB builds distributed via PGDG APT repository.
+									PostgreSQL is one of the major open source projects out there that is extremely popular with all sorts of crowds: from enthusiasts to unicorn startups. And as the Snapcraft ecosystem matures more and more, a fully-functional PostgreSQL snap package becomes absolutely necessary for reasons ranging from developers being able to easily run PostgreSQL in strictly isolated test environments, to providing more complex software solutions that build on PostgreSQL (e.g. Travis CI people expressly stated they were very ...
+								</p>
+							</div>	
+						</div>
+						<div class="post-footer d-flex flex-row justify-content-between align-items-center">
+							<ul class="meta">
+								<li class="meta-item"><i class="fa fa-clock-o" aria-hidden="true"></i>Nov. 24, 2018, 3:57 a.m.</li>
+								<li class="meta-item"><i class="fa fa-comments" aria-hidden="true"></i>Ivan Lezhnjov IV</li>
+								<li class="meta-item"><a href="" title="Follow"><i class="fa fa-rss" aria-hidden="true"></i>Follow</a></li>
+								<li class="meta-item"><i class="fa fa-tags" aria-hidden="true"></i> PostgreSQL OpenSource</li>
+							</ul>	
+							<a href="#" class="d-flex align-items-center font-weight-bold read-more-link">Read more<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>		
+				<div class="col-lg-2 col-md-10">
+				<div class="blog-list">
+					<h5 class="blog-list-title font-weight-bold">Recent blogs</h5>
+						<div class="blog-post">
+							<h6 class="post-title">
+								<a class="text-decoration-none" href="/blog/copy-file-ssh-wormhole">Copy Files Through an SSH Wormhole!</a>
+							</h6>
+							<p class="date">Oct. 16, 2017, 1:09 p.m.</p>
+							<p class="author"><a href="#">- Eric Worden</a></p>
+						</div>
+						
+						<div class="blog-post">
+							<h6 class="post-title">
+								<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
+							</h6>
+							<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
+							<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
+						</div>
+						<div class="blog-post">
+							<h6 class="post-title">
+								<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
+							</h6>
+							<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
+							<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
+						</div>
+						<div class="blog-post">
+							<h6 class="post-title">
+								<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
+							</h6>
+							<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
+							<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
+						</div>			
+				</div>
+				</div> 
+	</main>
+	<footer id="footer">
+		<div class="container-fluid pb-5 pt-5 bg-dark">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="d-flex flex-column">
+						<h2 class="general-title general-title-white text-center font-weight-bold">Connect with us</h2>
+						<ul class="list-unstyled list-inline social-icons">
+								<li class="list-inline-item"><a href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+								<li class="list-inline-item"><a href=""><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
+								<li class="list-inline-item"><a href=""><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+								<li class="list-inline-item"><a href="" data-toggle="modal" data-target="#newsletterModal"><i class="fa fa-envelope fa-3x envelope-icon" aria-hidden="true"></i></a></li>
+						</ul>
+	
+						<ul class="list-unstyled list-inline copyright m-3">
+							<li class="list-inline-item">© Copyright © 2000-2019 Command Prompt, Inc. All Rights Reserved. All trademarks property of their respective owners.</li>
+							<li class="list-inline-item"><a href="/legal/terms_of_use">Terms of Use</a></li>
+							<li class="list-inline-item"><a href="/legal/privacy_policy">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
