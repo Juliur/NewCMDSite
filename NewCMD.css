@@ -1077,10 +1077,10 @@ input:focus {
     font-size: 1.5rem;
   }
   .blog-list .blog-post .post-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .blog-list .blog-post .post-author, .blog-list .blog-post .post-date {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   #nav-custom .navbar-nav-custom .nav-link-custom {
     font-size: 1.4rem;
@@ -1167,10 +1167,10 @@ input:focus {
     font-size: 1.5rem;
   }
   #main-blog-page .blog-list .blog-post .post-title > a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
-  #main-blog-page .blog-list .blog-post .post-author, #main-blog-page .blog-list .blog-post .post-date {
-    font-size: .8rem;
+  #main-blog-page .blog-list .blog-post .author > a, #main-blog-page .blog-list .blog-post .date {
+    font-size: 1rem;
   }
   #main-blog-page .post-item .post-title {
     font-size: 3rem;

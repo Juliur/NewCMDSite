@@ -1060,10 +1060,10 @@ input:focus
 		}
 		.blog-post{
 			.post-title{
-				font-size: 1.1rem;
+				font-size: 1.2rem;
 			}
 			.post-author, .post-date{
-				font-size: .8rem;
+				font-size: 1rem;
 			}
 		}
 	}
@@ -1211,10 +1211,10 @@ input:focus
 			}
 			.blog-post{
 				.post-title>a{
-					font-size: 1.1rem;
+					font-size: 1.3rem;
 				}
-				.post-author, .post-date{
-					font-size: .8rem;
+				.author>a, .date{
+					font-size: 1rem;
 				}
 			}
 		}	
