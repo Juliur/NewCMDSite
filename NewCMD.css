@@ -1155,13 +1155,13 @@ input:focus {
     font-size: 1rem;
   }
   #main-blog-index .blog-list .blog-list-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
-  #main-blog-index .blog-list .blog-post .post-title {
-    font-size: 1.4rem;
+  #main-blog-index .blog-list .blog-post .post-title > a {
+    font-size: 1.3rem;
   }
-  #main-blog-index .blog-list .blog-post .date, #main-blog-index .blog-list .blog-post .author {
-    font-size: .8rem;
+  #main-blog-index .blog-list .blog-post .date, #main-blog-index .blog-list .blog-post .author > a {
+    font-size: 1rem;
   }
   #main-blog-page .blog-list .blog-list-title {
     font-size: 1.5rem;
