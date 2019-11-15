@@ -128,6 +128,21 @@ input:focus
 		font-size: 1.5rem;
 	}
 }
+.blog-list{
+	.blog-list-title{
+		font-size: 1.1rem;
+	}
+	.blog-post{
+		margin-bottom: 15px;
+		.post-title{
+			font-size: .9rem;
+		}
+		.post-author, .post-date{
+			margin-bottom: 0;
+			font-size: .6rem;
+		}
+	}
+}
 //popup style
 .modal-backdrop {
 	z-index: 1;
@@ -302,7 +317,7 @@ input:focus
 	}
 }
 #header-secondary {
-	height: 35vh;
+	height: 300px;
     position: relative;
     background-color: $main-color;
     background-image: url("images/mountains.jpg");
@@ -503,20 +518,13 @@ input:focus
 			padding: 1rem 1rem 1rem 0 ;
 			.blog-list-title{
 				color: white;
-				font-size: .9rem;
 			}
 			.blog-post{
-				margin-bottom: 15px;
-				.post-title{
-					font-size: .9rem;
-				}
-				.post-title>a, .post-author>a, .post-date{
-				color: white;
-				}
-				.post-author, .post-date{
+				.post-title>a{
 					color: white;
-					margin-bottom: 0;
-					font-size: .6rem;
+				}
+				.post-author>a, .post-date{
+					color: white;
 				}
 			}
 		}
@@ -667,6 +675,9 @@ input:focus
 				}
 			}
 		}
+		.form-check{
+			padding-left: 0;
+		}
 		textarea{
 			height: 100%;
 			resize: none;
@@ -686,6 +697,9 @@ input:focus
 		}
 		.main-btn{
 			width: 150px;
+			&:hover{
+				background-color: transparent;
+			}
 		}
 	}
 	.cards-section{
@@ -988,6 +1002,15 @@ input:focus
 	}
 }
 @media (min-width: 1800px){
+	h4{
+		font-size: 1.8rem;
+	}
+	h5{
+		font-size: 1.6rem;
+	}
+	h6{
+		font-size: 1.5rem;
+	}
 	body{
 		font-size: 1.4rem;
 	}
@@ -1027,6 +1050,19 @@ input:focus
 						height: 50px;
 					}
 				}
+			}
+		}
+	}
+	.blog-list{
+		.blog-list-title{
+			font-size: 1.5rem;
+		}
+		.blog-post{
+			.post-title{
+				font-size: 1.1rem;
+			}
+			.post-author, .post-date{
+				font-size: .8rem;
 			}
 		}
 	}
@@ -1105,12 +1141,88 @@ input:focus
 		}
 	}
 	#main-about{
+		.our-partners-content{
+			h5{
+				font-size: 1.8rem;
+			}
+		}
 		.careers{
 			.card-custom{
 				margin: 0 2rem 2rem 2rem;
 			}
 		}	
 	}
+	#main-contact{
+		#contact-form{
+			.form-group{
+				.input-wrap{
+					.color-square{
+						width: 40px;
+						height: 40px;
+						left: 20px;
+						.color-square-inner{
+							font-size: 1.5rem;
+						}
+					}
+					input{
+						height:60px;
+					}
+				}
+			}
+		}
+		.form-check{
+			.custom-control{
+				.custom-control-label::before{
+					top: .35rem;
+					left: -2rem;
+					width: 1.4rem;
+					height: 1.4rem;
+				}
+			}		
+		}
+	}
+	#main-blog-index{
+		.post-item{
+			.post-footer{
+				.meta{
+					font-size: 1rem;
+				}
+			}
+		}
+		.blog-list{
+			.blog-list-title{
+				font-size: 1.7rem;
+			}
+			.blog-post{
+				.post-title{
+					font-size: 1.4rem;
+				}
+				.date, .author{
+					font-size: .8rem;
+				}
+			}
+		}
+	}
+	#main-blog-page{
+		.blog-list{
+			.blog-list-title{
+				font-size: 1.5rem;
+			}
+			.blog-post{
+				.post-title>a{
+					font-size: 1.1rem;
+				}
+				.post-author, .post-date{
+					font-size: .8rem;
+				}
+			}
+		}	
+		.post-item{
+			.post-title{
+				font-size: 3rem;
+			}
+		}
+	}  
 }
 @media (max-width: 1199px){
 	body{

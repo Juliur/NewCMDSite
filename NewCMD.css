@@ -133,6 +133,23 @@ input:focus {
   font-size: 1.5rem;
 }
 
+.blog-list .blog-list-title {
+  font-size: 1.1rem;
+}
+
+.blog-list .blog-post {
+  margin-bottom: 15px;
+}
+
+.blog-list .blog-post .post-title {
+  font-size: .9rem;
+}
+
+.blog-list .blog-post .post-author, .blog-list .blog-post .post-date {
+  margin-bottom: 0;
+  font-size: .6rem;
+}
+
 .modal-backdrop {
   z-index: 1;
 }
@@ -324,7 +341,7 @@ input:focus {
 }
 
 #header-secondary {
-  height: 35vh;
+  height: 300px;
   position: relative;
   background-color: #014D80;
   background-image: url("images/mountains.jpg");
@@ -555,25 +572,14 @@ input:focus {
 
 #main .featured-article-blog .blog-list .blog-list-title {
   color: white;
-  font-size: .9rem;
 }
 
-#main .featured-article-blog .blog-list .blog-post {
-  margin-bottom: 15px;
-}
-
-#main .featured-article-blog .blog-list .blog-post .post-title {
-  font-size: .9rem;
-}
-
-#main .featured-article-blog .blog-list .blog-post .post-title > a, #main .featured-article-blog .blog-list .blog-post .post-author > a, #main .featured-article-blog .blog-list .blog-post .post-date {
+#main .featured-article-blog .blog-list .blog-post .post-title > a {
   color: white;
 }
 
-#main .featured-article-blog .blog-list .blog-post .post-author, #main .featured-article-blog .blog-list .blog-post .post-date {
+#main .featured-article-blog .blog-list .blog-post .post-author > a, #main .featured-article-blog .blog-list .blog-post .post-date {
   color: white;
-  margin-bottom: 0;
-  font-size: .6rem;
 }
 
 #main-about .info {
@@ -730,6 +736,10 @@ input:focus {
   border: 0;
 }
 
+#main-contact #contact-form .form-check {
+  padding-left: 0;
+}
+
 #main-contact #contact-form textarea {
   height: 100%;
   resize: none;
@@ -750,6 +760,10 @@ input:focus {
 
 #main-contact #contact-form .main-btn {
   width: 150px;
+}
+
+#main-contact #contact-form .main-btn:hover {
+  background-color: transparent;
 }
 
 #main-contact .cards-section {
@@ -1010,6 +1024,15 @@ input:focus {
 }
 
 @media (min-width: 1800px) {
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 1.6rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
   body {
     font-size: 1.4rem;
   }
@@ -1048,6 +1071,15 @@ input:focus {
   .modal-custom .modal-dialog-custom .modal-content-custom .subscribe-form .subscribe-btn {
     font-size: inherit;
     height: 50px;
+  }
+  .blog-list .blog-list-title {
+    font-size: 1.5rem;
+  }
+  .blog-list .blog-post .post-title {
+    font-size: 1.1rem;
+  }
+  .blog-list .blog-post .post-author, .blog-list .blog-post .post-date {
+    font-size: .8rem;
   }
   #nav-custom .navbar-nav-custom .nav-link-custom {
     font-size: 1.4rem;
@@ -1095,8 +1127,52 @@ input:focus {
   #main .featured-featured-featured-article-blog .blog-list .blog-post h5 {
     font-size: 1.6rem;
   }
+  #main-about .our-partners-content h5 {
+    font-size: 1.8rem;
+  }
   #main-about .careers .card-custom {
     margin: 0 2rem 2rem 2rem;
+  }
+  #main-contact #contact-form .form-group .input-wrap .color-square {
+    width: 40px;
+    height: 40px;
+    left: 20px;
+  }
+  #main-contact #contact-form .form-group .input-wrap .color-square .color-square-inner {
+    font-size: 1.5rem;
+  }
+  #main-contact #contact-form .form-group .input-wrap input {
+    height: 60px;
+  }
+  #main-contact .form-check .custom-control .custom-control-label::before {
+    top: .35rem;
+    left: -2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  #main-blog-index .post-item .post-footer .meta {
+    font-size: 1rem;
+  }
+  #main-blog-index .blog-list .blog-list-title {
+    font-size: 1.7rem;
+  }
+  #main-blog-index .blog-list .blog-post .post-title {
+    font-size: 1.4rem;
+  }
+  #main-blog-index .blog-list .blog-post .date, #main-blog-index .blog-list .blog-post .author {
+    font-size: .8rem;
+  }
+  #main-blog-page .blog-list .blog-list-title {
+    font-size: 1.5rem;
+  }
+  #main-blog-page .blog-list .blog-post .post-title > a {
+    font-size: 1.1rem;
+  }
+  #main-blog-page .blog-list .blog-post .post-author, #main-blog-page .blog-list .blog-post .post-date {
+    font-size: .8rem;
+  }
+  #main-blog-page .post-item .post-title {
+    font-size: 3rem;
   }
 }
 
