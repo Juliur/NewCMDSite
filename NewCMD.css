@@ -246,7 +246,8 @@ input:focus {
 
 #nav-custom .nav-link-custom {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
   padding: 0.7rem;
   display: flex;
   align-items: center;
