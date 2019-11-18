@@ -79,7 +79,6 @@ input:focus {
 
 .sidebar-wrap .sidebar-items-wrap .sidebar-title {
   color: #014D80;
-  font-size: 1.1rem;
 }
 
 .sidebar-wrap .sidebar-items-wrap .sidebar-item {
@@ -88,6 +87,12 @@ input:focus {
   text-decoration: none;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: all 0.1s ease-in 0s;
+}
+
+.sidebar-wrap .sidebar-items-wrap .sidebar-item:hover {
+  font-weight: 700;
+  transition: all 0.1s ease-in 0s;
 }
 
 .btn-effect {
@@ -100,7 +105,7 @@ input:focus {
 }
 
 .btn-effect:hover {
-  background-color: white;
+  background-color: transparent;
   color: #014D80;
   transition: all 0.1s ease-in 0s;
   box-shadow: none;
@@ -133,10 +138,6 @@ input:focus {
   font-size: 1.5rem;
 }
 
-.blog-list .blog-list-title {
-  font-size: 1.1rem;
-}
-
 .blog-list .blog-post {
   margin-bottom: 15px;
 }
@@ -148,6 +149,31 @@ input:focus {
 .blog-list .blog-post .post-author, .blog-list .blog-post .post-date {
   margin-bottom: 0;
   font-size: .6rem;
+}
+
+.read-more-link {
+  color: #014D80;
+  position: relative;
+  transition: 0.3s;
+}
+
+.read-more-link:hover {
+  text-decoration: none;
+  color: #014D80;
+}
+
+.read-more-link::after {
+  font-family: "ForkAwesome";
+  content: '\f061';
+  position: absolute;
+  right: -20px;
+  top: 2px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.read-more-link:hover:after {
+  right: -25px;
 }
 
 .modal-backdrop {
@@ -167,7 +193,7 @@ input:focus {
 .modal-custom .modal-dialog-custom .modal-content-custom {
   position: relative;
   border: 0;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0;
   padding: 1rem;
 }
@@ -182,8 +208,9 @@ input:focus {
   font-size: 25px;
 }
 
-.modal-custom .modal-dialog-custom .modal-content-custom h4 {
+.modal-custom .modal-dialog-custom .modal-content-custom .modal-title {
   color: #014D80;
+  font-weight: 700;
 }
 
 .modal-custom .modal-dialog-custom .modal-content-custom .subscribe-form {
@@ -231,11 +258,14 @@ input:focus {
 .card-custom .card-body-custom .card-title {
   color: #014D80;
   font-weight: 700;
-  margin-bottom: .75rem;
 }
 
 .card-custom .card-body-custom .card-subtitle {
   margin-bottom: .75rem;
+}
+
+.card-no-mb {
+  margin-bottom: 0 !important;
 }
 
 #nav-custom {
@@ -417,6 +447,10 @@ input:focus {
   justify-content: space-between;
 }
 
+#main .dashboard-items .dashboard-item {
+  color: #343a40;
+}
+
 #main .dashboard-items .dashboard-item .counter-amount {
   text-align: center;
   font-size: 2.3rem;
@@ -440,11 +474,6 @@ input:focus {
   flex: 0 0 30%;
   border-radius: 0;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-#main .community-involvement .container-fluid-custom .card-deck-custom .card-custom .card-title {
-  font-weight: 700;
-  color: #014D80;
 }
 
 #main .more-about-us {
@@ -655,11 +684,13 @@ input:focus {
 
 #main-products .cards-section .card-custom, #main-services .cards-section .card-custom {
   width: 100%;
+  padding: 0;
   margin-bottom: 30px;
 }
 
 #main-products .cards-section .card-custom .card-body-custom, #main-services .cards-section .card-custom .card-body-custom {
   margin-bottom: 0;
+  padding: 1rem;
 }
 
 #main-services .info {
@@ -763,10 +794,6 @@ input:focus {
   width: 150px;
 }
 
-#main-contact #contact-form .main-btn:hover {
-  background-color: transparent;
-}
-
 #main-contact .cards-section {
   padding: 0 0 3rem 0;
 }
@@ -820,15 +847,6 @@ input:focus {
 
 #main-blog-index .post-item .post-footer .meta i {
   margin-right: 5px;
-}
-
-#main-blog-index .post-item .post-footer .read-more-link {
-  text-decoration: none;
-  color: #014D80;
-}
-
-#main-blog-index .post-item .post-footer .read-more-link i {
-  margin-left: 5px;
 }
 
 #main-blog-index .blog-list {
@@ -953,6 +971,14 @@ input:focus {
     width: 170px;
     height: 50px;
   }
+  .read-more-link::after {
+    right: -23px;
+    top: 3px;
+    font-size: 20px;
+  }
+  .read-more-link:hover:after {
+    right: -30px;
+  }
   body {
     font-size: 1.2rem;
   }
@@ -1007,6 +1033,9 @@ input:focus {
   #main .featured-article-blog .featured-img-wrap .featured-article-title {
     font-size: 4rem;
   }
+  #main-products .cards-section .card-custom .card-body-custom, #main-services .cards-section .card-custom .card-body-custom {
+    padding: 1.3rem;
+  }
   #main-support .card-custom .card-footer .main-btn {
     width: 270px;
   }
@@ -1049,7 +1078,7 @@ input:focus {
     width: auto;
   }
   .modal-custom .modal-dialog-custom .modal-content-custom {
-    width: 530px;
+    width: 550px;
     height: 300px;
     justify-content: center;
     padding: 2rem;
