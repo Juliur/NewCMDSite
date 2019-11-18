@@ -1316,6 +1316,12 @@ input:focus {
 	body{
 		font-size: .9rem;
 	}
+	.read-more-link{
+		&::after {
+			top: 5px;
+			font-size: 13px;
+		}
+	}	
 	#main{
 		.community-involvement{
 			.container-fluid-custom{
@@ -1423,7 +1429,7 @@ input:focus {
 			}
 		}
 	}
-	#main-products{
+	#main-products, #main-services{
 		.info{
 			padding-top: 3rem;
 		}
@@ -1546,6 +1552,14 @@ input:focus {
 			}
 		}
 	}
+	#main-products, #main-services{
+		.info{ 
+			padding-bottom: 0;
+		}
+		.cards-section{
+			padding-bottom: 0;
+		}
+	}
 	#main-contact{
 		#contact-form{
 			.form-group{
@@ -1590,6 +1604,11 @@ input:focus {
 	.container-fluid-custom{
 		width: 90%;
 	}
+	read-more-link{
+		&::after {
+			top: 3px;
+		}
+	}	
 	#nav-custom{
 		background-color: $main_color;
 		.navbar-nav-custom{
@@ -1682,6 +1701,11 @@ input:focus {
 			}
 		}
 	}
+	#main-products, #main-services{
+		.info{ 
+			padding-top: 5rem;
+		}
+	}
 	#main-contact{
 		.general-title{
 			margin-top: 4rem;
@@ -1713,6 +1737,12 @@ input:focus {
 			width: 10%;
 		}
 	}
+	.read-more-link{
+		&::after {
+			top: 2px;
+			font-size: 12px;
+		}
+	}	
 	#header-home{
 		height: 270px;
 		.company-name-wrap{

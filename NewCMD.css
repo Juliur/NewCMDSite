@@ -1247,6 +1247,10 @@ input:focus {
   body {
     font-size: .9rem;
   }
+  .read-more-link::after {
+    top: 5px;
+    font-size: 13px;
+  }
   #main .community-involvement .container-fluid-custom .card-deck-custom .card-custom {
     flex: 0 0 29%;
   }
@@ -1317,13 +1321,13 @@ input:focus {
   #main .featured-featured-featured-article-blog .blog-list .blog-post p:first-of-type {
     margin-bottom: 0;
   }
-  #main-products .info {
+  #main-products .info, #main-services .info {
     padding-top: 3rem;
   }
-  #main-products .cards-section {
+  #main-products .cards-section, #main-services .cards-section {
     padding: 1.5rem 0;
   }
-  #main-products .sidebar-wrap {
+  #main-products .sidebar-wrap, #main-services .sidebar-wrap {
     padding-top: 0;
   }
   #main-contact .cards-section .card-custom {
@@ -1409,6 +1413,12 @@ input:focus {
   #main .featured-featured-featured-article-blog .blog-list .blog-list-title {
     font-size: 1.5rem;
   }
+  #main-products .info, #main-services .info {
+    padding-bottom: 0;
+  }
+  #main-products .cards-section, #main-services .cards-section {
+    padding-bottom: 0;
+  }
   #main-contact #contact-form .form-group {
     margin-right: 5px;
     width: 80%;
@@ -1441,6 +1451,9 @@ input:focus {
   }
   .container-fluid-custom {
     width: 90%;
+  }
+  read-more-link::after {
+    top: 3px;
   }
   #nav-custom {
     background-color: #014D80;
@@ -1514,6 +1527,9 @@ input:focus {
   #main-support .card-custom .card-footer .main-btn {
     width: 180px;
   }
+  #main-products .info, #main-services .info {
+    padding-top: 5rem;
+  }
   #main-contact .general-title {
     margin-top: 4rem;
   }
@@ -1537,6 +1553,10 @@ input:focus {
   }
   .general-title::after {
     width: 10%;
+  }
+  .read-more-link::after {
+    top: 2px;
+    font-size: 12px;
   }
   #header-home {
     height: 270px;
