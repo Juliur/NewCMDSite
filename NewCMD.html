@@ -56,7 +56,7 @@
 								<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">Careers</a>
 							</div>
 							</li>
-						<li class="nav-item nav-item-custom dropdown">
+						<!-- <li class="nav-item nav-item-custom dropdown">
 							<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Products
@@ -66,11 +66,11 @@
 								<a class="dropdown-item dropdown-item-custom" href="/products/hot_or_cold_standby">Hot Standby / Cold Standby / DRBD</a>
 								<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">High Availability Clusters</a>
 								<a class="dropdown-item dropdown-item-custom" href="/products/performance_audit">Performance Audit</a>
-								<a class="dropdown-item dropdown-item-custom" href="/products/postgresql_core">PostgreSQL Core</a>
+								<a class="dropdown-item dropdown-item-custom" href="/products/postgresql_core">Postgres Core</a>
 								<a class="dropdown-item dropdown-item-custom" href="/products/warm_standby">Warm Standby</a>
 								<a class="dropdown-item dropdown-item-custom" href="/products/audit_and_tune">Audit and Tune</a>
 							</div>
-						</li>
+						</li> -->
 						<li class="nav-item nav-item-custom dropdown">
 							<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -182,7 +182,9 @@
 								<h5 class="card-title">Point In Time Recovery Tools </h5>
 								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sint eum expedita, tenetur consectetur aliquid optio. Nemo aspernatur, esse expedita ducimus quaerat, provident eum sequi harum veniam id enim at.</p>
 							</div>
-							<button class="main-btn btn-effect mt-auto">Learn more</button>
+							<div class="card-footer card-footer-custom">
+								<button class="main-btn btn-effect mt-auto">Learn more</button>
+							</div>
 					</div>
 					<div class="card card-custom">
 						<img src="./images/NO_IMG.png" class="card-img-top w-75 mx-auto" alt="">
@@ -190,7 +192,9 @@
 							<h5 class="card-title">Postgres Conference</h5>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 						</div>
+						<div class="card-footer card-footer-custom">
 							<button class="main-btn btn-effect mt-auto">Learn more</button>
+						</div>
 					</div>
 					<div class="card card-custom">
 						<img src="./images/NO_IMG.png" class="card-img-top w-75 mx-auto" alt="">
@@ -198,14 +202,16 @@
 							<h5 class="card-title">Meetup Title</h5>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 						</div>
+						<div class="card-footer card-footer-custom">
 							<button class="main-btn btn-effect mt-auto">Learn more</button>
+						</div>
 						</div>
 				</div>
 			</div>	
 		</div>
 
 		<div class="more-about-us">
-			<h5 class="more-about-us-title mb-0"><a href="#" class="d-flex flex-row align-items-center">More about us<i class="fa fa-arrow-right arrow" aria-hidden="true"></i></a></h5>
+			<h5 class="more-about-us-title mb-0"><a href="#" class="d-flex flex-row align-items-center animated-arrow-link">More about us</a></h5>
 		</div>
 
 		<div class="clients pt-5 pb-5">
@@ -290,14 +296,16 @@
 					<div class="col-md-5 col-sm-12">
 						<div class="featured-img-wrap">
 							<img class="featured-img" src="images/2.jpg">
-							<p class="featured-article-title font-weight-bold p-2">Is it time for a newbie-hacker mentor for Postgresql.org?</p>
 						</div>
 					</div>
 					<div class="col-md-5 col-sm-12">
 						<div class="featured-article-content p-3 h-100">
 							<div class="d-flex flex-column featured-article-inner h-100">
-								<p>At PostgresConf US 2018, Bruce Momjian, Grant Zhou, and I had a meeting to discuss potential opportunities for the Chinese PostgreSQL community to participate in the wider International community, including submitting patches to PostgreSQL.Org. Then at Postgres Open China the International Consultants Committee had a meeting to discuss more opportunities in depth. Between the two meetings there were a lot of ideas but one opportunity that was considered needs further discussion.There are many volumes within the PostgreSQL community. Email volume (over 3000 emails to -hackers alone in the first 6 months of 2018), side channel volume, idea volume, and, arguably most important, code volume. The investment someone has to make in order to submit a feature to the ...</p>
-								<a href="#" class="d-flex align-items-center mt-auto font-weight-bold">Read more<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+							<h2 class="featured-article-title font-weight-bold">Is it time for a newbie-hacker mentor for Postgres.org?</h2>
+								<p>At PostgresConf US 2018, Bruce Momjian, Grant Zhou, and I had a meeting to discuss potential opportunities for the Chinese Postgres community to participate in the wider International community, including submitting patches to Postgres.Org. Then at Postgres Open China the International Consultants Committee had a meeting to discuss more opportunities in depth. Between the two meetings there were a lot of ideas but one opportunity that was considered needs further discussion.There are many volumes within the Postgres community. Email volume (over 3000 emails to -hackers alone in the first 6 months of 2018), side channel volume, idea volume, and, arguably most important, code volume. The investment someone has to make in order to submit a feature to the ...</p>
+								<div class="post-footer mt-auto">
+									<a href="#" class="d-inline-flex align-items-center font-weight-bold animated-arrow-link">Read more</a>
+								</div>
 							</div>	
 						</div>
 					</div>
@@ -353,7 +361,7 @@
 						</ul>
 
 						<ul class="list-unstyled list-inline copyright m-3">
-						<li class="list-inline-item">© Copyright © 2000-2019 Command Prompt, Inc. All Rights Reserved. All trademarks property of their respective owners.</li>
+						<li class="list-inline-item w-100">© Copyright © 2000-2019 Command Prompt, Inc. All Rights Reserved. All trademarks property of their respective owners.</li>
 						<li class="list-inline-item"><a href="/legal/terms_of_use">Terms of Use</a></li>
 						<li class="list-inline-item"><a href="/legal/privacy_policy">Privacy Policy</a></li>
 						</ul>

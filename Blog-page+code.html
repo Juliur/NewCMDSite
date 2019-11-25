@@ -8,8 +8,8 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="NewCMD.css">
-	</link>
+	<link rel="stylesheet" type="text/css" href="NewCMD.css"></link>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-okaidia.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
 		integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
@@ -21,7 +21,9 @@
 	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-	</script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
 	<script src="./NewCMD.js"></script>
 </head>
 
@@ -122,70 +124,86 @@
 	</nav>
 
 	<div id="banner">
-		<img src="./images/sunset.jpg" class="banner-img w-100 h-100">
+		<img src="./images/blue-gradient-mountains.jpg" class="banner-img w-100 h-100">
 	</div>
 
 	<main id="main-blog-page">
 		<div class="container-fluid">
 			<div class="row justify-content-md-center">
-				<div class="col-lg-8 col-md-10 translated-column">
-					<div class="post-item">
-						<h5 class="post-title font-weight-bold">Keys to moving forward in your life and career - making the leap to uncomfortable</h5>
+				<div class="col-lg-8 col-md-10">
+					<div class="post-item mb-5">
+						<h5 class="post-title font-weight-bold">Postgres Deferred Primary Keys, a Hidden Gem</h5>
 						<div>
 							<ul class="meta">
-							<li class="meta-item"><i class="fa fa-clock-o" aria-hidden="true"></i>Nov. 12, 2019, 11:32 a.m. </li>
-							<li class="meta-item"><i class="fa fa-comments" aria-hidden="true"></i>Amanda Nystrom</li>
-							<li class="meta-item"><a href="" title="Follow"><i class="fa fa-rss" aria-hidden="true"></i>Follow</a></li>
-							<li class="meta-item"><i class="fa fa-tags" aria-hidden="true"></i>Business</li>
+								<li class="meta-item"><i class="fa fa-clock-o" aria-hidden="true"></i>July 25, 2017, 9:21 a.m.</li>
+								<li class="meta-item"><i class="fa fa-comments" aria-hidden="true"></i>Joshua D. Drake</li>
+								<li class="meta-item"><a href="" title="Follow"><i class="fa fa-rss" aria-hidden="true"></i>Follow</a></li>
+								<li class="meta-item"><i class="fa fa-tags" aria-hidden="true"></i> PostgreSQL OpenSource</li>
 							</ul>	
 						</div>
-						<div class="post-body d-flex flex-column">
-							<img class="w-100" src="./images/selfdefinedbox_(1).jpg">
+						<div class="post-body d-flex flex-column"></div>
 							<p class="post-inner mt-3 mb-0">
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, a quidem fuga beatae natus nobis, officia sed, nesciunt autem quisquam quaerat provident. Quo repellendus, excepturi saepe sunt dolorum doloremque. Officiis!
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, a quidem fuga beatae natus nobis, officia sed, nesciunt autem quisquam quaerat provident. Quo repellendus, excepturi saepe sunt dolorum doloremque. Officiis!
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, a quidem fuga beatae natus nobis, officia sed, nesciunt autem quisquam quaerat provident. Quo repellendus, excepturi saepe sunt dolorum doloremque. Officiis!
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, a quidem fuga beatae natus nobis, officia sed, nesciunt autem quisquam quaerat provident. Quo repellendus, excepturi saepe sunt dolorum doloremque. Officiis!
-							</p>
-						</div>	
-					
-							
-					</div>	
-				</div>
-				<div class="col-lg-3 col-md-10">
-					<div class="blog-list">
-						<h5 class="blog-list-title font-weight-bold">Recent blogs</h5>
-							<div class="blog-post">
-								<h6 class="post-title">
-									<a class="text-decoration-none" href="/blog/copy-file-ssh-wormhole">Copy Files Through an SSH Wormhole!</a>
-								</h6>
-								<p class="date">Oct. 16, 2017, 1:09 p.m.</p>
-								<p class="author"><a href="#">- Eric Worden</a></p>
-							</div>
-							
-							<div class="blog-post">
-								<h6 class="post-title">
-									<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
-								</h6>
-								<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
-								<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
-							</div>
-							<div class="blog-post">
-								<h6 class="post-title">
-									<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
-								</h6>
-								<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
-								<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
-							</div>
-							<div class="blog-post">
-								<h6 class="post-title">
-									<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
-								</h6>
-								<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
-								<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
-							</div>			
+                As you can see in the tweet, Postgres by default will not defer a PRIMARY KEY check. Without the check being deferred the following will not work:
+              </p>
+                            
+<div class="w-75 code-block">	
+	<pre class="code-block-inner">
+		<code class="language-sql">
+postgres=# select * from demo; 
+id  
+---- 
+	1 
+	2 
+(2 rows)
+postgres=# alter table demo add primary key(id);   
+ALTER TABLE 
+postgres=# begin; 
+BEGIN 
+postgres=# update demo set id=id-1; 
+UPDATE 2 
+postgres=# update demo set id=id+1; 
+ERROR:  duplicate key value violates unique constraint "demo_pkey" 
+DETAIL:  Key (id)=(1) already exists.
+	</code> 
+</pre>
+</div>                       
+						</div>				
 					</div>
-				</div> 
+					<div class="col-lg-3 col-md-10">
+							<div class="blog-list">
+								<h5 class="blog-list-title font-weight-bold">Recent blogs</h5>
+									<div class="blog-post">
+										<h6 class="post-title">
+											<a class="text-decoration-none" href="/blog/copy-file-ssh-wormhole">Copy Files Through an SSH Wormhole!</a>
+										</h6>
+										<p class="date">Oct. 16, 2017, 1:09 p.m.</p>
+										<p class="author"><a href="#">- Eric Worden</a></p>
+									</div>
+									
+									<div class="blog-post">
+										<h6 class="post-title">
+											<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
+										</h6>
+										<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
+										<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
+									</div>
+									<div class="blog-post">
+										<h6 class="post-title">
+											<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
+										</h6>
+										<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
+										<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
+									</div>
+									<div class="blog-post">
+										<h6 class="post-title">
+											<a class="text-decoration-none" href="/blog/connection-initiation-overhead-pgbouncer">Connection Initiation Overhead is Killing Your Web App - Use a Connection Pool</a>
+										</h6>
+										<p class="date">Dec. 6, 2017, 7:16 p.m.</p>
+										<p class="author"><a href="/blog/author/eric">- Eric Worden</a></p>
+									</div>			
+							</div>
+					</div> 	
+				</div>
 			</div>
 		</div>	
 	</main>
