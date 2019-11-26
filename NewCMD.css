@@ -124,7 +124,7 @@ input:focus {
 }
 
 .icon {
-  color: #014D80;
+  width: 40%;
 }
 
 .color-square {
@@ -981,6 +981,9 @@ input:focus {
   .container-fluid-custom {
     width: 90%;
   }
+  .sidebar-wrap {
+    top: 20px;
+  }
   .sidebar-wrap .sidebar-items-wrap {
     margin-bottom: 1.3rem;
   }
@@ -1446,6 +1449,9 @@ input:focus {
   }
   .container-fluid-custom {
     width: 90%;
+  }
+  .icon {
+    width: 25%;
   }
   #nav-custom {
     background-color: #014D80;

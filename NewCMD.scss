@@ -118,7 +118,7 @@ input:focus {
 	font-weight: 700;
 }
 .icon{
-	color: $main_color;
+	width: 40%;
 }
 .color-square{
 	width:40px;
@@ -915,6 +915,7 @@ input:focus {
 		width: 90%;
 	}
 	.sidebar-wrap{
+		top: 20px;
 		.sidebar-items-wrap{
 			margin-bottom: 1.3rem;
 			.sidebar-title{
@@ -1614,6 +1615,9 @@ input:focus {
 	.container-fluid-custom{
 		width: 90%;
 	}	
+	.icon{
+		width: 25%;
+	}
 	#nav-custom{
 		background-color: $main_color;
 		.navbar-nav-custom{
