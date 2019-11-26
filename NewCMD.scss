@@ -78,24 +78,38 @@ input:focus {
 	padding-top: 3rem;
 	position: sticky;
 	top: 10px;
-	.sidebar-items-wrap{
-		margin-bottom: 1.3rem;
-		.sidebar-title{
-			color: $main_color;
-		}
-		.sidebar-item{
-			font-size: .8rem;
-			color: $main_color;
-			text-decoration: none;
-			cursor: pointer;
-			margin-bottom: 10px;
+	.sidebar-title{
+		color: $main_color;
+	}
+	.sidebar-item{
+		font-size: .8rem;
+		color: $main_color;
+		text-decoration: none;
+		cursor: pointer;
+		margin-bottom: 10px;
+		transition: $transition_animation;
+		&:hover{
+			font-weight: 700;
 			transition: $transition_animation;
-			&:hover{
-				font-weight: 700;
-				transition: $transition_animation;
-			}
 		}
-	
+	}
+	.blog-post{
+		margin-bottom: 15px;
+		.post-title>a{
+			font-size: .9rem;
+			color: $main_color;
+			font-weight: 600;
+		}
+		.author>a, .date{
+			display: inline-block;
+			margin-bottom: 0;
+			font-size: .6rem;
+			color: $main_color;
+		}
+		.author{
+			margin-bottom: 0;
+			display: inline-block;
+		}
 	}
 }
 .btn-effect{
@@ -117,8 +131,11 @@ input:focus {
 	height: 40px;
 	font-weight: 700;
 }
-.icon{
+.library-icon{
 	width: 40%;
+}
+.fa-icon{
+	color: $main_color;
 }
 .color-square{
 	width:40px;
@@ -135,21 +152,9 @@ input:focus {
 		font-size: 1.5rem;
 	}
 }
-.blog-list{
-	padding-top: 3rem;
-	position: sticky;
-	top: 10px;
-	.blog-post{
-		margin-bottom: 15px;
-		.post-title{
-			font-size: .9rem;
-		}
-		.post-author, .post-date{
-			margin-bottom: 0;
-			font-size: .6rem;
-		}
-	}
-}
+
+
+	
 .animated-arrow-link{
 	color: $main_color;
 	position: relative;
@@ -538,6 +543,7 @@ input:focus {
 					font-size: 2rem;
 					line-height: 1;
 					text-align: start;
+					margin-bottom: 1.5rem;
 				}
 				.animated-arrow-link{
 					color: white;
@@ -546,20 +552,6 @@ input:focus {
 					// 	font-size: 15px;
 					// 	margin-left: 5px;
 					// }
-				}
-			}
-		}
-		.blog-list{
-			padding: 1rem 1rem 1rem 0 ;
-			.blog-list-title{
-				color: white;
-			}
-			.blog-post{
-				.post-title>a{
-					color: white;
-				}
-				.post-author>a, .post-date{
-					color: white;
 				}
 			}
 		}
@@ -638,29 +630,31 @@ input:focus {
 #main-support{
 	.cards-section{
 		padding-top: 3rem;
-	}
-	.card-custom{
-		padding: 0;
-		margin-bottom: 3rem;
-		.card-body-custom{
-			padding: 1.5rem;
-		}
-		.card-footer{
-			.attached-doc{
-				a{
-					color: $main_color;
-					font-weight: 700;
-					.icon{
-						margin-right: 5px;
-					}
+		.card-custom{
+			padding: 0;
+			margin-bottom: 3rem;
+			.card-body-custom{
+				padding: 1.5rem;
+				.general-title{
+					margin-bottom: 2rem;
 				}
 			}
-			.main-btn{
-				width: 200px;
+			.card-footer{
+				.attached-doc{
+					a{
+						color: $main_color;
+						font-weight: 700;
+						.fa-icon{
+							margin-right: 5px;
+						}
+					}
+				}
+				.main-btn{
+					width: 200px;
+				}
 			}
 		}
 	}
-	
 }
 #main-contact{
 	.general-title{
@@ -768,26 +762,6 @@ input:focus {
 			}
 		}
 	}
-	.blog-list{
-		color: $main_color;
-		.blog-list-title{
-			color: inherit;
-			font-size: 1.1rem;
-		}
-		.blog-post{
-			margin-bottom: 1rem;
-			.post-title, .post-title>a{
-				font-size: .9rem;
-				color: inherit;
-				font-weight: bold;
-			}
-			.date, .author>a{
-				font-size: .6rem;
-				margin: 0;
-				color: inherit;
-			}
-		}
-	}
 }
 #main-blog-page{
 	.translated-column{
@@ -822,26 +796,6 @@ input:focus {
 				.code-block-inner{
 					border-radius: 0;
 				}
-			}
-		}
-	}
-	.blog-list{
-		color: $main_color;
-		.blog-list-title{
-			color: inherit;
-			font-size: 1.1rem;
-		}
-		.blog-post{
-			margin-bottom: 1rem;
-			.post-title, .post-title>a{
-				font-size: .9rem;
-				color: inherit;
-				font-weight: bold;
-			}
-			.date, .author>a{
-				font-size: .6rem;
-				margin: 0;
-				color: inherit;
 			}
 		}
 	}
@@ -1010,10 +964,12 @@ input:focus {
 		}
 	}
 	#main-support{
-		.card-custom{
-			.card-footer{
-				.main-btn{
-					width: 270px;
+		.cards-section{
+			.card-custom{
+				.card-footer{
+					.main-btn{
+						width: 270px;
+					}
 				}
 			}
 		}
@@ -1031,16 +987,6 @@ input:focus {
 				font-size: 1.8rem;
 			}
 		} 
-		.blog-list{
-			.blog-list-title{
-				font-size: 1.5rem;
-			}
-			.blog-post{
-				.post-title>a{
-					font-size: 1rem;
-				}
-			}
-		}
 	}
 }
 @media (min-width: 1800px){
@@ -1092,16 +1038,13 @@ input:focus {
 			}
 		}
 	}
-	.blog-list{
-		.blog-list-title{
-			font-size: 1.5rem;
-		}
+	.sidebar-wrap{
 		.blog-post{
-			.post-title{
-				font-size: 1.2rem;
+			.post-title>a{
+				font-size: 1.3rem;
 			}
-			.post-author, .post-date{
-				font-size: 1rem;
+			.author>a, .date{
+				font-size: 1.1rem;
 			}
 		}
 	}
@@ -1228,37 +1171,16 @@ input:focus {
 				}
 			}
 		}
-		.blog-list{
-			.blog-list-title{
-				font-size: 1.5rem;
-			}
-			.blog-post{
-				.post-title>a{
-					font-size: 1.3rem;
-				}
-				.date, .author>a{
-					font-size: 1rem;
-				}
-			}
-		}
 	}
 	#main-blog-page{
-		.blog-list{
-			.blog-list-title{
-				font-size: 1.5rem;
-			}
-			.blog-post{
-				.post-title>a{
-					font-size: 1.3rem;
+		.translated-column{
+			.post-item{
+				.post-title{
+					font-size: 3rem;
 				}
-				.author>a, .date{
-					font-size: 1rem;
+				.code-block{
+					height: 500px;
 				}
-			}
-		}	
-		.post-item{
-			.post-title{
-				font-size: 3rem;
 			}
 		}
 	}  
@@ -1355,6 +1277,14 @@ input:focus {
 	.container-fluid-custom{
 		width: 85%;
 	}
+	.cards-section{
+		.card-custom{
+			margin-bottom: 30px;
+		}
+	}
+	.sidebar-wrap{
+		padding-top: 0;
+	}
 	#nav-custom{
 		display: flex;
 		align-items: center;
@@ -1442,21 +1372,6 @@ input:focus {
 		}
 		.cards-section{
 			padding: 1.5rem 0;
-		}
-		.sidebar-wrap{
-			padding-top: 0;
-		}
-	}
-	#main-contact{
-		.cards-section{
-			.card-custom{
-				margin-bottom: 30px;
-			}
-		}
-	}
-	#main-blog-index{
-		.blog-list{
-			padding-top: 0;
 		}
 	}
 	#main-blog-page{
@@ -1615,7 +1530,7 @@ input:focus {
 	.container-fluid-custom{
 		width: 90%;
 	}	
-	.icon{
+	.library-icon{
 		width: 25%;
 	}
 	#nav-custom{
@@ -1689,7 +1604,7 @@ input:focus {
 				.carousel-item-custom {
 					.quote-wrap{
 						padding: 1rem;
-						.icon{
+						.fa-icon{
 							display: none;
 						}
 						.quote{
@@ -1704,6 +1619,7 @@ input:focus {
 		.cards-section{
 			padding-top: 5rem;
 			.card-custom{
+				margin-bottom: 15px;
 				.card-footer{
 					.main-btn{
 						width: 180px;
@@ -1730,14 +1646,6 @@ input:focus {
 	#main-contact{
 		.general-title{
 			margin-top: 4rem;
-		}
-		.cards-section{
-			.card-custom{
-				margin-bottom: 15px;
-			}
-		}
-		.sidebar-wrap{
-			padding-top: 0;
 		}
 	}
 	#main-blog-page{
