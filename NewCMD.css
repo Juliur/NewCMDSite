@@ -926,13 +926,10 @@ input:focus {
   .sidebar-wrap {
     top: 20px;
   }
-  .sidebar-wrap .sidebar-items-wrap {
-    margin-bottom: 1.3rem;
-  }
-  .sidebar-wrap .sidebar-items-wrap .sidebar-title {
+  .sidebar-wrap .sidebar-title {
     font-size: 1.5rem;
   }
-  .sidebar-wrap .sidebar-items-wrap .sidebar-item {
+  .sidebar-wrap .sidebar-item {
     font-size: 1.2rem;
   }
   #nav-custom .navbar-nav-custom .nav-link-custom {

@@ -870,14 +870,11 @@ input:focus {
 	}
 	.sidebar-wrap{
 		top: 20px;
-		.sidebar-items-wrap{
-			margin-bottom: 1.3rem;
-			.sidebar-title{
-				font-size: 1.5rem;
-			}
-			.sidebar-item{
-				font-size: 1.2rem;
-			}
+		.sidebar-title{
+			font-size: 1.5rem;
+		}
+		.sidebar-item{
+			font-size: 1.2rem;
 		}
 	}
 	#nav-custom{
