@@ -601,6 +601,22 @@ input:focus {
   font-size: 1.1rem;
 }
 
+#main .featured-article-blog .blog-list {
+  color: white;
+}
+
+#main .featured-article-blog .blog-list a {
+  color: inherit;
+}
+
+#main .featured-article-blog .blog-list .blog-post p {
+  font-size: .7rem;
+}
+
+#main .featured-article-blog .blog-list .blog-post p:nth-child(2) {
+  margin-bottom: 0;
+}
+
 #main-about .info {
   padding-top: 3rem;
 }

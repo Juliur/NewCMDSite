@@ -555,6 +555,20 @@ input:focus {
 				}
 			}
 		}
+		.blog-list{
+			color: white;
+			a{
+				color: inherit;	
+			}
+			.blog-post{
+				p{
+					font-size: .7rem;
+				}
+				p:nth-child(2){
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
 }
 #main-about{
