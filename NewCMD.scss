@@ -776,6 +776,40 @@ input:focus {
 			}
 		}
 	}
+	.custom-pagination{
+		.page-item-custom{
+			&:first-child{
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+			&:last-child{
+				.page-link-custom{
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+			}
+			&.active{
+				.page-link-custom{
+					background-color: $main_color;
+					color: white;
+					border-color: transparent;
+				}
+			}
+			.page-link-custom{
+				color: $main_color;
+				line-height: 1;
+				border: 0;
+				background-color: transparent;
+				&:hover{
+					background-color: $main_color;
+					color: white;
+				}
+				&:focus{
+					box-shadow: none;
+				}
+			}
+		}	
+	}
 }
 #main-blog-page{
 	.translated-column{
@@ -1180,6 +1214,11 @@ input:focus {
 				.meta{
 					font-size: 1rem;
 				}
+			}
+		}
+		.custom-pagination{
+			.page-link-custom{
+				padding: .75rem 1rem;
 			}
 		}
 	}
