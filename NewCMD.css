@@ -322,6 +322,10 @@ input:focus {
   cursor: pointer;
 }
 
+#nav-custom .navbar-nav-custom .nav-item-custom.dropdown:hover > .dropdown-menu-custom {
+  display: block;
+}
+
 #nav-custom .navbar-nav-custom .dropdown-menu-custom {
   border-radius: 0;
 }

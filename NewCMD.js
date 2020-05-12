@@ -12,13 +12,8 @@ function handleTopNavAnimation () {
     $nav.toggleClass('scrolled', $(this).scrollTop() > 10);
 };
 
-// $(function(){
-//     $('.nav-item').on('click', function(){
-//         $(this).find('.rotated-angle').toggleClass('rotate');
-//     });
-// });
-
-document.getElementsByClassName(".about").onclick = function()
-{
-  document.location.href = "https://juliur.github.io/NewCMDSite/About.html";
-}
+$(function($) {
+    $('.dropdown > a').click(function(){
+        location.href = this.href;
+    });
+});

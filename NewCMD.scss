@@ -289,6 +289,9 @@ input:focus {
 	.navbar-nav-custom {
 		.nav-item-custom {
 			cursor: pointer;
+			&.dropdown:hover>.dropdown-menu-custom {
+				display: block;
+			}
 		}
 		.dropdown-menu-custom{
 			border-radius: 0;

@@ -27,13 +27,12 @@
 
 <body>
 	<nav class="navbar fixed-top navbar-expand-md" id="nav-custom">
-
 		<button class="navbar-toggler p-0 hamburger" aria-controls="navbarToggleExternalContent" aria-expanded="false"
 			aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
 			aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
 		</button>
-			
+
 		<div class="container-fluid p-0">
 			<div class="row w-100 m-0 no-gutters">
 				<div class="col-lg-1 d-none d-sm-none d-md-none d-lg-block">
@@ -42,67 +41,58 @@
 					</a>
 				</div>
 				<div class="col-lg-7 offset-lg-4 col-xs-12">
-					<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
-						<ul class="navbar-nav navbar-nav-custom">
-							<li class="nav-item nav-item-custom">
-								<a class="nav-link nav-link-custom" href="#">Home</a>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
+					<ul class="navbar-nav navbar-nav-custom">
+						<li class="nav-item nav-item-custom">
+							<a class="nav-link nav-link-custom current" href="./NewCMD.html">Home</a>
+						</li>
+						<li class="nav-item nav-item-custom dropdown about">
+							<a class="nav-link nav-link-custom" href="./About.html" id="navbarDropdownMenuLink"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								About
+								<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+							</a>
+							<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item dropdown-item-custom dropdown-item dropdown-item-custom-custom" href="/products/hot_or_cold_standby">Partners</a>
+								<a class="dropdown-item dropdown-item-custom" href="/products/high_availability_clusters">Careers</a>
+							</div>
 							</li>
-							<li class="nav-item nav-item-custom dropdown">
-								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-									aria-expanded="false">
-									About
-									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
-								</a>
-								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item dropdown-item-custom dropdown-item dropdown-item-custom-custom"
-										href="/products/hot_or_cold_standby">Partners</a>
-									<a class="dropdown-item dropdown-item-custom"
-										href="/products/high_availability_clusters">Careers</a>
-								</div>
-							</li>
-							<li class="nav-item nav-item-custom dropdown">
-								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-									aria-expanded="false">
-									Services
-									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
-								</a>
-								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item dropdown-item-custom" href="/services/performance_tuning">Performance
-										Tuning</a>
-									<a class="dropdown-item dropdown-item-custom" href="/services/on_site">On
-										Site</a>
-									<a class="dropdown-item dropdown-item-custom" href="/services/training">Training</a>
-									<a class="dropdown-item dropdown-item-custom" href="/services/high_availability">High
-										Availability</a>
-									<a class="dropdown-item dropdown-item-custom" href="/services/remote_hands">Remote Hands</a>
-									<a class="dropdown-item dropdown-item-custom" href="/services/oracle_to_postgres_migrations">Oracle
-										Migrations</a>
-									<a class="dropdown-item dropdown-item-custom" href="/services/fullstack">Full
-										Stack Offerings</a>
-								</div>
-							</li>
-							<li class="nav-item nav-item-custom dropdown">
-								<a class="nav-link nav-link-custom" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-									aria-expanded="false">
-									Support
-									<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
-								</a>
-								<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item dropdown-item-custom" href="/support/support_options">Support Options</a>
-								</div>
-							</li>
-							<li class="nav-item nav-item-custom">
-								<a class="nav-link nav-link-custom">Blog</a>
-							</li>
-							<li class="nav-item nav-item-custom">
-								<a class="nav-link nav-link-custom">Contact</a>
-							</li>
-							<li class="nav-item nav-item-custom">
+						<li class="nav-item nav-item-custom dropdown">
+							<a class="nav-link nav-link-custom" href="./Services.html" id="navbarDropdownMenuLink" 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Services
+								<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+							</a>
+							<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item dropdown-item-custom" href="/services/performance_tuning">Performance Tuning</a>
+								<a class="dropdown-item dropdown-item-custom" href="/services/on_site">On Site</a>
+								<a class="dropdown-item dropdown-item-custom" href="/services/training">Training</a>
+								<a class="dropdown-item dropdown-item-custom" href="/services/high_availability">High Availability</a>
+								<a class="dropdown-item dropdown-item-custom" href="/services/remote_hands">Remote Hands</a>
+								<a class="dropdown-item dropdown-item-custom" href="/services/oracle_to_postgres_migrations">Oracle Migrations</a>
+								<a class="dropdown-item dropdown-item-custom" href="/services/fullstack">Full Stack Offerings</a>
+							</div>
+						</li>
+						<li class="nav-item nav-item-custom dropdown">
+							<a class="nav-link nav-link-custom" href="./Support.html" id="navbarDropdownMenuLink" 
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Support
+								<i class="fa fa-angle-down rotated-angle" aria-hidden="true"></i>
+							</a>
+							<div class="dropdown-menu bg-dark dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item dropdown-item-custom" href="/support/support_options">Support Options</a>
+							</div>
+						</li>
+						<li class="nav-item nav-item-custom">
+							<a class="nav-link nav-link-custom" href="./Blog-index.html">Blog</a>
+						</li>
+						<li class="nav-item nav-item-custom">
+							<a class="nav-link nav-link-custom" href="#">Contact</a>
+						</li>
+						<li class="nav-item nav-item-custom">
 								<a class="nav-link nav-link-custom" data-toggle="modal" data-target="#newsletterModal">Newsletter</a>
-							</li>
+						</li>
 							<!-- Modal -->
-							<div class="modal modal-custom fade" id="newsletterModal" tabindex="-1" role="dialog"
-								aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal modal-custom fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 								<div class="modal-dialog modal-dialog-custom" role="document">
 									<div class="modal-content modal-content-custom">
 										<button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
@@ -110,21 +100,20 @@
 										</button>
 										<div class="d-flex flex-column align-items-center">
 											<i class="fa fa-envelope fa-3x fa-icon" aria-hidden="true"></i>
-											<h4 class="modal-title text-center" id="exampleModalLabel">Join Our
-												Newsletter</h4>
+											<h4 class="modal-title text-center" id="exampleModalLabel">Join Our Newsletter</h4>
 										</div>
 										<div class="subscribe-form d-flex flex-row justify-content-center">
 											<input type="email" class="subscribe-input" placeholder="youremail@example.com">
 											<button type="button" class="btn subscribe-btn btn-effect">Subscribe</button>
-										</div>
+										</div>	
 									</div>
 								</div>
-							</div>
-						</ul>
-					</div>
+							</div>	
+					</ul>
+				</div>
 				</div>
 			</div>
-		</div>
+		</div>					
 	</nav>
 
 	<header id="header-secondary">
